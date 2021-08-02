@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS for Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
+
+    <link href="./css/bakery.css" rel="stylesheet" />
+    <title>Bakery - Puff n' Pie</title>
+    <link rel="icon" href="./favicon.ico">
+</head>
+
+<body>
+    <!-- Navbar for Desktop==================================================================== -->
+    <nav class="navbar navbar-expand-md navigation-bar d-none d-md-block fixed-top">
+        <div class="container mt-lg-2">
+            <a class="navbar-brand ms-md-3" href="./Home.html">
+                <img src="./images2/navbar/Puff-Pie-Logo.png" class="logo-home"></img>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-lg-0 mb-md-2  nav-menu d-md-flex justify-content-between">
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link  " href="./Bakery.html">Bakery</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link" href="./Meal.html">Meal</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link  nav-menu-link " href="./Box.html">Box</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link " href="./Event.html">Event</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link " href="#contentFooter">Contact</a>
+                    </li>
+                </ul>
+                <a href="#">
+                    <img src="./images2/navbar/THAI-Catering-Logo.png" id="catering-logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar for Mobile==================================================================== -->
+    <nav id="mobileNavbar" class=" container-fluid  d-block d-md-none fixed-bottom px-0 ">
+        <div class="w-100 h-100 row justify-content-evenly mx-0 ">
+            <a class="col-2  px-0 mobile-link " href="./Bakery.html">
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Bakery-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Bakery-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Bakery-Hover.png">
+
+                <div class='textIcon w-100'>Bakery</div>
+            </a>
+            <a class="col-2  px-0 mobile-link  " href="./Meal.html">
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Meal-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Meal-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Meal-Hover.png">
+
+                <div class='textIcon w-100'>Meal</div>
+            </a>
+            <a class="col-2  px-0 mobile-link " href="./Home.html">
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Home-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Home-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Home-Hover.png">
+
+                <div class='textIcon w-100'>Home</div>
+            </a>
+            <a class="col-2  px-0  mobile-link " href='./Box.html'>
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Box-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Box-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Box-Hover.png">
+
+                <div class='textIcon w-100'>Box</div>
+            </a>
+            <a class="col-2  px-0  mobile-link" href='./Event.html'>
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Event-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Event-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Event-Hover.png">
+
+                <div class='textIcon w-100'>Event</div>
+            </a>
+        </div>
+    </nav>
+    <!-- Section one Desktop==================================================================== -->
+    <section id="sectionOneBakery" class="d-none d-md-block" style="background: url('./images2/bakery/Bakery_Hero_Desktop.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;">
+        <div class="container">
+
+            <h1 id="Bakery" class="mx-auto mb-lg-2  mb-1 d-md-block d-none ">
+                Bakery
+            </h1>
+            <div class="bar-light-long ms-2 mx-md-auto my-1 my-lg-4 my-md-3 d-md-block d-none"></div>
+            <div id="contentOneBakery" class=" mx-auto py-md-2 h-auto mx-md-5 d-md-block d-none ">
+                <div class="mx-md-5">
+                    <h2 class="newArrivals mt-0  ">Must Try!</h2>
+                    <div class="bar-dark-sm "></div>
+                    <div class=" hero-scroll d-flex flex-row  justify-content-between mt-3 h-auto">
+                        <div class="card-big flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                            <img src="./images2/bakery/recommended/Chicken Roll-desktop.png" alt="image not available"
+                                class="d-block card-img-big">
+                            <div class="card-text w-100 h-auto pt-1 ">
+                                <h4 class="card-name-big">Chicken Roll <br>Supreme</h4>
+                                <h5 class="card-name-thai-big">ชิกเก้นโรลซูพรีม</h5>
+                                <span class="card-price-big float-end">45,-</span>
+                            </div>
+                            <p class="ingredient d-none">
+                                Chicken/ไก่,<br>
+                                Butter/เนย, <br>
+                                Milk/นม, <br>
+                                Yeast/ยีสต์
+                            </p>
+                            <div class="productDetail d-none">
+                                Ready to served or Baked in Oven with Lowest Power for 2 Mins
+                                <br><br>
+                                ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+
+                            </div>
+                            <div class="preservation d-none">
+                                3 Days in Refrigerator
+                                <br>
+                                เก็บในตู้เย็นได้ 3 วัน
+                            </div>
+                        </div>
+                        <div class="card-big flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                            <img src="./images2/bakery/recommended/Almond Cream Croissant-desktop.png"
+                                alt="image not available" class="d-block card-img-big">
+                            <div class="card-text w-100 h-auto pt-1">
+                                <p class="card-name-big">Almond <br>Croissant</p>
+                                <span class="card-name-thai-big">ครัวซองต์อัลมอนด์</span>
+                                <span class="card-price-big float-end">80,-</span>
+                            </div>
+                            <div class="ingredient d-none">
+                                Almond/อัลมอนด์,<br>
+                                Butter/เนย, <br>
+                                Milk/นม, <br>
+                                Yeast/ยีสต์
+                            </div>
+                            <div class="productDetail d-none">
+                                Ready to served or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                                ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+
+                            </div>
+                            <div class="preservation d-none">
+                                3 Days in Refrigerator
+                                <br>
+                                เก็บในตู้เย็นได้ 3 วัน
+                            </div>
+                        </div>
+                        <div class="card-big flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                            <img src="./images2/bakery/recommended/Fresh Cream Aclaire-desktop.png"
+                                alt="image not available" class="d-block card-img-big">
+                            <div class="card-text w-100 h-auto pt-1">
+                                <p class="card-name-big mb-0">Fresh Cream <br> A Claire</p>
+                                <span class="card-name-thai-big">เอแคลร์ครีม</span>
+                                <span class="card-price-big float-end">70,-</span>
+                            </div>
+                            <div class="ingredient d-none">
+                                Egg/ไข่,<br>
+                                Butter/เนย, <br>
+                                Milk/นม, <br>
+                                Yeast/ยีสต์
+                            </div>
+                            <div class="productDetail d-none">
+                                Ready to serve <br>
+                                <br>
+                                ทานได้ทันที
+
+                            </div>
+                            <div class="preservation d-none">
+                                3 Days in Refrigerator
+                                <br>
+                                เก็บในตู้เย็นได้ 3 วัน
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Section One for Mobile==================================================================== -->
+    <section id="sectionOneBakery-mobile" class="d-md-none" style=" background: linear-gradient(180deg, #3d2211 0%, rgba(153, 90, 19, 0) 60.42%),
+    url(./images2/bakery/Bakery_Hero_Mobile.png);
+    background-size: cover;">
+        <div class="container">
+            <!-- Mobile Header -->
+            <h1 id='newMenu' class="mx-auto d-md-none d-block ">
+                New <br>
+                Bakery
+            </h1>
+
+            <div id="contentOneBakery-mobile" class="d-block d-md-none d-flex flex-row overflow-auto mt-5  h-auto">
+                <div class="card-mobile-new flex-shrink-0 mx-2 position-relative " data-bs-toggle="modal"
+                    data-bs-target="#modal-product">
+
+                    <img src="./images2/bakery/recommended/Green Tea Buns--mobile.png" alt=""
+                        class=" d-block w-100 h-100 newMenu-card-img">
+                    <img src="./images2/bakery/recommended/Green Tea Buns-modal.png" class="d-none" alt="">
+                    <div class=" newMenu-card-text w-100   ">
+                        <h4 class="newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2">
+                            Green Tea Bun <br>
+                            with Red Bean
+                        </h4>
+                    </div>
+                    <div class="ingredient d-none">
+                        Green Tea/ชาเขียว<br>
+                        Red Bean/ถั่วแดง<br>
+                        Egg/ไข่,<br>
+                        Butter/เนย, <br>
+                        Milk/นม, <br>
+                        Yeast/ยีสต์
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to serve <br><br>
+                        ทานได้ทันที
+                    </div>
+                    <div class="preservation d-none">
+                        3 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 3 วัน
+                    </div>
+                </div>
+                <div class="card-mobile-new flex-shrink-0 mx-2 position-relative" data-bs-toggle="modal"
+                    data-bs-target="#modal-product">
+                    <img src="./images2/bakery/recommended/Butterfly Pies-mobile.png" alt=""
+                        class="d-block w-100 h-100 newMenu-card-img">
+                    <img src="./images2/bakery//recommended/Butterfly Pies-modal.png" class="d-none" alt="">
+                    <div class=" newMenu-card-text w-100   ">
+                        <h4 class="newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2">
+                            Butterfly <br>
+                            Pies
+                        </h4>
+                    </div>
+                    <div class="ingredient d-none">
+                        Butter/เนย, <br>
+                        Milk/นม, <br>
+                        Yeast/ยีสต์
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to serve <br><br>
+                        ทานได้ทันที
+                    </div>
+                    <div class="preservation d-none">
+                        20 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 20 วัน
+                    </div>
+                </div>
+                <div class="card-mobile-new flex-shrink-0 mx-2 position-relative" data-bs-toggle="modal"
+                    data-bs-target="#modal-product">
+                    <img src="./images2/bakery//recommended/Danish Bread with Blueberry Jam-mobile.png" alt=""
+                        class="d-block w-100 h-100 newMenu-card-img">
+                    <img src="./images2/bakery/recommended/Danish Bread with Blueberry Jam-modal.png" class="d-none"
+                        alt="">
+                    <div class=" newMenu-card-text w-100   ">
+                        <h4 class="newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2">
+                            Danish Bread<br>
+                            Blueberry Jam
+                        </h4>
+                    </div>
+                    <div class="ingredient d-none">
+                        Egg/ไข่,<br>
+                        Butter/เนย, <br>
+                        Milk/นม, <br>
+                        Yeast/ยีสต์
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                        ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                    </div>
+                    <div class="preservation d-none">
+                        5 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 5 วัน
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- White Sections=================================================================== -->
+    <section class="sectionBakery py-lg-5 py-md-3 py-2  w-100 h-auto">
+        <div class="container mx-auto row">
+            <div class="col-md-6 col-0 d-md-block d-none  ">
+                <div class="position-relative w-50 h-auto mt-5">
+                    <img src="./images2/bakery/Poster/Croissant_Poster_Back-min.png " class=" pic-sm" alt="">
+                    <img src="./images2/bakery/Poster/Croissant_Hero_Front-min.png"
+                        class="position-absolute top-50 start-50 pic-lg" alt="">
+                </div>
+
+            </div>
+            <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
+                <h2 class="quoteDark mt-md-4 mb-lg-5 my-3 d-md-block d-none">"On Board
+                    <br>with Croissants"
+                </h2>
+                <div class="bar-dark d-md-block d-none"></div>
+                <p class="detailEng my-md-4 my-2 d-lg-block d-none">Croissant is our pride,
+                    since we impressed many passengers on board,
+                    now we are excited for you to try.
+                    <br>
+                    <br>
+                    ครัวซองค์เป็นเมนูที่พัฟแอนด์พาย ขอแนะนำให้ท่านลิ้มลอง
+                    หากท่านคิดถึงบรรยากาศบนเครื่องบินที่ได้ทานครัวซองค์แสนอร่อย
+                </p>
+                <!-- <div class="deatailThai d-lg-block d-none">
+                    ครัวซองค์เป็นเมนูที่พัฟแอนด์พาย ขอแนะนำให้ท่านลิ้มลอง
+                    <br>หากท่านคิดถึงบรรยากาศบนเครื่องบินที่ได้ทานครัวซองค์แสนอร่อย
+                </div> -->
+                <h2 class="menu-header-mobile-dark d-block d-md-none mb-1 ms-2">Croissants</h2>
+                <div class="bar-dark-mobile  d-block d-md-none ms-2"></div>
+                <div id="croissantBox" class="d-flex flex-row overflow-auto scroll-box-short my-md-4 my-2 ">
+
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/croissant_modal/Multigrain Croissant-min.png"
+                            alt="image not available" class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <h4 class="card-name-small mb-md-1">Multigrain<br>Croissant</h4>
+                            <h5 class="card-name-thai-small text-wrap float-start">ครัวซองค์รสธัญพืช</h5>
+                            <span class="card-price-small float-end">50,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Multigrain/ธัญพืช,<br>
+                            Butter/เนย, <br>
+                            Milk/นม, <br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/croissant_modal/Almond Cream Croissant-min.png"
+                            alt="image not available" class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small mb-md-1">Almond<br>Croissant</p>
+                            <span class="card-name-thai-small text-wrap float-start">ครัวซองค์รสอัลมอนด์</span>
+                            <span class="card-price-small float-end">80,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Almond/อัลมอนด์,<br>
+                            Butter/เนย, <br>
+                            Milk/นม, <br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/croissant_modal/Ham Cheese Croissant-min.png"
+                            alt="image not available" class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small mb-md-1">Ham Cheese<br>Croissant</p>
+                            <span class="card-name-thai-small text-wrap float-start">ครัวซองค์แฮมชีส</span>
+                            <span class="card-price-small float-end">55,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            ็Ham/แฮม, <br>
+                            Cheese/ชีส, <br>
+                            Butter/เนย, <br>
+                            Milk/นม, <br>
+                            Yeast/ยีสต์</div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/croissant_modal/Plain Croissant-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small mb-md-1">Original Butter<br>Croissant</p>
+                            <span class="card-name-thai-small text-wrap float-start">ครัวซองค์เนยรสดั้งเดิม</span>
+                            <span class="card-price-small float-end">50,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย, <br>
+                            Milk/นม, <br>
+                            Yeast/ยีสต์</div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/croissant_modal/Premium Croissant-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small mb-md-1">Premium<br>Croissant</p>
+                            <span class="card-name-thai-small text-wrap float-start">พรีเมี่ยมครัวซองต์</span>
+                            <span class="card-price-small float-end">75,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย, <br>
+                            Milk/นม, <br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/croissant_modal/Mini Ham Cheese Croissant-min.png"
+                            alt="image not available" class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small mb-md-1">Mini Ham Cheese<br>Croissant</p>
+                            <span class="card-name-thai-small text-wrap float-start">ครัวซองค์แฮมชีสมินิ</span>
+                            <span class="card-price-small float-end">55,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            ็Ham/แฮม, <br>
+                            Cheese/ชีส, <br>
+                            Butter/เนย, <br>
+                            Milk/นม, <br>
+                            Yeast/ยีสต์</div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none ">Grab
+                    Me!</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="sectionBakery   py-md-5 py-2 w-100 h-auto">
+        <div class="container mx-auto row">
+
+            <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
+                <h2 class="quoteDark mt-md-4 mb-lg-5 my-2 text-end d-md-block d-none ">"Our Original
+                    <br>Bakery to be Served"
+                </h2>
+                <div class="bar-dark ms-md-auto d-md-block d-none "></div>
+                <p class="detailEng my-md-4 my-2 text-end d-lg-block d-none ">We started our journey with "Chicken
+                    Roll" since 1997, with the passion od pastry chef to create authentic pastry bakeries.
+                    <br>
+                    <br>
+                    จุดเริ่มต้นของพัฟแอนด์พายเกิดจากเมนู "ชิ้กเก้นโรล" ตั้งแต่ปี 2540
+                    ซึ่งสร้างความประทับใจแก่ลูกค้าจนถึงปัจจุบัน เราจึงอยากให้ท่านได้ลอง
+
+                </p>
+                <!-- <div class="deatailThai text-end d-lg-block d-none ">
+                    จุดเริ่มต้นของพัฟแอนด์พายเกิดจากเมนู "ชิ้กเก้นโรล" ตั้งแต่ปี 2540
+                    <br>ซึ่งสร้างความประทับใจแก่ลูกค้าจนถึงปัจจุบัน เราจึงอยากให้ท่านได้ลอง
+                </div> -->
+                <h2 class="menu-header-mobile-dark d-block d-md-none mb-1 ms-2">Pastries</h2>
+                <div class="bar-dark-mobile  d-block d-md-none ms-2"></div>
+                <div id="orignalBox"
+                    class="d-flex flex-row overflow-auto scroll-box-short scroll-end my-lg-5 my-3 float-md-end ">
+
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/pastry_modal/Chili Chicken Roll-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small mb-md-1">Sweet & Spicy<br>Chicken Pie</p>
+                            <span class="card-name-thai-small text-wrap float-start">พายไก่หยองน้ำพริกเผา</span>
+                            <span class="card-price-small float-end">35,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Chicken/ไก่, <br>
+                            Chilli Paste/น้ำพริกเผา, <br>
+                            Flour/แป้ง,<br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/pastry_modal/Chicken Mushroom Pie-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small mb-md-1">Chicken Mushroom<br>Pie</p>
+                            <span class="card-name-thai-small text-wrap float-start">พายไก่ซอสเห็ด</span>
+                            <span class="card-price-small float-end">40,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Chicken/ไก่, <br>
+                            Mushroom/เห็ด, <br>
+                            Flour/แป้ง,<br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์<br>
+                        </div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/pastry_modal/Chicken Roll-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small mb-md-1">Chicken Roll<br> Supreme</p>
+                            <span class="card-name-thai-small text-wrap float-start">ชิกเก้นโรลซูพรีม</span>
+                            <span class="card-price-small float-end">45,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Chicken/ไก่, <br>
+                            Flour/แป้ง,<br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์<br>
+                        </div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/pastry_modal/Curry Chicken Pie-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small mb-md-1">Chicken Curry<br>Pie</p>
+                            <span class="card-name-thai-small text-wrap float-start">พายแกงกระหรี่ไก่</span>
+                            <span class="card-price-small float-end">35,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Curry Powder/ผงแกงกระหรี่, <br>
+                            Chicken/ไก่, <br>
+                            Flour/แป้ง,<br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์<br>
+                        </div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/pastry_modal/Salmon Danish-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small mb-md-1">Salmon<br>Danish</p>
+                            <span class="card-name-thai-small text-wrap float-start">แซลมอนเดนิช</span>
+                            <span class="card-price-small float-end">85,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Salmon/แซลมอน, <br>
+                            Flour/แป้ง,<br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์<br>
+                        </div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <!-- <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/pastry/Pork_Thai_Chili_Paste_Pie-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small mb-md-1">Pork Chilli Paste<br>Pie</p>
+                            <span class="card-name-thai-small text-wrap float-start">พายผริกเผาหมู</span>
+                            <span class="card-price-small float-end">45,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            PumpkinsTest,<br>
+                            MilkTest, <br>
+                            ButterTest, <br>
+                            WhipcreamTest</div>
+                        <div class="productDescription d-none">
+                            Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
+                            Now, let’s grab this and enjoy more good to both your health and joy.
+                        </div>
+                        <div class="preservation d-none">
+                            2 Days Storage <br>
+                            Cold and Dry Places
+                        </div>
+                    </div> -->
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/pastry_modal/Salmon Wellington-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small mb-md-1">Salmon <br>Wellington</p>
+                            <span class="card-name-thai-small text-wrap float-start">แซลมอนเวลลิงตั้น</span>
+                            <span class="card-price-small float-end">80,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Salmon/แซลมอน, <br>
+                            Spinach/ผักโขม, <br>
+                            Flour/แป้ง,<br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/pastry_modal/Sausage Roll-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small mb-md-1">Chicken <br>Roll</p>
+                            <span class="card-name-thai-small text-wrap float-start">โรลไส้กรอก</span>
+                            <span class="card-price-small float-end">35,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Sausage/ไส้กรอก, <br>
+                            Flour/แป้ง,<br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+
+                </div>
+                <button type="button"
+                    class="btn btn-primary  rounded-pill grabMe-btn d-md-block d-none float-md-end">Grab
+                    Me!</button>
+
+            </div>
+            <div class="col-md-6 col-0 d-md-block d-none  ">
+                <div class="position-relative w-50 h-auto mt-0 mt-lg-5 ms-5 ps-5">
+                    <img src="./images2/bakery/Poster/Pastry_Poster_Front-min.png"
+                        class="position-absolute top-50 start-50 pic-lg" alt="" style="object-fit: cover;">
+                    <img src="./images2/bakery/Poster/Pastry_Poster_Back-min.png " class=" pic-sm " alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Patongko Sections=================================================================== -->
+    <section class="narrow-section d-flex flex-column h-auto justify-content-around   align-items-center" style="background: url(./images2/bakery/patongko_banner.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;">
+
+        <h1 class="header-narrow h-auto   align-self-start text-start px-2">Grab Your <br>
+            Patongko Now!
+        </h1>
+        <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn">Grab Me!</button>
+    </section>
+
+    <!-- Brown Sections=================================================================== -->
+    <section class="section-brown w-100  py-lg-5 py-md-3 py-2 h-auto d-flex flex-column "
+        style="background-color:#3d2211 ;">
+        <h2 class="quoteWhite text-center my-lg-4 my-2 d-md-block d-none">
+            "Get Lifted <br>with Light"
+        </h2>
+        <div class="bar-light-long mx-auto my-lg-4 my-2 d-md-block d-none"></div>
+        <p class="detailEng-white text-center my-lg-4 my-2 d-lg-block d-none">
+            If you just want something not too much for your breaktime,<br>
+            our light snacks are there for you to go!
+            <br>
+            <br>
+            หากท่านต้องการขนมขบเคี้ยวที่ไม่หนักท้องมากในระหว่างกิจกรรมประจำวัน<br>
+            เรามีขนมที่ทานได้ง่ายและเติมพลังให้ท่านพร้อมลุยต่อไป!
+
+        </p>
+        <!-- <div class="deatailThai-white text-center my-md-4 my-2 d-lg-block d-none">
+            หากท่านต้องการขนมขบเคี้ยวที่ไม่หนักท้องมากในระหว่างกิจกรรมประจำวัน<br>
+            เรามีขนมที่ทานได้ง่ายและเติมพลังให้ท่านพร้อมลุยต่อไป!
+        </div> -->
+        <div class="container mx-auto ps-3 ps-lg-5 pt-3">
+            <h2 class="menu-header-mobile-white d-block d-md-none mb-1 ms-2">Light Snacks</h2>
+            <div class="bar-white-mobile  d-block d-md-none ms-2"></div>
+            <div id="snackBox" class="d-flex flex-row overflow-auto scroll-box my-lg-4 my-2 ms-md-5 ms-auto ">
+
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/snack_modal/Cinnamon Bun-min.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <h4 class="card-name-small-white mb-md-1">Cinnamon<br>Bun</h4>
+                        <span class="card-name-thai-small-white text-wrap float-start">ขนมปังซินนาม่อน</span>
+                        <span class="card-price-small-white float-end">40,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Flour/แป้ง,<br>
+                        Egg/ไข่, <br>
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Cinnamon/ซินนาม่อน
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to serve <br><br>
+                        ทานได้ทันที
+                    </div>
+                    <div class="preservation d-none">
+                        3 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 3 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/snack_modal/Almond Cream Danish-min.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Almond <br>Danish</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">แดนนิชแอลมอนด์</span>
+                        <span class="card-price-small-white float-end">35,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Flour/แป้ง,<br>
+                        Egg/ไข่, <br>
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Almond Cream/ครีมอัลมอนด์
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to serve <br><br>
+                        ทานได้ทันที
+                    </div>
+                    <div class="preservation d-none">
+                        3 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 3 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/snack_modal/Green Tea Buns-min.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Green Tea Bun<br>Red Beans</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">ขนมปังชาเขียว ถั่วแดง</span>
+                        <span class="card-price-small-white float-end">45,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Egg/ไข่, <br>
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Yeast/ยีสต์, <br>
+                        Green Tea/ชาเขียว <br>
+                        Red Bean/ถั่วแดง
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to serve <br><br>
+                        ทานได้ทันที
+                    </div>
+                    <div class="preservation d-none">
+                        3 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 3 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/snack_modal/Cheese Winner Roll.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Cheese Winner <br>Roll</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">ขนมปังชีสวินเนอร์โรล</span>
+                        <span class="card-price-small-white float-end">50,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Egg/ไข่, <br>
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Yeast/ยีสต์, <br>
+                        Sausage/ไส้กรอก
+
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to served or Baked in Oven with 180 degC heat for 2 Mins <br><br>
+                        ทานได้ทันที หรือนำมาอบใช้ไฟ 180 องศา ใช้เวลาประมาณ 2 นาที
+
+                    </div>
+                    <div class="preservation d-none">
+                        3 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 3 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/snack_modal/Mini Sausage Buns-min.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Chicken Sausage <br>Bread</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">ขนมปังไส้กรอกไก่</span>
+                        <span class="card-price-small-white float-end">40,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Egg/ไข่, <br>
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Yeast/ยีสต์,<br>
+                        Chicken Sausage/ไส้กรอกไก่
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to served or Baked in Oven with 180 degC heat for 2 Mins <br><br>
+                        ทานได้ทันที หรือนำมาอบใช้ไฟ 180 องศา ใช้เวลาประมาณ 2 นาที
+                    </div>
+                    <div class="preservation d-none">
+                        3 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 3 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/snack_modal/Pineapple Pie-min.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Pineapple <br>Pie</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">พายสัปปะรด</span>
+                        <span class="card-price-small-white float-end">35,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Egg/ไข่, <br>
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Yeast/ยีสต์, <br>
+                        Pineapple/สับปะรด
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to serve <br><br>
+                        ทานได้ทันที
+                    </div>
+                    <div class="preservation d-none">
+                        3 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 3 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/snack_modal/Sandwich Chicken-min.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Chicken<br>Sandwich</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">แซนวิชไก่</span>
+                        <span class="card-price-small-white float-end">50,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Yeast/ยีสต์, <br>
+                        Chicken/ไก่,<br>
+                        Mayonnaise/มายองเนส
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to served or Baked in Oven with the lowest heat for 2 Mins <br><br>
+                        ทานได้ทันที หรือนำมาอบใช้ไฟ ต่ำสุด ใช้เวลาประมาณ 2 นาที
+                    </div>
+                    <div class="preservation d-none">
+                        3 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 3 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/snack_modal/Sandwich Ham Cheese-min.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Ham Cheese <br>Sandwich</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">แซนวิชแฮมชีส</span>
+                        <span class="card-price-small-white float-end">50,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Yeast/ยีสต์,<br>
+                        Ham/แฮม,<br>
+                        Cheese/ชีส
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to served or Baked in Oven with the lowest heat for 2 Mins <br><br>
+                        ทานได้ทันที หรือนำมาอบใช้ไฟ ต่ำสุด ใช้เวลาประมาณ 2 นาที
+                    </div>
+                    <div class="preservation d-none">
+                        3 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 3 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/snack_modal/Sandwich Tuna-min.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Tuna<br>Sandwich</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">แซนวิชทูน่า</span>
+                        <span class="card-price-small-white float-end">50,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Yeast/ยีสต์, <br>
+                        Tuna/ทูน่า,<br>
+                        Mayonnaise/มายองเนส
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to served or Baked in Oven with the lowest heat for 2 Mins <br><br>
+                        ทานได้ทันที หรือนำมาอบใช้ไฟ ต่ำสุด ใช้เวลาประมาณ 2 นาที
+                    </div>
+                    <div class="preservation d-none">
+                        3 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 3 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/snack_modal/Toddy Palm Pie-min.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Toddy Palm<br>Pie</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">พายลูกตาล</span>
+                        <span class="card-price-small-white float-end">40,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Flour/แป้ง, <br>
+                        Egg/ไข่,<br>
+                        Toddy Palm/ลูกตาล
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to serve <br><br>
+                        ทานได้ทันที
+                    </div>
+                    <div class="preservation d-none">
+                        3 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 3 วัน
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <button type="button"
+            class="btn btn-primary btn-lg rounded-pill grabMe-btn  d-md-block d-none mx-auto my-md-4 my-2">Grab
+            Me!
+        </button>
+        <div class="container mx-auto pt-3 row">
+            <div class="col-md-6 col-0  d-md-block d-none ">
+                <div class="position-relative w-50 h-auto mt-5">
+                    <img src="./images2/bakery/Poster/Sweeties_Poster_Back-min.png " class=" pic-sm" alt="">
+                    <img src="./images2/bakery/Poster/Sweeties_Poster_Front-min.png"
+                        class="position-absolute top-50 start-50 pic-lg" alt="">
+                </div>
+
+            </div>
+            <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
+                <h2 class="quoteWhite  my-lg-5 my-3  d-md-block d-none">
+                    "So sweet
+                    <br>and happy"
+                </h2>
+                <div class="bar-light-long  d-md-block d-none"></div>
+                <p class="detailEng-white my-md-4 my-2  d-lg-block d-none">
+                    Sweet, sweet, and sweeties all the way!
+                    <br>
+                    <br>
+                    สายของหวานต้องห้ามพลาดขนมหวาน
+                    <br>จากพัฟแอนด์พาย เลือกรสชาติแบบที่ท่านชอบได้เลย!
+                </p>
+                <!-- <div class="deatailThai-white  d-lg-block d-none">
+                    สายของหวานต้องห้ามพลาดขนมหวาน
+                    <br>จากพัฟแอนด์พาย เลือกรสชาติแบบที่ท่านชอบได้เลย!
+                </div> -->
+                <h2 class="menu-header-mobile-white d-block d-md-none mb-1 ms-2">Sweeties</h2>
+                <div class="bar-white-mobile  d-block d-md-none ms-2"></div>
+                <div id="sweetyBox" class="d-flex flex-row overflow-auto scroll-box-short my-lg-5 my-3 ">
+
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Banana Cake-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Banana<br>Cake</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">เค้กกล้วยหอม</span>
+                            <span class="card-price-small-white float-end">30,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Flour/แป้ง, <br>
+                            Yeast/ยีสต์, <br>
+                            Banana/กล้วยหอม
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <!-- <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/Sweety/Brownies-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Brownie Twin<br>Cake</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">เค้กคู่บราวนี่</span>
+                            <span class="card-price-small-white float-end">45,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            PumpkinsTest,<br>
+                            MilkTest, <br>
+                            ButterTest, <br>
+                            WhipcreamTest</div>
+                        <div class="productDetail d-none">
+                            Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
+                            Now, let’s grab this and enjoy more good to both your health and joy.
+                        </div>
+                        <div class="preservation d-none">
+                            2 Days Storage <br>
+                            Cold and Dry Places
+                        </div>
+                    </div> -->
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Coconut Cake-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Coconut<br>Cake</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">เค้กมะพร้าว</span>
+                            <span class="card-price-small-white float-end">55,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Flour/แป้ง, <br>
+                            Yeast/ยีสต์, <br>
+                            Coconut/มะพร้าวสด
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Egg Tarts-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Egg<br>Tards</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">ทาร์ดไข่</span>
+                            <span class="card-price-small-white float-end">45,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Flour/แป้ง, <br>
+                            Egg/ไข่
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Fresh Cream Aclaire-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Fresh Cream<br>Aclaire Set</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">เอแคลร์ครีมสด</span>
+                            <span class="card-price-small-white float-end">70,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Flour/แป้ง, <br>
+                            Egg/ไข่
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Mixed Fruit Pudding-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Mixed Fruit<br>Pudding</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">พุดดิ้งผลไม้รวม</span>
+                            <span class="card-price-small-white float-end">40,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Jelly/วุ้น,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล, <br>
+                            Fresh Fruit/ผลไม้สด
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Mixed Fruit Tarts-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Mixed Fruit<br>Tard</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">ทาร์ดผลไม้รวม</span>
+                            <span class="card-price-small-white float-end">50,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล, <br>
+                            Egg/ไข่, <br>
+                            Flour/แป้ง, <br>
+                            Fresh Fruit/ผลไม้สด</div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Mini Mixed Fruit Tarts -min.png"
+                            alt="image not available" class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Mini Fruit<br>Tard</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">มินิทาร์ตผลไม้</span>
+                            <span class="card-price-small-white float-end">80,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล, <br>
+                            Egg/ไข่, <br>
+                            Flour/แป้ง, <br>
+                            Fresh Fruit/ผลไม้สด</div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Pineapple Cake-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Pineapple<br>Cake</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">เค๊กสับปะรด</span>
+                            <span class="card-price-small-white float-end">40,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล, <br>
+                            Egg/ไข่, <br>
+                            Flour/แป้ง, <br>
+                            Pineapple/สับปะรด
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Lemon Roll-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Lemon<br>Roll</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">เลมอนโรล</span>
+                            <span class="card-price-small-white float-end">60,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล, <br>
+                            Egg/ไข่, <br>
+                            Flour/แป้ง, <br>
+                            Lemon Cream/เลม่อนครีม, <br>
+                            Almond/แอลม่อน
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Roll Chocolate-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Chocolate<br>Roll</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">โรลรสช็อคโกแลต</span>
+                            <span class="card-price-small-white float-end">35,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล, <br>
+                            Egg/ไข่, <br>
+                            Flour/แป้ง, <br>
+                            Cocoa Powder/ผงโกโก้
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Roll Coffee-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Coffee<br>Roll</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">โรลรสกาแฟ</span>
+                            <span class="card-price-small-white float-end">35,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล, <br>
+                            Egg/ไข่, <br>
+                            Flour/แป้ง, <br>
+                            Coffee Powder/ผงกาแฟ
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Roll Pandan-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Pandan<br>Roll</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">โรลรสใบเตย</span>
+                            <span class="card-price-small-white float-end">35,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล, <br>
+                            Egg/ไข่, <br>
+                            Flour/แป้ง, <br>
+                            Pandan Powder/ผงใบเตย
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Roll Strawberry-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Strawberry Jam<br>Roll</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">โรลรสแยมสตอเบอร์รี่</span>
+                            <span class="card-price-small-white float-end">35,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล, <br>
+                            Egg/ไข่, <br>
+                            Flour/แป้ง, <br>
+                            Strawberry Jam/แยมสตรอเบอรี่
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Roll Taro-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Taro<br>Roll</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">โรลรสเผือก</span>
+                            <span class="card-price-small-white float-end">35,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล, <br>
+                            Egg/ไข่, <br>
+                            Flour/แป้ง, <br>
+                            Taro Flavour/กลิ่นเผือก
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                        <img src="./images2/bakery/sweety_modal/Snow Butter Loaf-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small-white mb-md-1">Snowy Butter<br>Loaf</p>
+                            <span class="card-name-thai-small-white text-wrap float-start">ขนมปังเนยสดหิมะ</span>
+                            <span class="card-price-small-white float-end">75,-</span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล, <br>
+                            Egg/ไข่, <br>
+                            Flour/แป้ง, <br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none">Grab
+                    Me!</button>
+            </div>
+        </div>
+        <div class="container ps-lg-5 ps-3  pt-lg-3 pt-md-5">
+            <div class="quoteWhite  mt-md-5 mb-md-3 ms-md-5 ms-auto d-md-block d-none">"Complimentaries"</div>
+            <div class="bar-light-long ms-md-5 ms-auto d-md-block d-none "></div>
+            <h2 class="menu-header-mobile-white d-block d-md-none mb-1 ms-2">Complimentaries</h2>
+            <div class="bar-white-mobile  d-block d-md-none ms-2"></div>
+            <div id="complimentaryBox" class="d-flex flex-row overflow-auto scroll-box my-md-4 my-2 ms-md-5 ms-auto ">
+
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/complementary_modal/Butter Scotch Cookies-min.png"
+                        alt="image not available" class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Butter Scotch<br>Cookies</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">คุกกี้เนยสก็อตช์</span>
+                        <span class="card-price-small-white float-end">129,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Sugar/น้ำตาล, <br>
+                        Flour/แป้ง
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to serve <br><br>
+                        ทานได้ทันที
+                    </div>
+                    <div class="preservation d-none">
+                        20 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 20 วัน
+                    </div>
+                </div>
+
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/complementary_modal/Butterfly Pies-min.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Butterfly<br>Pies</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">พายผีเสื้อ</span>
+                        <span class="card-price-small-white float-end">100,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Sugar/น้ำตาล, <br>
+                        Flour/แป้ง
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to serve <br><br>
+                        ทานได้ทันที
+                    </div>
+                    <div class="preservation d-none">
+                        20 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 20 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/complementary_modal/Brioche Loaf -min.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Brioch Loaf &<br>Strawberry Jam</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">
+                            ขนมปังบริยอช
+                            แยมสตรอว์เบอร์รี่
+                        </span>
+                        <span class="card-price-small-white float-end">135,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Sugar/น้ำตาล, <br>
+                        Flour/แป้ง, <br>
+                        Yeast/ยีสต์, <br>
+                        Strawberry Jam/แยมสตรอว์เบอร์รี่
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to served or Baked in Oven with the lowest heat for 2 Mins <br><br>
+                        ทานได้ทันที หรือนำมาอบใช้ไฟ ต่ำสุด ใช้เวลาประมาณ 2 นาที
+                    </div>
+                    <div class="preservation d-none">
+                        5 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 5 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/complementary_modal/Danish Bread with Blueberry Jam-modal.png"
+                        alt="image not available" class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Danish Bread &<br>Blueberry Jam</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">
+                            ขนมปังแถวเดนิช แยมบลูเบอร์รี่
+                        </span>
+                        <span class="card-price-small-white float-end">125,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Butter/เนย,<br>
+                        Milk/นม,<br>
+                        Sugar/น้ำตาล, <br>
+                        Flour/แป้ง, <br>
+                        Yeast/ยีสต์, <br>
+                        Blueberry Jam/แยมบลูเบอร์รี่
+                    </div>
+                    <div class="productDetail d-none">
+                        Ready to served or Baked in Oven with the lowest heat for 2 Mins <br><br>
+                        ทานได้ทันที หรือนำมาอบใช้ไฟ ต่ำสุด ใช้เวลาประมาณ 2 นาที
+                    </div>
+                    <div class="preservation d-none">
+                        5 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 5 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/complementary_modal/Mineral Water-min.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Mineral<br>Water</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">น้ำแร่</span>
+                        <span class="card-price-small-white float-end"></span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Mineral Water 100%<br>
+                        <br>
+                        น้ำแร่ธรรมชาติ 100%
+
+                    </div>
+                    <div class="productDetail d-none">
+                        330 ml : 6,- <br><br>
+                        500 ml : 10,- <br><br>
+                        1500 ml : 17,- <br><br>
+                    </div>
+                    <div class="preservation d-none">
+                        2 years in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 2 ปี
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/complementary_modal/Mixed Fruit Juice2-min.png" alt="image not available"
+                        class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Mixed Fruit<br>Juice 850ml</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">น้ำผลไม้รวม</span>
+                        <span class="card-price-small-white float-end">85,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Mixed Fruit Juice/น้ำผลไม้รวม,<br>
+                        Sugar/น้ำตาล
+                    </div>
+                    <div class="productDetail d-none">
+                        Served with Iced or Chilled <br><br>
+                        ใส่น้ำแข็งหรือแช่เย็นๆ ก่อนดื่มจะทำรสชาติอร่อยยิ่งขึ้น
+                    </div>
+                    <div class="preservation d-none">
+                        4-5 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 4-5 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/complementary_modal/Butterfly Pea Lime Juice 2-min.png"
+                        alt="image not available" class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Butterfly Pea<br>Lime Juice 850ml</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">น้ำมะนาวอัญชัน</span>
+                        <span class="card-price-small-white float-end">85,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Lime Juice/น้ำมะนาว,<br>
+                        Butterfly pea/น้ำดอกอัญชัน,<br>
+                        Sugar/น้ำตาล
+                    </div>
+                    <div class="productDetail d-none">
+                        Served with Iced or Chilled <br><br>
+                        ใส่น้ำแข็งหรือแช่เย็นๆ ก่อนดื่มจะทำรสชาติอร่อยยิ่งขึ้น
+                    </div>
+                    <div class="preservation d-none">
+                        4-5 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 4-5 วัน
+                    </div>
+                </div>
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
+                    <img src="./images2/bakery/complementary_modal/Tamarind Tea Juice 2-min.png"
+                        alt="image not available" class="d-block card-img-small">
+                    <div class="card-text w-100 h-auto pt-1 ps-1">
+                        <p class="card-name-small-white mb-md-1">Tamarind Tea<br>Juice 850ml</p>
+                        <span class="card-name-thai-small-white text-wrap float-start">น้ำชามะขาม</span>
+                        <span class="card-price-small-white float-end">85,-</span>
+                    </div>
+                    <div class="ingredient d-none">
+                        Tamarind Juice/น้ำมะขาม,<br>
+                        Sugar/น้ำตาล
+                    </div>
+                    <div class="productDetail d-none">
+                        Served with Iced or Chilled <br><br>
+                        ใส่น้ำแข็งหรือแช่เย็นๆ ก่อนดื่มจะทำรสชาติอร่อยยิ่งขึ้น
+                    </div>
+                    <div class="preservation d-none">
+                        5-7 Days in Refrigerator
+                        <br>
+                        เก็บในตู้เย็นได้ 5-7 วัน
+                    </div>
+                </div>
+
+            </div>
+            <button type="button"
+                class="btn btn-primary btn-lg rounded-pill grabMe-btn d-block  ms-md-5 mx-auto my-md-4 my-3">Grab
+                Me!</button>
+        </div>
+    </section>
+    <section id="sectionThree" class="v41_32 d-flex flex-column justify-content-center align-items-center" style="background: url('./images2/footer/Visitshops-banner-min.png');background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;">
+        <div id="letsMeetUs">Let’s meet us
+            in places
+        </div>
+        <a href="./Map.html" class="btn btn-primary btn-lg rounded-pill visitShops-btn">Visit Shops</a>
+
+    </section>
+
+    <!-- Modal Section------------------------------------------------ -->
+
+    <div class="modal fade" id="modal-product" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-img-contaniner position-relative mx-md-5 mt-md-3">
+                    <img src="" alt="" class="modal-img ">
+                    <div class=" modal-img-text w-100 h-auto position-absolute bottom-0 px-3 m-0 pb-3">
+                        <h2 class="modal-name mb-0 mt-3 d-inline-block">
+                            <!-- Test<br>Croissant -->
+                        </h2>
+
+                        <button type="button"
+                            class="btn btn-primary rounded-pill grabMe-btn-modal d-inline-block mt-5  float-end">Grab
+                            Me!</button>
+                    </div>
+                    <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="row w-100 h-auto modal-text mx-auto">
+                    <p class="col-5 modal-ingredient ps-2 ps-md-5 py-2">
+                        <!-- Pumpkins,<br>
+                    Milk, <br> 
+                    Butter, <br> 
+                    Whipcream -->
+                    </p>
+                    <p class="col-7 modal-detail py-2">
+                        <!-- Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
+                    Now, let’s grab this and enjoy more good to both your health and joy. -->
+                    </p>
+                </div>
+                <div class="time-preserve mx-auto py-2 text-center">
+                    <img src="./images2/modal-clock.png" alt="" class="clock-img mb-3 d-inline-block">
+                    <p class="modal-preservation d-inline-block pt-0 my-0 ps-2">
+                        <!-- 2 Days Storage <br>
+                    Cold and Dry Places -->
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="modal fade" id="notAvailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Service Not Available</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              This service will be available soon. Please come back later.
+            </div>
+          </div>
+        </div>
+    </div> -->
+
+    <footer id="contentFooter" class=" w-100 h-auto pb-5">
+        <div class="container h-auto row mx-auto px-0">
+            <div
+                class="col-lg-4 col-12 d-flex flex-column align-items-center justify-content-lg-around justify-content-center h-auto">
+                <div>
+                    <div class="Contact">Contact</div>
+                    <div class="bar-light mx-auto mb-3"></div>
+                </div>
+                <div class="d-flex justify-content-between w-50 ">
+                    <a href="#"><img class="social-icon" src="./images2/footer/Facebook-Icon.png"></a>
+                    <a href="#"><img class="social-icon" src="./images2/footer/Instagram-Icon.png"></a>
+                    <a href="#"><img class="social-icon" src="./images2/footer/Line-Icon.png"></a>
+                </div>
+            </div>
+            <div class="col-lg-8 d-flex flex-wrap justify-content-between ">
+
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript for Bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <!-- Navbar Control Javascript -->
+    <script src="./navbar-control.js"></script>
+    <!-- Import Bakery Data  -->
+    <!-- <script src="./bakery-data.js"></script> -->
+    <!-- Scroll Control Javascript -->
+    <script src="./scroll-control.js"></script>
+    <!-- Modal Control Javascript     -->
+    <script src="./modal-control.js"></script>
+</body>
+
+</html>

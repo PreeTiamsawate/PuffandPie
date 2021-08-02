@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS for Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
+
+    <link href="./css/box.css" rel="stylesheet" />
+    <title>Box - Puff n' Pie</title>
+    <link rel="icon" href="./favicon.ico">
+</head>
+
+<body>
+    <!-- Navbar for Desktop==================================================================== -->
+    <nav class="navbar navbar-expand-md navigation-bar d-none d-md-block fixed-top">
+        <div class="container mt-lg-2">
+            <a class="navbar-brand ms-md-3" href="./Home.html">
+                <img src="./images2/navbar/Puff-Pie-Logo.png" class="logo-home"></img>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-lg-0 mb-md-2  nav-menu d-md-flex justify-content-between">
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link  " href="./Bakery.html">Bakery</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link" href="./Meal.html">Meal</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link  nav-menu-link " href="./Box.html">Box</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link " href="./Event.html">Event</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link " href="#contentFooter">Contact</a>
+                    </li>
+                </ul>
+                <a href="#">
+                    <img src="./images2/navbar/THAI-Catering-Logo.png" id="catering-logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar for Mobile==================================================================== -->
+    <nav id="mobileNavbar" class=" container-fluid  d-block d-md-none fixed-bottom px-0 ">
+        <div class="w-100 h-100 row justify-content-evenly mx-0 ">
+            <a class="col-2  px-0 mobile-link " href="./Bakery.html">
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Bakery-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Bakery-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Bakery-Hover.png">
+
+                <div class='textIcon w-100'>Bakery</div>
+            </a>
+            <a class="col-2  px-0 mobile-link  " href="./Meal.html">
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Meal-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Meal-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Meal-Hover.png">
+
+                <div class='textIcon w-100'>Meal</div>
+            </a>
+            <a class="col-2  px-0 mobile-link " href="./Home.html">
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Home-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Home-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Home-Hover.png">
+
+                <div class='textIcon w-100'>Home</div>
+            </a>
+            <a class="col-2  px-0  mobile-link " href='./Box.html'>
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Box-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Box-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Box-Hover.png">
+
+                <div class='textIcon w-100'>Box</div>
+            </a>
+            <a class="col-2  px-0  mobile-link" href='./Event.html'>
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Event-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Event-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Event-Hover.png">
+
+                <div class='textIcon w-100'>Event</div>
+            </a>
+        </div>
+    </nav>
+    <!-- Section one Desktop==================================================================== -->
+    <section id="sectionOneBox" class="d-none d-md-block" style="
+            background: url(./images2/box/Box_Hero_Desktop.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;">
+        <div class="container">
+
+            <h1 id="Box" class="mx-auto  mb-lg-2  mb-1 d-md-block d-none">
+                Box
+            </h1>
+
+            <div class="bar-dark mx-auto my-1 my-lg-4 my-md-3 d-md-block d-none"></div>
+        </div>
+
+    </section>
+    <!-- Section One for Mobile==================================================================== -->
+    <section id="sectionOneBox-mobile" class="d-md-none" style="
+        background: linear-gradient(180deg, #000000 0%, rgba(61, 34, 17, 0.29) 60.42%),
+        url(./images2/box/Box_Hero_Mobile.png);
+        background-size: cover;">
+        <div class="container">
+            <h1 id='newMenu' class="mx-auto d-md-none d-block ">
+                Box <br>
+                Members
+            </h1>
+        </div>
+    </section>
+
+    <!-- White Sections=================================================================== -->
+
+    <section id="banner-mobile-1" class="container-fluid d-block d-md-none" style="
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 51.55%, #000000 84.72%),
+        url(./images2/box/Poster/Poster_Premium_Box-min.png);background-size: cover;background-position: center;">
+        <div class="row justify-content-end">
+            <div class="col-3 ps-0 pt-4 ">
+                <h2 class="banner-mobile-header">
+                    Premium <br>
+                    Snack Box
+                </h2>
+                <div class="bar-white-mobile  d-block d-md-none ms-0"></div>
+                <p class="banner-mobile-list  mt-3">
+                    - 3 Bakeries
+                    <br>
+                    - 1 Juice
+                </p>
+                <!-- <ul class="banner-mobile-list ps-3 mt-3">
+                    <li>2 Bakeries</li>
+                    <li>1 Juice</li>
+                </ul> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionBox py-lg-5 py-md-3 py-2 w-100 h-auto">
+        <div class="container mx-auto row">
+            <div class="col-md-6 col-0 d-md-block d-none  ">
+                <div class="position-relative w-50 h-auto mt-5">
+                    <img src="./images2/box/Poster/Sweeties_Poster_Back-min.png " class=" pic-sm" alt="">
+                    <img src="./images2/box/Poster/Poster_Premium_Box-min.png"
+                        class="position-absolute top-50 start-50 pic-lg" alt="">
+                </div>
+
+            </div>
+            <!-- <div class="col-md-6 col-0 d-md-block d-none ">
+                <img class="box-pic d-block mt-4" src="./images/v205_735.png">
+            </div> -->
+            <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
+                <div class="quoteDark mt-md-4 mb-lg-5 my-3 d-md-block d-none">Premium Snack
+                    <br>Party
+                </div>
+                <div class="bar-dark d-md-block d-none"></div>
+                <div class="box-content mt-lg-4 mt-3 d-md-block d-none">
+                    3 Bakeries + 1 Juice
+                    <br>
+                    <br>
+                    Enrich your meeting with bakeries and juice,
+                    and rolling in the deep.
+
+                </div>
+                <!-- <div class="detailEng my-md-4 my-2  d-lg-block d-none">
+                    Enrich your meeting with bakeries and juice, <br>
+                    and rolling in the deep.
+                </div> -->
+
+                <h2 class="menu-header-mobile-dark d-block d-md-none mb-1 ms-2">Premium Snack Members (3 Bakeries + 1
+                    Juice) </h2>
+                <div class="bar-dark-mobile  d-block d-md-none ms-2"></div>
+                <div class="d-flex flex-row overflow-auto scroll-box-short my-lg-5 my-3 ">
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Almond Danish -min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <h4 class="card-name-small pb-1">Almond<br>Danish</h4>
+                            <h5 class="card-name-thai-small float-start">แดนิชแอลมอนด์</h5>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Almond Cream/ครีมอัลมอนด์
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Blueberry Danish-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Blueberry<br>Danish</p>
+                            <span class="card-name-thai-small float-start">แดนิชบลูเบอร์รี่</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Blueberry/บลูเบอร์รี่
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Chocolate Chip Cake-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Chocolate Chip<br>Cake</p>
+                            <span class="card-name-thai-small float-start">เค้กช็อกโกแลตชิบ</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Chocolate/ช็อกโกแลต
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Butter Cake-A-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Butter<br>Cake</p>
+                            <span class="card-name-thai-small float-start">เค้กเนยสด</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Sandwich Crabstick-B-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Crab Finger<br>Sandwich</p>
+                            <span class="card-name-thai-small float-start">แซนวิชปูอัด</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์, <br>
+                            Crabstick/ปูอัด
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Puff Chicken Curry-A-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Chicken Curry<br>Pie</p>
+                            <span class="card-name-thai-small float-start">กะหรี่พั๊ฟไก่</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Chicken/ไก่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์, <br>
+                            Curry Paste/ผงกระหรี่
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Fruit Cake-B-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Fruit<br>Cake</p>
+                            <span class="card-name-thai-small float-start">เค้กผลไม้</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Dried Fluit/ผลไม้แห้ง, <br>
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Fruit_Roll-A-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Fruit<br>Roll</p>
+                            <span class="card-name-thai-small float-start">โรลผลไม้</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Mixed Fluit/ผลไม้รวม,<br>
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Marble Cake-A-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Marble<br>Cake</p>
+                            <span class="card-name-thai-small float-start">มาร์เบิ้ลเค้ก</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Roll Jam-A-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Jam<br>Roll</p>
+                            <span class="card-name-thai-small float-start">แยมโรล</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล,<br>
+                            Strawberry Jam/แยมสตรอเบอรี่
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Mini_Choc_Roll-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Chocolate<br>Roll</p>
+                            <span class="card-name-thai-small float-start">โรลชอคโกแลต</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล,<br>
+                            Cocoa Powder/ผงโกโก้
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box//box_modal/Roll Coffee-A-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Coffee<br>Roll</p>
+                            <span class="card-name-thai-small float-start">โรลกาแฟมินิ</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล,<br>
+                            Coffee Powder/ผงกาแฟ
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+
+
+                </div>
+                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none">Grab
+                    Me!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner-mobile-2" class="container-fluid d-block d-md-none" style="
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 51.55%, #000000 84.72%),
+        url(./images2/box/Poster/Poster_Petite_Box-min.png);background-size: cover;background-position: center;">
+        <div class="row  justify-content-end">
+            <div class="col-3 ps-0 pt-4 ">
+                <h2 class="banner-mobile-header">
+                    Petite <br>
+                    Snack Box
+                </h2>
+                <div class="bar-white-mobile  d-block d-md-none ms-0"></div>
+                <p class="banner-mobile-list  mt-3">
+                    - 2 Bakeries
+                    <br>
+                    - 1 Juice
+                </p>
+                <!-- <ul class="banner-mobile-list ps-3 mt-3">
+                    <li>1 Bakeries</li>
+                    <li>1 Juice</li>
+                </ul> -->
+            </div>
+        </div>
+    </section>
+    <section class="sectionBox py-md-5  py-2 w-100 h-auto">
+        <div class="container mx-auto row">
+
+            <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
+                <div class="quoteDark mt-md-2 mb-lg-5 my-2 text-end d-md-block d-none ">Petite
+                    <br>Party
+                </div>
+                <div class="bar-dark ms-md-auto d-md-block d-none "></div>
+                <div class="box-content mt-4 text-end d-md-block d-none ">
+                    2 Bakeries + 1 Juice
+                    <br>
+                    <br>
+                    Precious trival moment can be small and easy,
+                    add a pair of bakery and juice to your event is awesome!
+                </div>
+                <!-- <div class="detailEng my-md-4 my-2 text-end  d-lg-block d-none ">
+                    Precious trival moment can be small and easy, <br>
+                    add a pair of bakery and juice to your event is awesome!
+
+                </div> -->
+
+                <h2 class="menu-header-mobile-dark d-block d-md-none mb-1 ms-2">Petite Snack Members (2 Bakeries + 1
+                    Juice) </h2>
+                <div class="bar-dark-mobile  d-block d-md-none ms-2"></div>
+                <div class="d-flex flex-row overflow-auto scroll-box-short scroll-end my-lg-5 my-4  float-md-end ">
+
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Roll Orange-A-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Orange<br>Roll</p>
+                            <span class="card-name-thai-small float-start">โรลส้ม</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล,<br>
+                            Orange Jam/แยมส้ม
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Roll Pandan-A-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Pandan<br>Roll</p>
+                            <span class="card-name-thai-small float-start">โรลใบเตย</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล,<br>
+                            Pandan Powder/ผงใบเตย
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Mini_Pineapple_Pie-A-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Pineapple<br>Pie</p>
+                            <span class="card-name-thai-small float-start">พายสัปปะรด</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล,<br>
+                            Pineapple/สับปะรด
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Mini_Red_Velvet_Cake-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Red Velvet<br>Cake</p>
+                            <span class="card-name-thai-small float-start">เค้กเรดเวลเวต</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Flour/แป้ง,<br>
+                            Egg/ไข่, <br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Sugar/น้ำตาล,<br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Mini Salmon Wellington-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Salmon<br>Wellington</p>
+                            <span class="card-name-thai-small float-start">แซลมอนเวลลิงตันมินิ</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Salmon/แซลมอน, <br>
+                            Spinach/ผักโขม, <br>
+                            Flour/แป้ง,<br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDescription d-none">
+                            Ready to serve or Baked in Oven with Lowest Power for 2 Mins <br><br>
+                            ทานได้ทันที หรืออบด้วยไฟต่ำสุด 2 นาที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Toddy Palm Pie-B-min.png" alt=" image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Toddy Palm<br>Pie</p>
+                            <span class="card-name-thai-small float-start">พายลูกตาล</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Flour/แป้ง, <br>
+                            Egg/ไข่,<br>
+                            Toddy Palm/ลูกตาล
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Sausage Roll-A -min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Sausage<br>Roll</p>
+                            <span class="card-name-thai-small float-start">โรลไส้กรอก</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Sausage/ไส้กรอก, <br>
+                            Flour/แป้ง,<br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Pie_Tuna-B-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Tuna<br>Pie</p>
+                            <span class="card-name-thai-small float-start">พายทูน่า</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Tuna/ทูน่า, <br>
+                            Flour/แป้ง,<br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Pie_chicken_mince-B-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Chicken Mince<br>Pie</p>
+                            <span class="card-name-thai-small float-start">พายไก่สับ</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Chicken/ไก่, <br>
+                            Flour/แป้ง,<br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Pie_Red_Chicken -A-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Red Chicken<br>Pie</p>
+                            <span class="card-name-thai-small float-start">พายไก่แดง</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Chicken/ไก่, <br>
+                            Flour/แป้ง,<br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+
+                    <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-box">
+                        <img src="./images2/box/box_modal/Pie_Chciken_Mushroom-A-min.png" alt="image not available"
+                            class="d-block card-img-small">
+                        <div class="card-text w-100 h-auto pt-1 ps-1">
+                            <p class="card-name-small pb-1">Chicken &<br>Mushroom Pie</p>
+                            <span class="card-name-thai-small float-start">พายไก่เห็ด</span>
+                            <span class="card-price-small float-end"></span>
+                        </div>
+                        <div class="ingredient d-none">
+                            Chicken/ไก่, <br>
+                            Mushroom/เห็ด, <br>
+                            Flour/แป้ง,<br>
+                            Butter/เนย,<br>
+                            Milk/นม,<br>
+                            Yeast/ยีสต์
+                        </div>
+                        <div class="productDetail d-none">
+                            Ready to serve <br><br>
+                            ทานได้ทันที
+                        </div>
+                        <div class="preservation d-none">
+                            3 Days in Refrigerator
+                            <br>
+                            เก็บในตู้เย็นได้ 3 วัน
+                        </div>
+                    </div>
+
+                </div>
+                <button type="button"
+                    class="btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none float-md-end">Grab
+                    Me!
+                </button>
+            </div>
+            <div class="col-md-6 col-0 d-md-block d-none  ">
+                <div class="position-relative w-50 h-auto mt-0 mt-lg-5 ms-5 ps-5 ">
+                    <img src="./images2/box/Poster/Pastry_Poster_Back-min.png"
+                        class="position-absolute top-50 start-50 pic-lg" alt="" style="object-fit: cover;">
+                    <img src="./images2/box/Poster/Poster_Petite_Box-min.png" class=" pic-sm " alt="">
+
+                </div>
+
+            </div>
+            <!-- <div class="col-md-6 col-0 d-md-block d-none ">
+
+                <img class="box-pic d-block mt-4 float-end" src="./images/v205_735.png">
+
+            </div> -->
+        </div>
+    </section>
+    <!-- Let's Make Party Your Party Happen Sections=================================================================== -->
+    <section class="narrow-section d-flex flex-column h-auto justify-content-around align-items-center" style="
+        background: url(./images2/box/Box_Banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;">
+        <h1 class="header-narrow h-auto text-start  px-2  align-self-start">Let's Make <br>
+            Your Party Happen!
+        </h1>
+        <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn">Grab Me!</button>
+    </section>
+
+    <section id="box-list" class="container d-flex flex-column align-items-center  ">
+        <h1 id="box-member" class="text-center">
+            Box <br> Members
+        </h1>
+        <div class="bar-dark  my-1 my-lg-4 my-md-3"></div>
+        <img src="./images2/box/Box_Members-min.png" class="d-block mx-5 w-100 ">
+        <button type=" button" class="btn btn-primary btn-lg rounded-pill grabMe-btn my-2 ">Grab
+            Me!
+        </button>
+        <div class="bar-dark  my-1 my-lg-4 my-md-3 d-md-block d-none"></div>
+    </section>
+
+    <!-- Modal Section------------------------------------------------ -->
+    <div class="modal fade" id="modal-box" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-img-contaniner position-relative mx-md-5 mt-md-2">
+                    <img src="" alt="" class="modal-img ">
+                    <div class=" modal-img-text w-100 h-auto position-absolute bottom-0 px-3 m-0 pb-3">
+                        <h2 class="modal-name mb-0 mt-3 d-inline-block">
+                            <!-- Test Noodle -->
+                        </h2>
+
+                        <button type="button"
+                            class="btn btn-primary rounded-pill grabMe-btn-modal  d-inline-block mt-5 float-end">Grab
+                            Me!</button>
+                    </div>
+                    <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="row w-100 h-auto modal-text mx-auto">
+                    <p class="col-5 modal-ingredient ps-md-5 ps-2 py-2">
+                        <!-- Pumpkins,<br>
+                            Milk, <br> 
+                            Butter, <br> 
+                            Whipcream -->
+                    </p>
+                    <p class="col-7 modal-detail py-2">
+                        <!-- Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
+                            Now, let’s grab this and enjoy more good to both your health and joy. -->
+                    </p>
+                </div>
+                <div class="time-preserve mx-auto py-2 text-center">
+                    <img src="./images2/modal-clock.png" alt="" class="clock-img mb-3 d-inline-block">
+                    <p class="preserve-detail modal-preservation d-inline-block pt-0 my-0 ps-2">
+                        <!-- 2 Days Storage <br>
+                            Cold and Dry Places -->
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="sectionThree" class="v41_32 d-flex flex-column justify-content-center align-items-center" style="background: url('./images2/footer/Visitshops-banner-min.png');background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;">
+        <div id="letsMeetUs">Let’s meet us
+            in places
+        </div>
+        <a href="./Map.html" class="btn btn-primary btn-lg rounded-pill visitShops-btn">Visit Shops</a>
+    </section>
+    <footer id="contentFooter" class=" w-100 h-auto pb-5">
+        <div class="container h-auto row mx-auto px-0">
+            <div
+                class="col-lg-4 col-12 d-flex flex-column align-items-center justify-content-lg-around justify-content-center h-auto">
+                <div>
+                    <div class="Contact">Contact</div>
+                    <div class="bar-light mx-auto mb-3"></div>
+                </div>
+                <div class="d-flex justify-content-between w-50 ">
+                    <a href="#"><img class="social-icon" src="./images2/footer/Facebook-Icon.png"></a>
+                    <a href="#"><img class="social-icon" src="./images2/footer/Instagram-Icon.png"></a>
+                    <a href="#"><img class="social-icon" src="./images2/footer/Line-Icon.png"></a>
+                </div>
+            </div>
+            <div class="col-lg-8 d-flex flex-wrap justify-content-between ">
+
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript for Bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <!-- Navbar Control Javascript -->
+    <script src="./navbar-control.js"></script>
+    <!-- Import Meal Data  -->
+    <!-- <script src="./meal-data.js"></script> -->
+    <!-- Modal Control Javascript     -->
+    <script src="./modal-control.js"></script>
+    <!-- Scroll Control Javascript -->
+    <script src="./scroll-control.js"></script>
+</body>
+
+</html>
