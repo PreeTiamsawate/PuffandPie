@@ -23,7 +23,7 @@
         </xsl:element>
        <section class=" event-section-short container-fluid">
             <div class="row h-100">
-                <div class="col-8 p-0 h-100">
+                <div class="col-8 p-0 h-100 bg-black">
                     <xsl:element name="img">
                         <xsl:attribute name="src">
                             <xsl:value-of select="image1" />
@@ -43,7 +43,7 @@
         </section>
         <section class=" event-section-short container-fluid">
             <div class="row h-100">
-                <div class="col-4 p-0 h-100">
+                <div class="col-4 p-0 h-100 bg-black">
                     <xsl:element name="img">
                         <xsl:attribute name="src">
                             <xsl:value-of select="image2" />
@@ -59,7 +59,7 @@
                         <xsl:value-of select="deatail2" disable-output-escaping="yes" />
                     </p>
                 </div>
-                <div class="col-4 p-0 h-100">
+                <div class="col-4 p-0 h-100 bg-black">
                      <xsl:element name="img">
                         <xsl:attribute name="src">
                             <xsl:value-of select="image3" />
@@ -80,7 +80,7 @@
                         <xsl:value-of select="deatail3" disable-output-escaping="yes" />
                     </p>
                 </div>
-                <div class="col-8 p-0 h-100">
+                <div class="col-8 p-0 h-100 bg-black">
                     <xsl:element name="img">
                         <xsl:attribute name="src">
                             <xsl:value-of select="image4" />
@@ -92,7 +92,7 @@
         </section>
         <section class=" event-section-short container-fluid">
             <div class="row h-100">
-                <div class="col-8 p-0 h-100">
+                <div class="col-8 p-0 h-100 bg-black">
                     <xsl:element name="img">
                         <xsl:attribute name="src">
                             <xsl:value-of select="image5" />
@@ -100,7 +100,7 @@
                         <xsl:attribute name="class">event-img-short</xsl:attribute>
                     </xsl:element>
                 </div>
-                <div class="col-4 p-0 h-100">
+                <div class="col-4 p-0 h-100 bg-black">
                     <xsl:element name="img">
                         <xsl:attribute name="src">
                             <xsl:value-of select="image6" />

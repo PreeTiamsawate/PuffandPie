@@ -14,7 +14,7 @@
                 <xsl:when test="($position mod 2) = 1">
                     <section class=" event-section-tall container-fluid">
                         <div class="row h-100">
-                            <div class="col-8 p-0 ">
+                            <div class="col-8 p-0 bg-black ">
                                 <xsl:element name="img">
                                     <xsl:attribute name="src">
                                         <xsl:value-of select="event_image" />
@@ -71,7 +71,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-8 p-0 h-100">
+                            <div class="col-8 p-0 h-100 bg-bright">
                                 <xsl:element name="img">
                                     <xsl:attribute name="src">
                                         <xsl:value-of select="event_image" />
