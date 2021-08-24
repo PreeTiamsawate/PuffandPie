@@ -220,7 +220,7 @@ window.onload = showShopsByDistance();
 //     distanceInKm: "",
 //   },
 // {
-//     branchName: "Chulalongkprn Hospital",
+//     branchName: "Chulalongkorn Hospital",
 //     imgAddress: "#######",
 //     mapFrame:
 //       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10962.323393505625!2d100.5360157322967!3d13.732575560475095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24d42cda27c0068f!2sPuff%20%26%20pie%20%7C%20Thai%20Airways%20Catering%20(Chula%20Hospital%20Branch)!5e0!3m2!1sen!2sth!4v1626113458787!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',

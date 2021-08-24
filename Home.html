@@ -13,7 +13,9 @@
     <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
 
     <link href="./css/home.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/rider-modal.css">
     <title>Home - Puff n' Pie</title>
+
     <link rel="icon" href="./favicon.ico">
 </head>
 
@@ -109,7 +111,8 @@
                     bakeries from
                     our passionate pastry chef.
                 </p>
-                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn">Grab Me!</button>
+                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn" data-bs-toggle="modal"
+                    data-bs-target="#modal-rider">Grab Me!</button>
             </div>
         </div>
     </section>
@@ -226,20 +229,37 @@
 
     </section>
 
-    <!-- Modal Section ================================================== -->
-    <!-- <div class="modal fade" id="notAvailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!-- Rider Modal Section------------------------------------------------ -->
+
+    <div class="modal fade " id="modal-rider" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Service Not Available</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content mx-auto ">
+                <h1 class="custom-modal-header">Select</h1>
+                <h2 class="custom-modal-subheader">Your Delivery</h2>
+                <div class="rider-box mx-auto">
+                    <a href="https://bit.ly/2UzPYZs" target="_blank" class="rider-btn" id="grabfood-btn">
+                        <img src="./images2/Deliveries/Grab Food.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Grab Food - active.png" alt="">
+                    </a>
+                    <a href="" class="rider-btn" target="_blank" id="foodpanda-btn">
+                        <img src="./images2/Deliveries/Foodpanda.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Foodpanda - active.png" alt="">
+                    </a>
+                    <a href="" class="rider-btn" target="_blank" id="robinhood-btn">
+                        <img src="./images2/Deliveries/Robinhood.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Robinhood - active.png" alt="">
+                    </a>
+
+                    <a href="https://lin.ee/w7TtUKN" target="_blank" class="rider-btn" id="lineOA-btn">
+                        <img src="./images2/Deliveries/Line OA.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Line OA - active.png" alt="">
+                    </a>
+                </div>
+                <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              This service will be available soon. Please come back later.
-            </div>
-          </div>
         </div>
-      </div> -->
+    </div>
 
     <footer id="contentFooter" class=" w-100 h-auto pb-5">
         <div class="container h-auto row mx-auto px-0">
@@ -318,6 +338,9 @@
         crossorigin="anonymous"></script>
     <!-- Navbar Control Javascript -->
     <script src="./navbar-control.js"></script>
+    <script src="./robinhood_links.js"></script>
+    <script src="./foodpanda_links.js"></script>
+    <script src="./rider-modal-control.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,103 @@
+#body {
+  overflow: hidden;
+}
+.modal-content {
+  background-color: #ebedec;
+  overflow: visible;
+  border-radius: 15px;
+  padding: 22px;
+  width: 320px;
+  margin-top: 150px;
+}
+.custom-modal-header {
+  font-style: normal;
+  /* font-family: "Avenir LT Std", sans-serif; */
+  color: #000000;
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  text-align: center;
+}
+.custom-modal-subheader {
+  font-style: normal;
+  font-family: "Avenir LT Std", sans-serif;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  text-align: center;
+}
+.rider-box {
+  width: 240px;
+  height: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.rider-btn {
+  box-sizing: border-box;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px 16px 32px 16px;
+  box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.35);
+  overflow: visible;
+  border-radius: 15px;
+  transition-property: all;
+
+  transition-duration: 0.25s;
+}
+#grabfood-btn {
+  background-color: var(--token-83ee3904-2b35-4439-a5e0-b1fc30b308ba, #00b052);
+}
+#grabfood-btn:hover {
+  background-color: var(--token-0161928c-161b-46bf-b35a-ba4215b6b0c0, #ffffff);
+}
+#grabfood-btn:focus {
+  background-color: var(--token-3417bab3-a62a-40d7-b377-1955342a7c93, #d9d9d9);
+}
+#foodpanda-btn {
+  background-color: var(--token-05102fb6-9c35-4dbb-8455-390bec0aa07b, #d91163);
+}
+#foodpanda-btn:hover {
+  background-color: var(--token-0161928c-161b-46bf-b35a-ba4215b6b0c0, #ffffff);
+}
+#foodpanda-btn:focus {
+  background-color: var(--token-3417bab3-a62a-40d7-b377-1955342a7c93, #d9d9d9);
+}
+#robinhood-btn {
+  background: linear-gradient(
+    180deg,
+    #792887 0%,
+    var(--Robinhood_Gradient_Purple, #a22188) 100%
+  );
+}
+#robinhood-btn:hover {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    var(--Robinhood_Gradient_Purple, #ffffff) 100%
+  );
+}
+#robinhood-btn:focus {
+  background: linear-gradient(
+    180deg,
+    #d9d9d9 0%,
+    var(--Robinhood_Gradient_Purple, #d9d9d9) 100%
+  );
+}
+#lineOA-btn {
+  background-color: var(--token-c7e97138-0d96-418d-a877-afe2aaf35ed9, #00b812);
+}
+#lineOA-btn:hover {
+  background-color: var(--token-0161928c-161b-46bf-b35a-ba4215b6b0c0, #ffffff);
+}
+#lineOA-btn:focus {
+  background-color: var(--token-3417bab3-a62a-40d7-b377-1955342a7c93, #d9d9d9);
+}
