@@ -5,6 +5,8 @@
 	<xsl:include href="http://www.interwoven.com/livesite/xsl/HTMLTemplates.xsl" />
 	<xsl:include href="http://www.interwoven.com/livesite/xsl/StringTemplates.xsl" />
 	<xsl:template match="/">
+
+    <!-- /* Do Not Use This on Box Page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */ -->
     <div class="modal fade" id="modal-product" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

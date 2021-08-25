@@ -24,7 +24,7 @@
             </xsl:element>
             <xsl:element name="a">
                 <xsl:attribute name="class">
-                    btn btn-primary btn-lg rounded-pill grabMe-btn
+                    btn btn-lg rounded-pill lineOA-btn
                 </xsl:attribute>
                 <xsl:attribute name="target">
                     <xsl:value-of select="target_link" />
@@ -32,8 +32,16 @@
                 <xsl:attribute name="href">
                     <xsl:value-of select="button_link" />
                 </xsl:attribute>
-                <xsl:value-of select="button_text" />
+                <xsl:element name="img">
+                    <xsl:attribute name="src">
+                        <xsl:value-of select="button_icon"></xsl:value-of>
+                    </xsl:attribute>
+                </xsl:element>
+                <xsl:element name="span">
+                    <xsl:value-of select="button_text" />
+                </xsl:element>
             </xsl:element>
+            
         </xsl:element>
 
         <section id="box-list" class="container d-flex flex-column align-items-center  ">
@@ -46,10 +54,9 @@
              <xsl:attribute name="class">d-block mx-5 w-100</xsl:attribute>   
              <xsl:attribute name="src"><xsl:value-of select="bottom_image" /></xsl:attribute>
             </xsl:element>
-
-            <xsl:element name="a">
+             <xsl:element name="a">
                 <xsl:attribute name="class">
-                    btn btn-primary btn-lg rounded-pill grabMe-btn my-2
+                    btn btn-lg rounded-pill lineOA-btn d-flex my-2
                 </xsl:attribute>
                 <xsl:attribute name="target">
                     <xsl:value-of select="target_link" />
@@ -57,11 +64,65 @@
                 <xsl:attribute name="href">
                     <xsl:value-of select="button_link" />
                 </xsl:attribute>
-                <xsl:value-of select="button_text" />
+                <xsl:element name="img">
+                    <xsl:attribute name="src">
+                        <xsl:value-of select="button_icon"></xsl:value-of>
+                    </xsl:attribute>
+                </xsl:element>
+                <xsl:element name="span">
+                    <xsl:value-of select="button_text" />
+                </xsl:element>
             </xsl:element>
             
             <div class="bar-dark  my-1 my-lg-4 my-md-3 d-md-block d-none"></div>
         </section>
+
+
+        <!-- Modal Section -->
+        
+        <div class="modal fade" id="modal-box" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-img-contaniner position-relative mx-md-5 mt-md-2">
+                        <img src="" alt="" class="modal-img ">
+                        <div class=" modal-img-text w-100 h-auto position-absolute bottom-0 px-3 m-0 pb-3">
+                            <h2 class="modal-name mb-0 mt-3 d-inline-block">
+                                <!-- Test Noodle -->
+                            </h2>
+                            <a href="https://lin.ee/w7TtUKN" target="_blank"
+                                class="btn btn-lg rounded-pill lineOA-btn-modal d-flex  mt-5 float-end">
+                                <img src="./images2/Deliveries/LineOA Icon.png" alt="">
+                                <span>Order</span>
+                            </a>
+
+                        </div>
+                        <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row w-100 h-auto modal-text mx-auto">
+                        <p class="col-5 modal-ingredient ps-md-5 ps-2 py-2">
+                            <!-- Pumpkins,<br>
+                                Milk, <br> 
+                                Butter, <br> 
+                                Whipcream -->
+                        </p>
+                        <p class="col-7 modal-detail py-2 pe-md-5">
+                            <!-- Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
+                                Now, let’s grab this and enjoy more good to both your health and joy. -->
+                        </p>
+                    </div>
+                    <div class="time-preserve mx-auto py-2 text-center">
+                        <img src="./images2/modal-clock.png" alt="" class="clock-img mb-3 d-inline-block">
+                        <p class="preserve-detail modal-preservation d-inline-block pt-0 my-0 ps-2">
+                            <!-- 2 Days Storage <br>
+                                Cold and Dry Places -->
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+         
         
         
         

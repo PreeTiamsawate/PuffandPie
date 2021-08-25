@@ -125,7 +125,7 @@
                                 </div>
                                 <xsl:element name="a">
 									<xsl:attribute name="class">
-                                        btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none
+                                        btn btn-lg rounded-pill lineOA-btn d-md-flex  d-none
                                     </xsl:attribute>
 									<xsl:attribute name="target">
 										<xsl:value-of select="target_link" />
@@ -133,7 +133,14 @@
 									<xsl:attribute name="href">
 										<xsl:value-of select="button_link" />
 									</xsl:attribute>
-									<xsl:value-of select="button_text" />
+                                    <xsl:element name="img">
+                                        <xsl:attribute name="src">
+                                            <xsl:value-of select="button_icon"></xsl:value-of>
+                                        </xsl:attribute>
+                                    </xsl:element>
+                                    <xsl:element name="span">
+                                       <xsl:value-of select="button_text" />
+                                    </xsl:element>
 								</xsl:element>
                             </div>
                         </div>
@@ -233,7 +240,7 @@
                                 </div>
                                 <xsl:element name="a">
 									<xsl:attribute name="class">
-                                        btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none float-md-end
+                                       btn btn-lg rounded-pill lineOA-btn d-md-flex  d-none float-md-end
                                     </xsl:attribute>
 									<xsl:attribute name="target">
 										<xsl:value-of select="target_link" />
@@ -241,7 +248,14 @@
 									<xsl:attribute name="href">
 										<xsl:value-of select="button_link" />
 									</xsl:attribute>
-									<xsl:value-of select="button_text" />
+                                    <xsl:element name="img">
+                                        <xsl:attribute name="src">
+                                            <xsl:value-of select="button_icon"></xsl:value-of>
+                                        </xsl:attribute>
+                                    </xsl:element>
+                                    <xsl:element name="span">
+                                       <xsl:value-of select="button_text" />
+                                    </xsl:element>
 								</xsl:element>
                             </div>
                             <div class="col-md-6 col-0 d-md-block d-none  ">
