@@ -48,7 +48,7 @@
                         </xsl:for-each>
                     </div>
                 </div>
-                <div class="col-lg-8 col-12 d-flex flex-column flex-lg-row flex-wrap justify-content-between ">
+                <div class="col-lg-8 col-12 d-flex flex-column flex-md-row flex-wrap justify-content-between ">
                     <xsl:for-each select="contact">
                         <xsl:element name="div">
                             <xsl:attribute name="class">h-auto  contacts contactDetail pt-4</xsl:attribute>
