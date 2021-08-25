@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/navbar.css">
     <link href="./css/home.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/rider-modal.css">
     <title>Home - Puff n' Pie</title>
@@ -111,7 +111,7 @@
                     bakeries from
                     our passionate pastry chef.
                 </p>
-                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn" data-bs-toggle="modal"
+                <button type="button" class="btn  btn-lg rounded-pill grabMe-btn" data-bs-toggle="modal"
                     data-bs-target="#modal-rider">Grab Me!</button>
             </div>
         </div>
@@ -197,7 +197,9 @@
                         Now, let's grab your favorite ones <br> to make you day better!
                     </p>
                 </div>
-                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn">Grab Me!</button>
+
+                <button type="button" class="btn  btn-lg rounded-pill grabMe-btn" data-bs-toggle="modal"
+                    data-bs-target="#modal-rider">Grab Me!</button>
             </div>
             <div
                 class="col-md-3 col-lg-4 col-6 ps-0 pe-1 px-md-auto contentTwo d-flex flex-column align-items-end justify-content-md-start justify-content-end ">
@@ -233,7 +235,7 @@
 
     <div class="modal fade " id="modal-rider" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content mx-auto ">
+            <div class="modal-content mx-auto modal-rider-content ">
                 <h1 class="custom-modal-header">Select</h1>
                 <h2 class="custom-modal-subheader">Your Delivery</h2>
                 <div class="rider-box mx-auto">
@@ -241,7 +243,7 @@
                         <img src="./images2/Deliveries/Grab Food.png" alt="">
                         <img class="d-none" src="./images2/Deliveries/Grab Food - active.png" alt="">
                     </a>
-                    <a href="" class="rider-btn" target="_blank" id="foodpanda-btn">
+                    <a href="#" class="rider-btn" target="_blank" id="foodpanda-btn">
                         <img src="./images2/Deliveries/Foodpanda.png" alt="">
                         <img class="d-none" src="./images2/Deliveries/Foodpanda - active.png" alt="">
                     </a>

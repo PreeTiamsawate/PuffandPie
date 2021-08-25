@@ -29,4 +29,3 @@ for (cardSmall of cardSmalls) {
 for (cardMobileNew of cardMobileNews) {
   cardMobileNew.addEventListener("click", assignModal);
 }
-console.log(typeof cardBigs[0].children[0].tagName);

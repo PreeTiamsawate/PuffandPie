@@ -11,8 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/navbar.css">
     <link href="./css/bakery.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/product-modal.css">
+    <link rel="stylesheet" href="./css/rider-modal.css">
     <title>Bakery - Puff n' Pie</title>
     <link rel="icon" href="./favicon.ico">
 </head>
@@ -478,8 +480,8 @@
 
 
                 </div>
-                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none ">Grab
-                    Me!</button>
+                <button type="button" class="btn  btn-lg rounded-pill grabMe-btn d-md-block d-none"
+                    data-bs-toggle="modal" data-bs-target="#modal-rider">Grab Me!</button>
             </div>
 
         </div>
@@ -713,9 +715,9 @@
                     </div>
 
                 </div>
-                <button type="button"
-                    class="btn btn-primary  rounded-pill grabMe-btn d-md-block d-none float-md-end">Grab
-                    Me!</button>
+                <button type="button" class="btn  btn-lg rounded-pill grabMe-btn  d-md-block d-none float-md-end"
+                    data-bs-toggle="modal" data-bs-target="#modal-rider">Grab Me!</button>
+
 
             </div>
             <div class="col-md-6 col-0 d-md-block d-none  ">
@@ -739,7 +741,8 @@
         <h1 class="header-narrow h-auto   align-self-start text-start px-2">Grab Your <br>
             Patongko Now!
         </h1>
-        <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn">Grab Me!</button>
+        <button type="button" class="btn  btn-lg rounded-pill grabMe-btn  d-md-block d-none " data-bs-toggle="modal"
+            data-bs-target="#modal-rider">Grab Me!</button>
     </section>
 
     <!-- Brown Sections=================================================================== -->
@@ -1026,11 +1029,9 @@
 
         </div>
 
+        <button type="button" class="btn  btn-lg rounded-pill grabMe-btn  d-md-block d-none mx-auto my-md-4 my-2"
+            data-bs-toggle="modal" data-bs-target="#modal-rider">Grab Me!</button>
 
-        <button type="button"
-            class="btn btn-primary btn-lg rounded-pill grabMe-btn  d-md-block d-none mx-auto my-md-4 my-2">Grab
-            Me!
-        </button>
         <div class="container mx-auto pt-3 row">
             <div class="col-md-6 col-0  d-md-block d-none ">
                 <div class="position-relative w-50 h-auto mt-5">
@@ -1466,8 +1467,9 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none">Grab
-                    Me!</button>
+                <button type="button" class="btn  btn-lg rounded-pill grabMe-btn  d-md-block d-none"
+                    data-bs-toggle="modal" data-bs-target="#modal-rider">Grab Me!</button>
+
             </div>
         </div>
         <div class="container ps-lg-5 ps-3  pt-lg-3 pt-md-5">
@@ -1677,8 +1679,8 @@
                 </div>
 
             </div>
-            <button type="button"
-                class="btn btn-primary btn-lg rounded-pill grabMe-btn d-block  ms-md-5 mx-auto my-md-4 my-3">Grab
+            <button type="button" class="btn  btn-lg rounded-pill grabMe-btn d-block  ms-md-5 mx-auto my-md-4 my-3"
+                data-bs-toggle="modal" data-bs-target="#modal-rider">Grab
                 Me!</button>
         </div>
     </section>
@@ -1696,7 +1698,7 @@
 
     <div class="modal fade" id="modal-product" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content ">
                 <div class="modal-img-contaniner position-relative mx-md-5 mt-md-3">
                     <img src="" alt="" class="modal-img ">
                     <div class=" modal-img-text w-100 h-auto position-absolute bottom-0 px-3 m-0 pb-3">
@@ -1705,7 +1707,8 @@
                         </h2>
 
                         <button type="button"
-                            class="btn btn-primary rounded-pill grabMe-btn-modal d-inline-block mt-5  float-end">Grab
+                            class="btn btn-primary rounded-pill grabMe-btn-modal d-inline-block mt-5  float-end"
+                            data-bs-toggle="modal" data-bs-target="#modal-rider" data-bs-dismiss="modal">Grab
                             Me!</button>
                     </div>
                     <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
@@ -1735,20 +1738,37 @@
         </div>
     </div>
 
+    <!-- Rider Modal Section------------------------------------------------ -->
 
-    <!-- <div class="modal fade" id="notAvailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade " id="modal-rider" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Service Not Available</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content mx-auto modal-rider-content ">
+                <h1 class="custom-modal-header">Select</h1>
+                <h2 class="custom-modal-subheader">Your Delivery</h2>
+                <div class="rider-box mx-auto">
+                    <a href="https://bit.ly/2UzPYZs" target="_blank" class="rider-btn" id="grabfood-btn">
+                        <img src="./images2/Deliveries/Grab Food.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Grab Food - active.png" alt="">
+                    </a>
+                    <a href="" class="rider-btn" target="_blank" id="foodpanda-btn">
+                        <img src="./images2/Deliveries/Foodpanda.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Foodpanda - active.png" alt="">
+                    </a>
+                    <a href="" class="rider-btn" target="_blank" id="robinhood-btn">
+                        <img src="./images2/Deliveries/Robinhood.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Robinhood - active.png" alt="">
+                    </a>
+
+                    <a href="https://lin.ee/w7TtUKN" target="_blank" class="rider-btn" id="lineOA-btn">
+                        <img src="./images2/Deliveries/Line OA.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Line OA - active.png" alt="">
+                    </a>
+                </div>
+                <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              This service will be available soon. Please come back later.
-            </div>
-          </div>
         </div>
-    </div> -->
+    </div>
 
     <footer id="contentFooter" class=" w-100 h-auto pb-5">
         <div class="container h-auto row mx-auto px-0">
@@ -1831,6 +1851,10 @@
     <script src="./scroll-control.js"></script>
     <!-- Modal Control Javascript     -->
     <script src="./modal-control.js"></script>
+    <script src="./robinhood_links.js"></script>
+    <script src="./foodpanda_links.js"></script>
+    <script src="./rider-modal-control.js"></script>
+
 </body>
 
 </html>

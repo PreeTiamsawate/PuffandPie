@@ -13,6 +13,9 @@
     <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
 
     <link href="./css/meal.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/product-modal.css">
+    <link rel="stylesheet" href="./css/rider-modal.css">
     <title>Meal - Puff n' Pie</title>
     <link rel="icon" href="./favicon.ico">
 </head>
@@ -419,7 +422,8 @@
 
 
                 </div>
-                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none">Grab
+                <button type="button" class="btn  btn-lg rounded-pill grabMe-btn d-md-block d-none"
+                    data-bs-toggle="modal" data-bs-target="#modal-rider">Grab
                     Me!</button>
             </div>
 
@@ -616,8 +620,8 @@
 
 
                 </div>
-                <button type="button"
-                    class="btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none float-md-end">Grab
+                <button type="button" class="btn  btn-lg rounded-pill grabMe-btn d-md-block d-none float-md-end"
+                    data-bs-toggle="modal" data-bs-target="#modal-rider">Grab
                     Me!</button>
             </div>
             <div class="col-md-6 col-0 d-md-block d-none ">
@@ -641,7 +645,8 @@
         <div class="header-narrow h-auto text-start  px-2  align-self-start">Royal Orchid <br>
             Dining Experience
         </div>
-        <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn">Grab Me!</button>
+        <button type="button" class="btn btn-lg rounded-pill grabMe-btn" data-bs-toggle="modal"
+            data-bs-target="#modal-rider">Grab Me!</button>
     </section>
 
     <!-- Black Sections=================================================================== -->
@@ -810,8 +815,8 @@
         </div>
 
 
-        <button type="button"
-            class="btn btn-primary btn-lg rounded-pill grabMe-btn mx-auto my-md-4 d-md-block d-none my-2">Grab
+        <button type="button" class="btn  btn-lg rounded-pill grabMe-btn mx-auto my-md-4 d-md-block d-none my-2"
+            data-bs-toggle="modal" data-bs-target="#modal-rider">Grab
             Me!</button>
         <div class="container mx-auto pt-3 row">
             <div class="col-md-6 col-0  d-md-block d-none ">
@@ -1053,8 +1058,8 @@
 
 
                 </div>
-                <button type="button"
-                    class="btn btn-primary btn-lg rounded-pill grabMe-btn d-block  ms-md-0 mx-auto my-md-4 my-3">Grab
+                <button type="button" class="btn  btn-lg rounded-pill grabMe-btn d-block  ms-md-0 mx-auto my-md-4 my-3"
+                    data-bs-toggle="modal" data-bs-target="#modal-rider">Grab
                     Me!</button>
             </div>
         </div>
@@ -1066,7 +1071,7 @@
         <div id="letsMeetUs">Let’s meet us
             in places
         </div>
-        <a href="./Map.html" class="btn btn-primary btn-lg rounded-pill visitShops-btn">Visit Shops</a>
+        <a href="./Map.html" class="btn  btn-lg rounded-pill visitShops-btn">Visit Shops</a>
 
     </section>
     <!-- Modal Section------------------------------------------------ -->
@@ -1080,8 +1085,8 @@
                             <!-- Test Noodle -->
                         </h2>
 
-                        <button type="button"
-                            class="btn btn-primary rounded-pill grabMe-btn-modal d-inline-block mt-5 float-end">Grab
+                        <button type="button" class="btn  rounded-pill grabMe-btn-modal d-inline-block mt-5  float-end"
+                            data-bs-toggle="modal" data-bs-target="#modal-rider" data-bs-dismiss="modal">Grab
                             Me!</button>
                     </div>
                     <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
@@ -1107,6 +1112,37 @@
                     </p>
 
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rider Modal Section------------------------------------------------ -->
+
+    <div class="modal fade " id="modal-rider" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content mx-auto modal-rider-content ">
+                <h1 class="custom-modal-header">Select</h1>
+                <h2 class="custom-modal-subheader">Your Delivery</h2>
+                <div class="rider-box mx-auto">
+                    <a href="https://bit.ly/2UzPYZs" target="_blank" class="rider-btn" id="grabfood-btn">
+                        <img src="./images2/Deliveries/Grab Food.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Grab Food - active.png" alt="">
+                    </a>
+                    <a href="" class="rider-btn" target="_blank" id="foodpanda-btn">
+                        <img src="./images2/Deliveries/Foodpanda.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Foodpanda - active.png" alt="">
+                    </a>
+                    <a href="" class="rider-btn" target="_blank" id="robinhood-btn">
+                        <img src="./images2/Deliveries/Robinhood.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Robinhood - active.png" alt="">
+                    </a>
+
+                    <a href="https://lin.ee/w7TtUKN" target="_blank" class="rider-btn" id="lineOA-btn">
+                        <img src="./images2/Deliveries/Line OA.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Line OA - active.png" alt="">
+                    </a>
+                </div>
+                <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
         </div>
     </div>
@@ -1204,6 +1240,9 @@
     <!-- <script src="./meal-data.js"></script> -->
     <!-- Modal Control Javascript     -->
     <script src="./modal-control.js"></script>
+    <script src="./robinhood_links.js"></script>
+    <script src="./foodpanda_links.js"></script>
+    <script src="./rider-modal-control.js"></script>
     <!-- Scroll Control Javascript -->
     <script src="./scroll-control.js"></script>
 </body>

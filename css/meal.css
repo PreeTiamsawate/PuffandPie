@@ -12,105 +12,6 @@ body {
 body {
   font-size: 14px;
 }
-.navigation-bar {
-  width: 100vw;
-  height: 100px;
-  box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.25);
-  background-color: rgba(3, 3, 3, 0.9);
-  overflow: visible;
-}
-/* .form-switch{
-    margin-right: 260px;
-  } */
-.logo-home {
-  width: 202px;
-  height: 61px;
-  overflow: visible;
-  object-fit: cover;
-}
-.nav-item {
-  /* border: 1px solid red; */
-  display: inline-block;
-  width: 100px;
-}
-/* #navbarSupportedContent{
-height: auto;
-border: 1px solid red;
-} */
-
-.nav-menu {
-  width: 610px;
-  height: 50px;
-  /* border: 1px solid orange; */
-}
-.nav-menu-link {
-  width: auto; /* 67px */
-  height: auto; /* 24px */
-  overflow: visible;
-  white-space: pre;
-  letter-spacing: 0px;
-  line-height: 1.2;
-  font-weight: 600;
-  font-family: "Inter-SemiBold", "Inter", sans-serif;
-  color: var(--Mild_White, #ebedec);
-  text-align: center;
-  font-size: 20px;
-  /* border-bottom: 4px solid rgba(3, 3, 3, 0.9); */
-  transition-property: font-size, border-bottom;
-  transition-duration: 0.25s;
-  /* transition-delay: 2s; */
-}
-
-.nav-menu-link:hover {
-  width: auto;
-  font-size: 23px;
-  font-family: "Inter-SemiBold", "Inter", sans-serif;
-  color: var(--Mild_White, #ebedec);
-  font-weight: 700;
-  letter-spacing: 0;
-  border-bottom: 4px solid #ebedec;
-  margin: 0;
-}
-.nav-menu-link:visited {
-  width: auto; /* 67px */
-  height: auto; /* 24px */
-  overflow: visible;
-  letter-spacing: 0px;
-  line-height: 1.2;
-  font-weight: 600;
-  font-family: "Inter-SemiBold", "Inter", sans-serif;
-  color: var(--Mild_White, #ebedec);
-  text-align: center;
-  font-size: 20px;
-  transition-property: font-size, border-bottom;
-  transition-duration: 0.25s;
-}
-
-#catering-logo {
-  margin-right: 50px;
-  width: 114px;
-  height: 55px;
-  object-fit: cover;
-}
-.nav-menu-link-acitve {
-  width: auto; /* 67px */
-  height: auto; /* 24px */
-  overflow: visible;
-  white-space: pre;
-  letter-spacing: 0px;
-  line-height: 1.2;
-  font-weight: 700;
-  font-family: "Inter-SemiBold", "Inter", sans-serif;
-  color: #995a13;
-  text-align: center;
-  font-size: 23px;
-  border-bottom: 4px solid #995a13;
-  margin: 0;
-}
-.nav-menu-link-acitve:hover {
-  text-decoration: none;
-  color: #995a13;
-}
 
 /* Section One======================================= */
 #sectionOneMeal {
@@ -336,6 +237,7 @@ border: 1px solid red;
 }
 .grabMe-btn {
   text-align: center;
+  color: rgba(235, 237, 236, 1);
   font-family: "Avenir LT Std", sans-serif;
   font-style: normal;
   font-weight: 350;
@@ -351,6 +253,7 @@ border: 1px solid red;
   transition-duration: 0.25s;
 }
 .grabMe-btn:hover {
+  color: rgba(235, 237, 236, 1);
   font-weight: 700;
   background-color: var(--token-0161928c-161b-46bf-b35a-ba4215b6b0c0, #3d2211);
 }
@@ -567,45 +470,6 @@ b {
 }
 /* Tablet Screen Display============================================================================================== */
 @media (max-width: 1023px) {
-  .navigation-bar {
-    height: 56px;
-  }
-  .logo-home {
-    width: 110px;
-    height: 32px;
-  }
-  #catering-logo {
-    margin-right: 0;
-    width: 64px;
-    height: 26px;
-  }
-  .nav-item {
-    width: 67px;
-  }
-  .nav-menu {
-    width: 400px;
-    height: 30px;
-    margin-bottom: 5px;
-    /* border: 1px solid orange; */
-  }
-  .nav-menu-link {
-    line-height: 22px;
-    font-weight: 400;
-    font-size: 18px;
-  }
-  .nav-menu-link:hover {
-    font-weight: 400;
-    font-size: 18px;
-  }
-  .nav-menu-link:visited {
-    font-weight: 400;
-    font-size: 18px;
-  }
-  .nav-menu-link-acitve {
-    line-height: 22px;
-    font-weight: 400;
-    font-size: 18px;
-  }
   #sectionOneMeal {
     height: 486px;
     min-height: 486px;
@@ -754,49 +618,6 @@ b {
 }
 /* Mobile Screen Display=============================================================== */
 
-#mobileNavbar {
-  width: 100%;
-  height: 65px;
-  background: rgba(0, 0, 0, 0.8);
-}
-.imgIcon {
-  width: 43px;
-  height: 43px;
-}
-.textIcon {
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  color: #ebedec;
-}
-.textIcon-hover {
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  color: #ebedec;
-}
-a,
-a:hover,
-a:focus,
-a:active {
-  text-decoration: none;
-  color: #ebedec;
-}
-.textIcon-active {
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  color: #995a13;
-}
 #sectionOneMeal-mobile {
   height: 1vw;
   min-height: 360px;
@@ -942,96 +763,4 @@ a:active {
   .contactDetail {
     width: 100%;
   }
-}
-
-/* Modal Styles++++++++++++++++++++++++++++++++++++++++ */
-
-.modal-img-contaniner {
-  background-color: transparent;
-  /* width: 100%;
-  height: 418px;
-   */
-}
-.modal-img {
-  border-radius: 20px;
-  width: 100%;
-  height: 418px;
-  object-fit: cover;
-}
-.modal-img-text {
-  background: linear-gradient(
-    360deg,
-    #000000 -0.26%,
-    rgba(0, 0, 0, 0.3) 47.14%
-  );
-  border-radius: 0px 0px 20px 20px;
-}
-.modal-name {
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: 350;
-  font-size: 30px;
-  line-height: 36px;
-  color: #ebedec;
-}
-.grabMe-btn-modal {
-  text-align: center;
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.25);
-  border: none;
-  background-color: #995a13;
-  /* padding: 10px 18px 8px; */
-  width: 85px;
-  height: 35px;
-  transition-property: font-weight, background-color;
-  transition-duration: 0.25s;
-}
-.grabMe-btn-modal:hover {
-  font-weight: 600;
-  background-color: var(--token-0161928c-161b-46bf-b35a-ba4215b6b0c0, #3d2211);
-}
-.btn-close-custom {
-  width: 20px;
-  height: 20px;
-  background-color: #ebedec;
-  border-radius: 50%;
-}
-.modal-text {
-  background-color: #ebedec;
-}
-.modal-ingredient {
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 15px;
-  line-height: 18px;
-  color: #000000;
-}
-.modal-detail {
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 13px;
-  color: #000000;
-}
-.time-preserve {
-  width: 300px;
-  height: 50px;
-}
-.clock-img {
-  width: 25px;
-  height: 25px;
-}
-.modal-preservation {
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: 750;
-  font-size: 13px;
-  line-height: 13px;
-  color: #000000;
 }

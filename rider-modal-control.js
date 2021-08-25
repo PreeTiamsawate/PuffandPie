@@ -9,17 +9,108 @@ for (let riderButton of riderButtons) {
     riderButton.children[1].classList.add("d-none");
     riderButton.children[0].classList.remove("d-none");
   });
-  riderButton.addEventListener("focus", function () {
-    riderButton.children[0].classList.add("d-none");
-    riderButton.children[1].classList.remove("d-none");
-  });
+
   riderButton.addEventListener("touchstart", function () {
     riderButton.children[0].classList.add("d-none");
     riderButton.children[1].classList.remove("d-none");
   });
-  riderButton.addEventListener("mouseup", function () {
+  riderButton.addEventListener("touchend", function () {
     riderButton.children[1].classList.add("d-none");
     riderButton.children[0].classList.remove("d-none");
   });
 }
-console.log(foodpandaLinks);
+
+let savedUserLat = sessionStorage.getItem("userLatitude");
+let savedUserLong = sessionStorage.getItem("userlongitude");
+
+const getDistance = function (lat1, lon1, lat2, lon2, unit) {
+  if (lat1 == lat2 && lon1 == lon2) {
+    return 0;
+  } else {
+    var radlat1 = (Math.PI * lat1) / 180;
+    var radlat2 = (Math.PI * lat2) / 180;
+    var theta = lon1 - lon2;
+    var radtheta = (Math.PI * theta) / 180;
+    var dist =
+      Math.sin(radlat1) * Math.sin(radlat2) +
+      Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+    if (dist > 1) {
+      dist = 1;
+    }
+    dist = Math.acos(dist);
+    dist = (dist * 180) / Math.PI;
+    dist = dist * 60 * 1.1515;
+    if (unit == "K") {
+      dist = dist * 1.609344;
+    }
+    if (unit == "N") {
+      dist = dist * 0.8684;
+    }
+    return dist;
+  }
+};
+
+const sortLinks = function (arrayOfLinks, userLat, userLong) {
+  for (let arrayOfLink of arrayOfLinks) {
+    arrayOfLink.distance = getDistance(
+      userLat,
+      userLong,
+      arrayOfLink.latitude,
+      arrayOfLink.longitude,
+      "K"
+    );
+  }
+  arrayOfLinks.sort(function (a, b) {
+    return a.distance - b.distance;
+  });
+};
+
+const setAndSortLinkDistances = function (arrayOfLinks) {
+  if (!savedUserLat || !savedUserLong) {
+    if (!navigator.geolocation) {
+      alert("Geolocation is not supported by your browser");
+    } else {
+      navigator.geolocation.getCurrentPosition(success, error);
+    }
+
+    function success(position) {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+
+      let coordinate = {
+        lat: latitude,
+        long: longitude,
+      };
+      sessionStorage.setItem("userLatitude", coordinate.lat);
+      sessionStorage.setItem("userlongitude", coordinate.long);
+      sortLinks(arrayOfLinks, coordinate.lat, coordinate.long);
+      console.log(arrayOfLinks);
+    }
+
+    function error() {
+      alert(
+        "คุณไม่อนุญาตให้ที่เว็ปไซต์เข้าถึงตำแหน่งที่ตั้งของคุณ\nเพื่อความสะดวกในการสั่งสินค้า กรุณาrefreshหน้าเว็ปไซต์แล้วกดอนุญาต"
+      );
+    }
+  } else {
+    sortLinks(arrayOfLinks, savedUserLat, savedUserLong);
+    console.log(arrayOfLinks);
+  }
+};
+
+const getOpenLinks = function (arrayOfLinks) {
+  return arrayOfLinks.filter((arrayOfLink) => arrayOfLink.isOpen === true);
+};
+
+setAndSortLinkDistances(robinhoodLinks);
+setAndSortLinkDistances(foodpandaLinks);
+const openRobinhoodLinks = getOpenLinks(robinhoodLinks);
+const openFoodpandaLinks = getOpenLinks(foodpandaLinks);
+console.log(openRobinhoodLinks);
+console.log(openFoodpandaLinks);
+
+const foodpandaBtn = document.querySelector("#foodpanda-btn");
+const robinhoodBtn = document.querySelector("#robinhood-btn");
+
+foodpandaBtn.setAttribute("href", openFoodpandaLinks[0].riderLink);
+robinhoodBtn.setAttribute("href", openRobinhoodLinks[0].riderLink);

@@ -27,13 +27,13 @@
                         <xsl:attribute name="class">d-none d-lg-block</xsl:attribute>
                         <xsl:value-of select="content_text" disable-output-escaping="yes" />
                     </xsl:element>
-                    <xsl:element name="a">
-                        <xsl:attribute name="class">btn btn-primary btn-lg rounded-pill grabMe-btn</xsl:attribute>
-                        <xsl:attribute name="target">
-                            <xsl:value-of select="target_link" />
+                    <xsl:element name="button">
+                        <xsl:attribute name="class">btn btn-lg rounded-pill grabMe-btn</xsl:attribute>
+                        <xsl:attribute name="data-bs-toggle">
+                            modal
                         </xsl:attribute>
-                        <xsl:attribute name="href">
-                            <xsl:value-of select="button_link" />
+                        <xsl:attribute name="data-bs-target">
+                            #modal-rider
                         </xsl:attribute>
                         <xsl:value-of select="button_text" />
                     </xsl:element>
@@ -98,57 +98,4 @@
 	</xsl:template>
 </xsl:stylesheet>
 
-    <!--Original HTML============================================================ -->
-
-     <section id="sectionOneHome" class="d-none d-md-block" style="background: url('./images/v40_18.png');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;">
-        <div class="container">
-            <div class=" mx-5 " id="contentOne">
-                <h1 id="goodMorning">Good <br>
-                    Morning.
-                </h1>
-                <div class="bar-light mt-lg-3 mb-4"></div>
-                <div id="weGetYou" class="d-none d-lg-block">We get you covered with our variety of freshly baked
-                    bakeries from
-                    our passionate pastry chef.
-                </div>
-                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn">Grab Me!</button>
-            </div>
-        </div>
-    </section>
-    <!-- Mobile Hero=================================== -->
-    <section id="sectionOneHomeMobile" class="d-block d-md-none w-100 d-block h-auto pb-4 ">
-        <div class="container ">
-            <a href="./Home.html" class=" d-block mb-2">
-                <img src="./images/PuffnPie_Logo.png" class="logo-home-mobile"></img>
-            </a>
-            <div id="promotion-scroll" class="d-flex flex-row overflow-auto h-auto">
-                <div class="promotion-card flex-shrink-0 mx-2 position-relative">
-                    <img src="./images/v144_464.png" alt="Image not available"
-                        class=" d-block w-100 h-100 promotion-card-img">
-
-                    <h2 class="promotion-card-text  w-100 position-absolute bottom-0 ps-3 m-0">
-                        Paris Pastry <br> Week
-                    </h2>
-                </div>
-                <div class="promotion-card flex-shrink-0 mx-2 position-relative">
-                    <img src="./images/v144_464.png" alt="Image not available"
-                        class=" d-block w-100 h-100 promotion-card-img">
-
-                    <h2 class="promotion-card-text  w-100 position-absolute bottom-0 ps-3 m-0">
-                        Paris Pastry <br> Week
-                    </h2>
-                </div>
-                <div class="promotion-card flex-shrink-0 mx-2 position-relative">
-                    <img src="./images/v144_464.png" alt="Image not available"
-                        class=" d-block w-100 h-100 promotion-card-img">
-
-                    <h2 class="promotion-card-text  w-100 position-absolute bottom-0 ps-3 m-0">
-                        Paris Pastry <br> Week
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </section>
+    

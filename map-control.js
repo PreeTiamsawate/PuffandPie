@@ -91,8 +91,7 @@ const showShopsByDistance = function () {
   }
 
   function error() {
-    alert("Unable to retrieve your location");
-    console.log(Shops);
+    alert("คุณไม่อนุญาตให้ที่เว็ปไซต์เข้าถึงตำแหน่งที่ตั้งของคุณ");
   }
 };
 

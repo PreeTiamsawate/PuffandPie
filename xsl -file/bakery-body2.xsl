@@ -22,18 +22,19 @@
                 </xsl:attribute>
                 <xsl:value-of select="banner_text" disable-output-escaping="yes" />
             </xsl:element>
-            <xsl:element name="a">
+            <xsl:element name="button">
                 <xsl:attribute name="class">
-                    btn btn-primary btn-lg rounded-pill grabMe-btn
+                    btn btn-lg rounded-pill grabMe-btn d-md-block d-none 
                 </xsl:attribute>
-                <xsl:attribute name="target">
-                    <xsl:value-of select="target_link" />
+                <xsl:attribute name="data-bs-toggle">
+                    modal
                 </xsl:attribute>
-                <xsl:attribute name="href">
-                    <xsl:value-of select="button_link" />
+                <xsl:attribute name="data-bs-target">
+                    #modal-rider
                 </xsl:attribute>
                 <xsl:value-of select="button_text" />
             </xsl:element>
+            
         </xsl:element>
 
         <!-- Brown Sections=================================================================== -->
@@ -100,18 +101,19 @@
                     </xsl:for-each>
                 </div>
             </div>
-            <xsl:element name="a">
+            <xsl:element name="button">
                 <xsl:attribute name="class">
-                    btn btn-primary btn-lg rounded-pill grabMe-btn  d-md-block d-none mx-auto my-md-4 my-2
+                    btn btn-lg rounded-pill grabMe-btn d-md-block d-none mx-auto my-md-4 my-2
                 </xsl:attribute>
-                <xsl:attribute name="target">
-                    <xsl:value-of select="target_link" />
+                <xsl:attribute name="data-bs-toggle">
+                    modal
                 </xsl:attribute>
-                <xsl:attribute name="href">
-                    <xsl:value-of select="button_link" />
+                <xsl:attribute name="data-bs-target">
+                    #modal-rider
                 </xsl:attribute>
                 <xsl:value-of select="button_text" />
             </xsl:element>
+            
 
             <div class="container mx-auto pt-3 row">
                 <div class="col-md-6 col-0  d-md-block d-none ">
@@ -188,18 +190,19 @@
                             </xsl:element>
                         </xsl:for-each>
                     </div>
-                    <xsl:element name="a">
+                     <xsl:element name="button">
                         <xsl:attribute name="class">
-                            btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none
+                            btn btn-lg rounded-pill grabMe-btn d-md-block d-none
                         </xsl:attribute>
-                        <xsl:attribute name="target">
-                            <xsl:value-of select="target_link" />
+                        <xsl:attribute name="data-bs-toggle">
+                            modal
                         </xsl:attribute>
-                        <xsl:attribute name="href">
-                            <xsl:value-of select="button_link" />
+                        <xsl:attribute name="data-bs-target">
+                            #modal-rider
                         </xsl:attribute>
                         <xsl:value-of select="button_text" />
                     </xsl:element>
+                    
                 </div>
             </div>
             <div class="container ps-lg-5 ps-3  pt-lg-3 pt-md-5">
@@ -253,18 +256,19 @@
                         </xsl:element>
                     </xsl:for-each>    
                 </div>
-                <xsl:element name="a">
+                <xsl:element name="button">
                     <xsl:attribute name="class">
-                        btn btn-primary btn-lg rounded-pill grabMe-btn d-block  ms-md-5 mx-auto my-md-4 my-3
+                        btn btn-lg rounded-pill grabMe-btn d-block  ms-md-5 mx-auto my-md-4 my-3
                     </xsl:attribute>
-                    <xsl:attribute name="target">
-                        <xsl:value-of select="target_link" />
+                    <xsl:attribute name="data-bs-toggle">
+                        modal
                     </xsl:attribute>
-                    <xsl:attribute name="href">
-                        <xsl:value-of select="button_link" />
+                    <xsl:attribute name="data-bs-target">
+                        #modal-rider
                     </xsl:attribute>
                     <xsl:value-of select="button_text" />
                 </xsl:element>
+                
             </div>
         </xsl:element>
         
