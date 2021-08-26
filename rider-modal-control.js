@@ -64,11 +64,16 @@ const sortLinks = function (arrayOfLinks, userLat, userLong) {
     return a.distance - b.distance;
   });
 };
+const getOpenLinks = function (arrayOfLinks) {
+  return arrayOfLinks.filter((arrayOfLink) => arrayOfLink.isOpen === true);
+};
 
-const setAndSortLinkDistances = function (arrayOfLinks) {
+const setLinkToButton = function (arrayOfLinks, linkButton) {
   if (!savedUserLat || !savedUserLong) {
     if (!navigator.geolocation) {
       alert("Geolocation is not supported by your browser");
+      linkButton.setAttribute("href", getOpenLinks(arrayOfLinks)[0].riderLink);
+      console.log(linkButton);
     } else {
       navigator.geolocation.getCurrentPosition(success, error);
     }
@@ -84,33 +89,26 @@ const setAndSortLinkDistances = function (arrayOfLinks) {
       sessionStorage.setItem("userLatitude", coordinate.lat);
       sessionStorage.setItem("userlongitude", coordinate.long);
       sortLinks(arrayOfLinks, coordinate.lat, coordinate.long);
-      console.log(arrayOfLinks);
+      linkButton.setAttribute("href", getOpenLinks(arrayOfLinks)[0].riderLink);
+      console.log(linkButton);
     }
 
     function error() {
+      linkButton.setAttribute("href", getOpenLinks(arrayOfLinks)[0].riderLink);
       alert(
         "คุณไม่อนุญาตให้ที่เว็ปไซต์เข้าถึงตำแหน่งที่ตั้งของคุณ\nเพื่อความสะดวกในการสั่งสินค้า กรุณาrefreshหน้าเว็ปไซต์แล้วกดอนุญาต"
       );
+      console.log(linkButton);
     }
   } else {
     sortLinks(arrayOfLinks, savedUserLat, savedUserLong);
-    console.log(arrayOfLinks);
+    linkButton.setAttribute("href", getOpenLinks(arrayOfLinks)[0].riderLink);
+    console.log(linkButton);
   }
 };
-
-const getOpenLinks = function (arrayOfLinks) {
-  return arrayOfLinks.filter((arrayOfLink) => arrayOfLink.isOpen === true);
-};
-
-setAndSortLinkDistances(robinhoodLinks);
-setAndSortLinkDistances(foodpandaLinks);
-const openRobinhoodLinks = getOpenLinks(robinhoodLinks);
-const openFoodpandaLinks = getOpenLinks(foodpandaLinks);
-console.log(openRobinhoodLinks);
-console.log(openFoodpandaLinks);
 
 const foodpandaBtn = document.querySelector("#foodpanda-btn");
 const robinhoodBtn = document.querySelector("#robinhood-btn");
 
-foodpandaBtn.setAttribute("href", openFoodpandaLinks[0].riderLink);
-robinhoodBtn.setAttribute("href", openRobinhoodLinks[0].riderLink);
+setLinkToButton(robinhoodLinks, robinhoodBtn);
+setLinkToButton(foodpandaLinks, foodpandaBtn);

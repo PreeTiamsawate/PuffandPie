@@ -1,10 +1,10 @@
 let robinhoodLinks = [
   {
-    branchName: "Rak Khun Thao FA Building",
+    branchName: "TG HQ",
     riderLink:
-      "https://static.robinhood.in.th/app_link.html?URI=robinhoodth://merchantlanding/id/12742",
-    latitude: 13.8974886,
-    longitude: 100.5903395,
+      "https://static.robinhood.in.th/app_link.html?URI=robinhoodth://merchantlanding/id/12741",
+    latitude: 13.8056359,
+    longitude: 100.562122,
     distance: 0,
     isOpen: true,
   },
@@ -15,7 +15,16 @@ let robinhoodLinks = [
     latitude: 13.8246644,
     longitude: 100.678121,
     distance: 0,
-    isOpen: false,
+    isOpen: true,
+  },
+  {
+    branchName: "Rak Khun Thao FA Building",
+    riderLink:
+      "https://static.robinhood.in.th/app_link.html?URI=robinhoodth://merchantlanding/id/12742",
+    latitude: 13.8974886,
+    longitude: 100.5903395,
+    distance: 0,
+    isOpen: true,
   },
   {
     branchName: "Chulabhorn Hospital",
@@ -25,14 +34,5 @@ let robinhoodLinks = [
     longitude: 100.5781207,
     distance: 0,
     isOpen: true,
-  },
-  {
-    branchName: "TG HQ",
-    riderLink:
-      "https://static.robinhood.in.th/app_link.html?URI=robinhoodth://merchantlanding/id/12741",
-    latitude: 13.8056359,
-    longitude: 100.562122,
-    distance: 0,
-    isOpen: false,
   },
 ];
