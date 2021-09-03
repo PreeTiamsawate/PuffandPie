@@ -68,12 +68,25 @@ const getOpenLinks = function (arrayOfLinks) {
   return arrayOfLinks.filter((arrayOfLink) => arrayOfLink.isOpen === true);
 };
 
-const setLinkToButton = function (arrayOfLinks, linkButton) {
+const setLinkToButton = function (
+  arrayOfLinks1,
+  linkButton1,
+  arrayOfLinks2,
+  linkButton2
+) {
   if (!savedUserLat || !savedUserLong) {
     if (!navigator.geolocation) {
       alert("Geolocation is not supported by your browser");
-      linkButton.setAttribute("href", getOpenLinks(arrayOfLinks)[0].riderLink);
-      console.log(linkButton);
+      linkButton1.setAttribute(
+        "href",
+        getOpenLinks(arrayOfLinks1)[0].riderLink
+      );
+      linkButton2.setAttribute(
+        "href",
+        getOpenLinks(arrayOfLinks2)[0].riderLink
+      );
+
+      console.log(linkButton1);
     } else {
       navigator.geolocation.getCurrentPosition(success, error);
     }
@@ -88,27 +101,46 @@ const setLinkToButton = function (arrayOfLinks, linkButton) {
       };
       sessionStorage.setItem("userLatitude", coordinate.lat);
       sessionStorage.setItem("userlongitude", coordinate.long);
-      sortLinks(arrayOfLinks, coordinate.lat, coordinate.long);
-      linkButton.setAttribute("href", getOpenLinks(arrayOfLinks)[0].riderLink);
-      console.log(linkButton);
+      sortLinks(arrayOfLinks1, coordinate.lat, coordinate.long);
+      sortLinks(arrayOfLinks2, coordinate.lat, coordinate.long);
+      linkButton1.setAttribute(
+        "href",
+        getOpenLinks(arrayOfLinks1)[0].riderLink
+      );
+      linkButton2.setAttribute(
+        "href",
+        getOpenLinks(arrayOfLinks2)[0].riderLink
+      );
+
+      console.log(linkButton1);
     }
 
     function error() {
-      linkButton.setAttribute("href", getOpenLinks(arrayOfLinks)[0].riderLink);
+      linkButton1.setAttribute(
+        "href",
+        getOpenLinks(arrayOfLinks1)[0].riderLink
+      );
+      linkButton2.setAttribute(
+        "href",
+        getOpenLinks(arrayOfLinks2)[0].riderLink
+      );
+
       alert(
         "คุณไม่อนุญาตให้ที่เว็ปไซต์เข้าถึงตำแหน่งที่ตั้งของคุณ\nเพื่อความสะดวกในการสั่งสินค้า กรุณาrefreshหน้าเว็ปไซต์แล้วกดอนุญาต"
       );
-      console.log(linkButton);
+      console.log(linkButton1);
     }
   } else {
-    sortLinks(arrayOfLinks, savedUserLat, savedUserLong);
-    linkButton.setAttribute("href", getOpenLinks(arrayOfLinks)[0].riderLink);
-    console.log(linkButton);
+    sortLinks(arrayOfLinks1, savedUserLat, savedUserLong);
+    linkButton1.setAttribute("href", getOpenLinks(arrayOfLinks1)[0].riderLink);
+    sortLinks(arrayOfLinks2, savedUserLat, savedUserLong);
+    linkButton2.setAttribute("href", getOpenLinks(arrayOfLinks2)[0].riderLink);
+
+    console.log(linkButton1);
   }
 };
 
 const foodpandaBtn = document.querySelector("#foodpanda-btn");
 const robinhoodBtn = document.querySelector("#robinhood-btn");
 
-setLinkToButton(robinhoodLinks, robinhoodBtn);
-setLinkToButton(foodpandaLinks, foodpandaBtn);
+setLinkToButton(robinhoodLinks, robinhoodBtn, foodpandaLinks, foodpandaBtn);
