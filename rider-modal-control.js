@@ -86,7 +86,12 @@ const setLinkToButton = function (
         getOpenLinks(arrayOfLinks2)[0].riderLink
       );
 
-      console.log(linkButton1);
+      console.log(
+        "Robinhood Branch: " + getOpenLinks(arrayOfLinks1)[0].branchName
+      );
+      console.log(
+        "foodpanda Branch: " + getOpenLinks(arrayOfLinks2)[0].branchName
+      );
     } else {
       navigator.geolocation.getCurrentPosition(success, error);
     }
@@ -112,7 +117,12 @@ const setLinkToButton = function (
         getOpenLinks(arrayOfLinks2)[0].riderLink
       );
 
-      console.log(linkButton1);
+      console.log(
+        "Robinhood Branch: " + getOpenLinks(arrayOfLinks1)[0].branchName
+      );
+      console.log(
+        "foodpanda Branch: " + getOpenLinks(arrayOfLinks2)[0].branchName
+      );
     }
 
     function error() {
@@ -128,7 +138,12 @@ const setLinkToButton = function (
       alert(
         "คุณไม่อนุญาตให้ที่เว็ปไซต์เข้าถึงตำแหน่งที่ตั้งของคุณ\nเพื่อความสะดวกในการสั่งสินค้า กรุณาrefreshหน้าเว็ปไซต์แล้วกดอนุญาต"
       );
-      console.log(linkButton1);
+      console.log(
+        "Robinhood Branch: " + getOpenLinks(arrayOfLinks1)[0].branchName
+      );
+      console.log(
+        "foodpanda Branch: " + getOpenLinks(arrayOfLinks2)[0].branchName
+      );
     }
   } else {
     sortLinks(arrayOfLinks1, savedUserLat, savedUserLong);
@@ -136,7 +151,12 @@ const setLinkToButton = function (
     sortLinks(arrayOfLinks2, savedUserLat, savedUserLong);
     linkButton2.setAttribute("href", getOpenLinks(arrayOfLinks2)[0].riderLink);
 
-    console.log(linkButton1);
+    console.log(
+      "Robinhood Branch: " + getOpenLinks(arrayOfLinks1)[0].branchName
+    );
+    console.log(
+      "foodpanda Branch: " + getOpenLinks(arrayOfLinks2)[0].branchName
+    );
   }
 };
 

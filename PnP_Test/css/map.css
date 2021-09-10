@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+html,
+body {
+  width: 100%;
+  /* height: 100%; */
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+#mapPage {
+  width: 105vw;
+  height: auto;
+  min-height: 400px;
+  margin-top: 0;
+
+  margin-right: 0;
+}
+#branch-menu {
+  /* background-color:#3D2211;  */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  height: auto;
+  background-image: linear-gradient(#3d2211, rgba(61, 34, 17, 0.93));
+  /* gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)); */
+}
+#area-input {
+  background: #ebedec;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  width: 193px;
+  height: 39px;
+}
+.place-box-header {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 750;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ebedec;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 4px 0px;
+}
+.bar-light-small {
+  width: 87px;
+  height: 4px;
+  background: #ebedec;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 4px 0px;
+}
+
+.scroll-box-shops {
+  width: 87vw;
+  min-width: 300px;
+  height: auto;
+  /* border: 1px solid black; */
+}
+.card-shops-small {
+  width: 210px;
+  height: 145px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.card-img-shop {
+  width: 100%;
+  height: 100%;
+  /* aspect-ratio: 1.44776; */
+  border-radius: 12px;
+}
+.card-text-shop {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 12px 12px;
+}
+.shop {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 750;
+  font-size: 15px;
+  line-height: 13px;
+  color: #ebedec;
+}
+.branch {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 13px;
+  color: #ebedec;
+}
+
+.location-pin {
+  width: 12px;
+  height: 19.26px;
+
+  filter: drop-shadow(1.6051px 1.6051px 3.21019px rgba(0, 0, 0, 0.5));
+}
+.distance {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ebedec;
+}
+iframe {
+  width: 100% !important;
+  height: 450px !important;
+}
+/* Scroll Bar=========================== */
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(235, 237, 236, 1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(153, 90, 19, 0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(153, 90, 19, 0.8);
+}
+.bar-light {
+  width: 166px;
+  height: 8px;
+  background: rgba(235, 237, 236, 1);
+  opacity: 1;
+  /* position: absolute;
+    top: 280px;
+    left: 157px; */
+  overflow: hidden;
+  /* margin-top: 20px; */
+}
+
+#visitOurShops {
+  width: 350px;
+  height: 70px;
+  color: rgba(235, 237, 236, 1);
+  /* position: absolute;
+    top: 42px;
+    left: 480px; */
+  font-family: "Avenir LT Std", sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  font-weight: 45;
+  font-size: 50px;
+  opacity: 1;
+  text-align: center;
+}
+.v41_32 {
+  width: 100%;
+  height: 330px;
+  background: url("../images/v41_32.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  /* position: absolute;
+    top: 0px;
+    left: 0px; */
+  overflow: hidden;
+}
+
+#shops {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+  background-image: linear-gradient(#3d2211, rgba(61, 34, 17, 0.93));
+}
+
+/* Tablet Screen Display============================================================================================== */
+@media (max-width: 1023px) {
+  .scroll-box-shops::-webkit-scrollbar {
+    display: none;
+  }
+  .card-shops-small {
+    width: 172px;
+    height: 120px;
+  }
+}
+/* Mobile Screen Display=============================================================== */
+
+@media (max-width: 767px) {
+  .v41_32 {
+    height: 151px;
+  }
+  #visitOurShops {
+    width: 300px;
+    font-size: 45px;
+    line-height: 75px;
+  }
+  .card-shops-small {
+    width: 172px;
+    height: 120px;
+  }
+  .scroll-box-shops::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-box-shops {
+    width: 95vw;
+  }
+}

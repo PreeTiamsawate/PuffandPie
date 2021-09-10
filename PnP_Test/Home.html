@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Puff & Pie (พัฟแอนด์พาย) ขนม เบเกอรี่ และ อาหารพร้อมทาน จาก ฝ่ายครัวการบิน</title>
+    <!-- SEO Support -->
+    <meta property="og:title" content="Puff & Pie ขนม เบเกอรี่ และ อาหารพร้อมทาน จากฝ่ายครัวการบิน" />
+    <meta property="og:description"
+        content="พัฟแอนด์พาย พร้อมเสิร์ฟคุณด้วยเมนู ขนม และ เบเกอรี่ เช่น เค้ก แยมโรล ครัวซอง แซนด์วิช พายทูน่า กะหรี่พัฟไก่ ซินนามอนโรล แสนอร่อย อิ่มท้องด้วยเมนู อาหารไทย และ อาหารฟิวชั่น ที่ขึ้นชื่อ จากรสชาติของความใส่ใจ Taste of Passion" />
+    <!-- <meta property="og:url" content="http://www.puffandpie.com/puffandpie/th/" />
+    <meta property="og:image" content="http://www.puffandpie.com/puffandpie/images/fb.png" /> -->
+    <meta property="og:site_name" content="Puff and Pie" />
+    <!-- <link rel="canonical" href="http://www.puffandpie.com/puffandpie/th/" />
+    <link rel="publisher" href="https://plus.google.com/+PuffandpieOfficial/" /> -->
+    <meta name="description"
+        content="พัฟแอนด์พาย พร้อมเสิร์ฟคุณด้วยเมนู ขนม และ เบเกอรี่ เช่น เค้ก แยมโรล ครัวซอง แซนด์วิช พายทูน่า กะหรี่พัฟไก่ ซินนามอนโรล แสนอร่อย อิ่มท้องด้วยเมนู อาหารไทย และ อาหารฟิวชั่น ที่ขึ้นชื่อ จากรสชาติของความใส่ใจ Taste of Passion" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS for Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link href="./css/home.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/rider-modal.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
+
+<body>
+    <!-- Navbar for Desktop==================================================================== -->
+    <nav class="navbar navbar-expand-md navigation-bar d-none d-md-block fixed-top">
+        <div class="container mt-lg-2">
+            <a class="navbar-brand ms-md-3" href="./Home.html">
+                <img src="./images2/navbar/Puff-Pie-Logo.png" class="logo-home"></img>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-lg-0 mb-md-2  nav-menu d-md-flex justify-content-between">
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link  " href="./Bakery.html">Bakery</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link" href="./Meal.html">Meal</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link  nav-menu-link " href="./Box.html">Box</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link " href="./Event.html">Event</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link " href="#contentFooter">Contact</a>
+                    </li>
+                </ul>
+                <a href="#">
+                    <img src="./images2/navbar/THAI-Catering-Logo.png" id="catering-logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar for Mobile==================================================================== -->
+    <nav id="mobileNavbar" class=" container-fluid  d-block d-md-none fixed-bottom px-0 ">
+        <div class="w-100 h-100 row justify-content-evenly mx-0 ">
+            <a class="col-2  px-0 mobile-link " href="./Bakery.html">
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Bakery-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Bakery-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Bakery-Hover.png">
+
+                <div class='textIcon w-100'>Bakery</div>
+            </a>
+            <a class="col-2  px-0 mobile-link  " href="./Meal.html">
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Meal-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Meal-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Meal-Hover.png">
+
+                <div class='textIcon w-100'>Meal</div>
+            </a>
+            <a class="col-2  px-0 mobile-link " href="./Home.html">
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Home-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Home-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Home-Hover.png">
+
+                <div class='textIcon w-100'>Home</div>
+            </a>
+            <a class="col-2  px-0  mobile-link " href='./Box.html'>
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Box-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Box-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Box-Hover.png">
+
+                <div class='textIcon w-100'>Box</div>
+            </a>
+            <a class="col-2  px-0  mobile-link" href='./Event.html'>
+
+                <img class="imgIcon d-block mx-auto" src="./images2/navbar/Event-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Event-Active.png">
+                <img class="imgIcon d-none mx-auto" src="./images2/navbar/Event-Hover.png">
+                <div class='textIcon w-100'>Event</div>
+            </a>
+        </div>
+    </nav>
+
+    <section id="sectionOneHome" class="d-none d-md-block" style="background: url('./images2/home/Hero_Home_Desktop.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;">
+        <div class="container">
+            <div class=" mx-5  " id="contentOne">
+                <h1 id="goodMorning">Good <br>
+                    Morning.
+                </h1>
+                <div class="bar-light mt-lg-3 mb-4"></div>
+                <p id="weGetYou" class="d-none d-lg-block">We get you covered with our variety of freshly baked
+                    bakeries from
+                    our passionate pastry chef.
+                </p>
+                <button type="button" class="btn  btn-lg rounded-pill grabMe-btn" data-bs-toggle="modal"
+                    data-bs-target="#modal-rider">Grab Me!</button>
+            </div>
+        </div>
+    </section>
+    <!-- Mobile Hero=================================== -->
+    <section id="sectionOneHomeMobile" class="d-block d-md-none w-100 d-block h-auto pb-4 ">
+        <div class="container ">
+
+            <img src="./images2/navbar/Puff-Pie-Logo.png" class="logo-home-mobile  d-block mb-2"></img>
+
+            <div id="promotion-scroll" class="d-flex flex-row overflow-auto h-auto">
+                <div class="promotion-card flex-shrink-0 mx-2 position-relative">
+                    <img src="./images2/home/Multigrain-min.png" alt="Image not available"
+                        class=" d-block w-100 h-100 promotion-card-img">
+
+                    <h2 class="promotion-card-text  w-100 position-absolute bottom-0 ps-3 m-0">
+                        Multigrain <br> Croissant
+                    </h2>
+                </div>
+                <div class="promotion-card flex-shrink-0 mx-2 position-relative">
+                    <img src="./images2/home/Carbonara-min.png" alt="Image not available"
+                        class=" d-block w-100 h-100 promotion-card-img">
+
+                    <h2 class="promotion-card-text  w-100 position-absolute bottom-0 ps-3 m-0">
+                        Carbonara <br> Pasta
+                    </h2>
+                </div>
+                <div class="promotion-card flex-shrink-0 mx-2 position-relative">
+                    <img src="./images2/home/todMan-min.png" alt="Image not available"
+                        class=" d-block w-100 h-100 promotion-card-img">
+
+                    <h2 class="promotion-card-text  w-100 position-absolute bottom-0 ps-3 m-0">
+                        Tod-Man <br> Week
+                    </h2>
+                </div>
+                <div class="promotion-card flex-shrink-0 mx-2 position-relative">
+                    <img src="./images2/home/GreenBun-min.png" alt="Image not available"
+                        class=" d-block w-100 h-100 promotion-card-img">
+
+                    <h2 class="promotion-card-text  w-100 position-absolute bottom-0 ps-3 m-0">
+                        Green Bun <br> Festival
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionTwo">
+
+        <div class="container mx-auto  row">
+            <div class="d-md-none my-3">
+                <h2 id="body-header-mobile" class="mt-2 mb-2">
+                    Taste <br>
+                    of Passion
+                </h2>
+                <div class="bar-light-mobile"></div>
+
+
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-none d-md-inline-block contentTwo">
+                <h2 id="body-header">
+                    Taste <br>
+                    of Passion
+                </h2>
+                <div class="bar-dark ms-lg-3 ms-0"></div>
+                <div id="body-paragraph" class=" pe-md-5 pe-lg-1">
+                    <p class="">
+                        With our passion of making your everyday dinning delightful <br>
+                        and special, we are proud to deliver our bakery, beverages and meal to fulfill your day.
+                    </p>
+
+
+                    <p class="">
+                        If you want to enlighten your meeting with well-crafted meal boxes <br> or sanck box, we also
+                        pleased
+                        to <br>
+                        create your impressive events with our customized service just in time.
+                    </p>
+
+
+                    <p class="">
+                        Now, let's grab your favorite ones <br> to make you day better!
+                    </p>
+                </div>
+
+                <button type="button" class="btn  btn-lg rounded-pill grabMe-btn" data-bs-toggle="modal"
+                    data-bs-target="#modal-rider">Grab Me!</button>
+            </div>
+            <div
+                class="col-md-3 col-lg-4 col-6 ps-0 pe-1 px-md-auto contentTwo d-flex flex-column align-items-end justify-content-md-start justify-content-end ">
+                <a href="./Bakery.html" class="foodLink my-1 my-md-3"><img src="./images2/home/img-link-bakery-min.png"
+                        class="img-link"></a>
+                <a href="./Meal.html" class="foodLink my-1 my-md-3"><img src="./images2/home/img-link-meal-min.png"
+                        class="img-link"></a>
+
+
+            </div>
+            <div
+                class="col-md-3 col-lg-4 col-6 pe-0 ps-1 px-md-auto contentTwo d-flex flex-column align-items-start justify-content-md-end justify-content-start">
+                <a href="./Box.html" class="foodLink my-1 my-md-3"><img src="./images2/home/img-link-box-min.png"
+                        class="img-link"></a>
+                <a href="./Event.html" class="foodLink my-1 my-md-3"><img src="./images2/home/img-link-event-min.png"
+                        class="img-link"></a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionThree" class="v41_32 d-flex flex-column justify-content-center align-items-center" style="background: url('./images2/footer/Visitshops-banner-min.png');background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;">
+        <div id="letsMeetUs">Let’s meet us
+            in places
+        </div>
+        <a href="./Map.html" class="btn btn-primary btn-lg rounded-pill visitShops-btn">Visit Shops</a>
+
+    </section>
+
+    <!-- Rider Modal Section------------------------------------------------ -->
+
+    <div class="modal fade " id="modal-rider" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content mx-auto modal-rider-content ">
+                <h1 class="custom-modal-header">Select</h1>
+                <h2 class="custom-modal-subheader">Your Delivery</h2>
+                <div class="rider-box mx-auto">
+                    <a href="https://bit.ly/2UzPYZs" target="_blank" class="rider-btn" id="grabfood-btn">
+                        <img src="./images2/Deliveries/Grab Food.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Grab Food - active.png" alt="">
+                    </a>
+                    <a href="#" class="rider-btn" target="_blank" id="foodpanda-btn">
+                        <img src="./images2/Deliveries/Foodpanda.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Foodpanda - active.png" alt="">
+                    </a>
+                    <a href="" class="rider-btn" target="_blank" id="robinhood-btn">
+                        <img src="./images2/Deliveries/Robinhood.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Robinhood - active.png" alt="">
+                    </a>
+
+                    <a href="https://lin.ee/w7TtUKN" target="_blank" class="rider-btn" id="lineOA-btn">
+                        <img src="./images2/Deliveries/Line OA.png" alt="">
+                        <img class="d-none" src="./images2/Deliveries/Line OA - active.png" alt="">
+                    </a>
+                </div>
+                <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contentFooter" class=" w-100 h-auto pb-5">
+        <div class="container h-auto row mx-auto px-0">
+            <div
+                class="col-lg-4 col-12 d-flex flex-column align-items-center justify-content-lg-around justify-content-center h-auto">
+                <div>
+                    <div class="Contact">Contact</div>
+                    <div class="bar-light mx-auto mb-3"></div>
+                </div>
+                <div class="d-flex justify-content-between w-50 ">
+                    <a href="#"><img class="social-icon" src="./images2/footer/Facebook-Icon.png"></a>
+                    <a href="#"><img class="social-icon" src="./images2/footer/Instagram-Icon.png"></a>
+                    <a href="#"><img class="social-icon" src="./images2/footer/Line-Icon.png"></a>
+
+                </div>
+            </div>
+            <div class="col-lg-8 col-12 d-flex flex-column flex-md-row justify-content-between flex-wrap ">
+
+                <div class="h-auto  contacts contactDetail pt-4 ">
+                    <p><b>ครัวการบินไทย ดอนเมือง - งานจัดเลี้ยง, snackbox</b> </p>
+                    <p> <b>Tel :</b> 02-3561666 (Line @thaicatering)<br>
+                        <b>Email :</b> ongroundsales@thaiairways.com <br>
+                        <b>Address :</b> เลขที่ 171/1 แขวงสนามบิน ดอนเมือง กรุงเทพฯ 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>สนใจเป็นผู้แทนจำหน่ายร้านพัฟแอนด์พาย</b> </p>
+                    <p> <b>Tel :</b> 02-592-1131-33, 02-592-1148-51 <br>
+                        <b>Email :</b> puffandpie.admin@thaiairways.com <br>
+                        <b>Address :</b> เลขที่ 171/1 แขวงสนามบิน ดอนเมือง กรุงเทพฯ 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>สนใจเป็นผู้แทนจำหน่ายร้านพัฟแอนด์พาย</b> </p>
+                    <p> <b>Tel :</b> 02-592-1131-33, 02-592-1148-51 <br>
+                        <b>Email :</b> puffandpie.admin@thaiairways.com <br>
+                        <b>Address :</b> เลขที่ 171/1 แขวงสนามบิน ดอนเมือง กรุงเทพฯ 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>สนใจเป็นผู้แทนจำหน่ายร้านพัฟแอนด์พาย</b> </p>
+                    <p> <b>Tel :</b> 02-592-1131-33, 02-592-1148-51 <br>
+                        <b>Email :</b> puffandpie.admin@thaiairways.com <br>
+                        <b>Address :</b> เลขที่ 171/1 แขวงสนามบิน ดอนเมือง กรุงเทพฯ 10210
+                    </p>
+
+                </div>
+                <!-- <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+                <div class="h-auto  contacts contactDetail pt-4">
+                    <p><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div> -->
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Javascript for Bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <!-- Navbar Control Javascript -->
+    <script src="./navbar-control.js"></script>
+    <script src="./robinhood_links.js"></script>
+    <script src="./foodpanda_links.js"></script>
+    <script src="./rider-modal-control.js"></script>
+</body>
+
+</html>

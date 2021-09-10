@@ -33,7 +33,7 @@ function distance(lat1, lon1, lat2, lon2, unit) {
   }
 }
 function sortShops(Shops, shopParent, userLat, userLong, mapFrame) {
-  for (shop of Shops) {
+  for (let shop of Shops) {
     let shopDistance = distance(
       userLat,
       userLong,
@@ -49,7 +49,6 @@ function sortShops(Shops, shopParent, userLat, userLong, mapFrame) {
     shop.addEventListener("click", function () {
       mapFrame.innerHTML = this.getAttribute("mapIframe");
     });
-    console.log(mapFrame);
   }
   Shops.sort(function (a, b) {
     return a.getAttribute("distance") - b.getAttribute("distance");

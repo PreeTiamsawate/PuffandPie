@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+html,
+body {
+  width: 100%;
+  /* height: 100%; */
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Section One======================================= */
+#sectionOneHome {
+  width: 100%;
+  height: 100vh;
+  /* min-height: 100vh; */
+  /* max-height: 600px ; */
+  /* background: url("../images/v40_18.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+  opacity: 1;
+  overflow: hidden;
+  margin-top: 0;
+}
+#contentOne {
+  /* border: 1px solid white; */
+  height: 688px;
+}
+#goodMorning {
+  width: 409px;
+  color: rgba(235, 237, 236, 1);
+  /* position: absolute;
+  top: 128px;
+  left: 157px; */
+  font-family: "Avenir LT Std", sans-serif;
+  font-weight: normal;
+  line-height: 72px;
+  font-size: 72px;
+  opacity: 1;
+  text-align: left;
+  margin-top: 140px;
+}
+#weGetYou {
+  width: 302px;
+  color: rgba(235, 237, 236, 1);
+  /* position: absolute;
+  top: 317px;
+  left: 157px; */
+  font-family: "Avenir LT Std", sans-serif;
+  font-weight: 45;
+  font-size: 18px;
+  opacity: 1;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.bar-light {
+  width: 166px;
+  height: 8px;
+  background: rgba(235, 237, 236, 1);
+  opacity: 1;
+  /* position: absolute;
+  top: 280px;
+  left: 157px; */
+  overflow: hidden;
+  /* margin-top: 20px; */
+}
+.grabMe-btn {
+  text-align: center;
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  color: rgba(235, 237, 236, 1);
+  font-weight: 350;
+  font-size: 25px;
+  line-height: 30px;
+  box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  background-color: #995a13;
+  padding: 10px 18px 8px;
+  height: 48px;
+  width: 195px;
+  transition-property: font-weight, background-color;
+  transition-duration: 0.25s;
+}
+.grabMe-btn:hover {
+  color: rgba(235, 237, 236, 1);
+  font-weight: 700;
+  background-color: var(--token-0161928c-161b-46bf-b35a-ba4215b6b0c0, #3d2211);
+}
+
+#sectionTwo {
+  width: 100%;
+  height: 1300px;
+  background-color: #f4eae0;
+  opacity: 1;
+  /* position: absolute;
+  top: 768px;
+  left: 0px; */
+  overflow: hidden;
+}
+.contentTwo {
+  height: 1200px;
+  margin-top: 40px;
+  /* border: 1px solid red; */
+}
+
+.foodLink {
+  width: 80%;
+  /* min-width: 200px; */
+  height: 505px;
+  object-fit: cover;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.foodLink:hover {
+  border: 8px solid #995a13;
+}
+
+.img-link {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#body-header {
+  width: 302px;
+  height: 120px;
+  color: rgba(0, 0, 0, 1);
+  font-family: "Avenir LT Std", sans-serif;
+  font-weight: 750;
+  font-size: 45px;
+  font-style: normal;
+  opacity: 1;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+.bar-dark {
+  width: 166px;
+  height: 8px;
+  background: rgba(0, 0, 0, 1);
+  opacity: 1;
+  overflow: hidden;
+}
+
+#body-paragraph {
+  width: 100%;
+  color: rgba(0, 0, 0, 1);
+  /* position: absolute;
+  top: 310px;
+  left: 157px; */
+  font-family: "Avenir LT Std", sans-serif;
+  font-weight: 45 Book;
+  font-size: 18px;
+  opacity: 1;
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/* .v46_23 {
+  width: 100%;
+  height: 362px;
+  background: url("../images/v46_23.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1910px;
+  left: 0px;
+  overflow: hidden;
+} */
+.v41_32 {
+  width: 100%;
+  height: 300px;
+  /* background: url("../images/v41_32.png"); */
+  /* background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+  opacity: 1;
+  overflow: hidden;
+}
+#letsMeetUs {
+  width: 300px;
+  height: 160px;
+  color: rgba(235, 237, 236, 1);
+  font-family: "Avenir LT Std", sans-serif;
+  font-weight: 45;
+  font-size: 50px;
+  opacity: 1;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.visitShops-btn {
+  text-align: center;
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 25px;
+  line-height: 30px;
+  box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  background-color: white;
+  padding: 10px 18px 8px;
+  height: 48px;
+  width: 195px;
+  transition-property: font-weight, background-color;
+  transition-duration: 0.25s;
+  color: black;
+}
+
+/* Tablet Screen Display============================================================================================== */
+@media (max-width: 1023px) {
+  #sectionOneHome {
+    height: 540px;
+    /* background: linear-gradient(
+        360deg,
+        #000000 -0.26%,
+        rgba(0, 0, 0, 0.25) 47.14%
+      ),
+      url("../images/image-tablet/Tablet-Hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; */
+    overflow: hidden;
+  }
+  #contentOne {
+    /* border: 1px solid white; */
+    height: 400px;
+  }
+  #goodMorning {
+    width: 190px;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-weight: 350;
+    line-height: 54px;
+    font-size: 45px;
+
+    margin-top: 250px;
+  }
+  .bar-light {
+    width: 105px;
+  }
+  .grabMe-btn {
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0;
+    height: 38px;
+    width: 104px;
+  }
+  #sectionTwo {
+    height: 700px;
+  }
+  .contentTwo {
+    height: 600px;
+    margin-top: 40px;
+    /* border: 1px solid red; */
+  }
+  #body-header {
+    width: 302px;
+    height: 70px;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  .bar-dark {
+    width: 86px;
+    height: 5px;
+    background: rgba(0, 0, 0, 1);
+    opacity: 1;
+    overflow: hidden;
+  }
+  #body-paragraph {
+    font-family: "Avenir LT Std", sans-serif;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 1;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .foodLink {
+    width: 153px;
+    /* min-width: 200px; */
+    height: 224px;
+
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+/* Mobile Screen Display========================================================================================== */
+
+/* Mobile Section One */
+#sectionOneHomeMobile {
+  background-color: black;
+}
+.logo-home-mobile {
+  width: 134px;
+  height: 54px;
+  overflow: visible;
+  object-fit: cover;
+  /* background-image: url(../images/PuffnPie_Logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+
+  /* margin-left: 106px; */
+}
+#promotion-scroll {
+  width: 103%;
+  min-width: 300px;
+  -ms-overflow-style: none;
+}
+#promotion-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.promotion-card {
+  width: 234px;
+  height: 344px;
+}
+.promotion-card-img {
+  filter: drop-shadow(40px 40px 100px rgba(0, 0, 0, 0.25));
+  border-radius: 15px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.promotion-card-text {
+  height: 200px;
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 27.65px;
+  line-height: 33px;
+  color: #ebedec;
+  padding-top: 132px;
+  background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+}
+#body-header-mobile {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 750;
+  font-size: 23.04px;
+  line-height: 28px;
+  color: #ebedec;
+}
+.bar-light-mobile {
+  width: 64px;
+  height: 7px;
+  background: #ebedec;
+}
+
+@media (max-width: 767px) {
+  #sectionTwo {
+    background: linear-gradient(
+      180deg,
+      #3d2211 0%,
+      rgba(153, 90, 19, 0) 60.42%
+    );
+    background-color: #f4eae0;
+    width: 100%;
+    height: 650px;
+  }
+  .contentTwo {
+    height: 516px;
+    margin-top: 10px;
+  }
+  .foodLink {
+    width: 146px;
+    min-width: none;
+    height: 210px;
+  }
+}

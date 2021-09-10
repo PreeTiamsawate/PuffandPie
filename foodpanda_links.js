@@ -5,7 +5,7 @@ let foodpandaLinks = [
     latitude: 13.8056359,
     longitude: 100.562122,
     distance: 0,
-    isOpen: true,
+    isOpen: false,
   },
   {
     branchName: "Don Muang",
