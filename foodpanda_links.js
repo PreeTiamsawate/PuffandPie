@@ -1,13 +1,5 @@
 let foodpandaLinks = [
   {
-    branchName: "TG HQ",
-    riderLink: "https://www.foodpanda.co.th/th/restaurant/a7u5",
-    latitude: 13.8056359,
-    longitude: 100.562122,
-    distance: 0,
-    isOpen: false,
-  },
-  {
     branchName: "Don Muang",
     riderLink: "https://www.foodpanda.co.th/th/restaurant/sz7t",
     latitude: 13.8975469,
@@ -15,6 +7,15 @@ let foodpandaLinks = [
     distance: 0,
     isOpen: true,
   },
+  {
+    branchName: "TG HQ",
+    riderLink: "https://www.foodpanda.co.th/th/restaurant/a7u5",
+    latitude: 13.8056359,
+    longitude: 100.562122,
+    distance: 0,
+    isOpen: true,
+  },
+
   {
     branchName: "Rak Khun Thao FA Building",
     riderLink: "https://www.foodpanda.co.th/th/restaurant/iksa",

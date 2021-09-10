@@ -126,6 +126,8 @@ const setLinkToButton = function (
     }
 
     function error() {
+      sessionStorage.setItem("userLatitude", "not allowed");
+      sessionStorage.setItem("userlongitude", "not allowed");
       linkButton1.setAttribute(
         "href",
         getOpenLinks(arrayOfLinks1)[0].riderLink
@@ -136,7 +138,8 @@ const setLinkToButton = function (
       );
 
       alert(
-        "คุณไม่อนุญาตให้ที่เว็ปไซต์เข้าถึงตำแหน่งที่ตั้งของคุณ\nเพื่อความสะดวกในการสั่งสินค้า กรุณาrefreshหน้าเว็ปไซต์แล้วกดอนุญาต"
+        "คุณไม่อนุญาตให้ที่เว็ปไซต์เข้าถึงตำแหน่งที่ตั้งของคุณ"
+        // "คุณไม่อนุญาตให้ที่เว็ปไซต์เข้าถึงตำแหน่งที่ตั้งของคุณ\nเพื่อความสะดวกในการสั่งสินค้า กรุณาrefreshหน้าเว็ปไซต์แล้วกดอนุญาต"
       );
       console.log(
         "Robinhood Branch: " + getOpenLinks(arrayOfLinks1)[0].branchName
@@ -145,6 +148,18 @@ const setLinkToButton = function (
         "foodpanda Branch: " + getOpenLinks(arrayOfLinks2)[0].branchName
       );
     }
+  } else if (
+    savedUserLat === "not allowed" ||
+    savedUserLong === "not allowed"
+  ) {
+    linkButton1.setAttribute("href", getOpenLinks(arrayOfLinks1)[0].riderLink);
+    linkButton2.setAttribute("href", getOpenLinks(arrayOfLinks2)[0].riderLink);
+    console.log(
+      "Robinhood Branch: " + getOpenLinks(arrayOfLinks1)[0].branchName
+    );
+    console.log(
+      "foodpanda Branch: " + getOpenLinks(arrayOfLinks2)[0].branchName
+    );
   } else {
     sortLinks(arrayOfLinks1, savedUserLat, savedUserLong);
     linkButton1.setAttribute("href", getOpenLinks(arrayOfLinks1)[0].riderLink);
