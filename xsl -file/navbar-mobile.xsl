@@ -8,7 +8,7 @@
 
         <nav id="mobileNavbar" class=" container-fluid  d-block d-md-none fixed-bottom px-0 ">
             <div class="w-100 h-100 row justify-content-evenly mx-0 ">
-                <xsl:for-each select="header_menu">  
+                <xsl:for-each select="/Properties/Data/Datum/DCR/header/header_menu">  
                     <xsl:element name="a">
                         <xsl:attribute name="class">col-2 px-0 mobile-link</xsl:attribute>
                         <xsl:attribute name="href"><xsl:value-of select="menu_link" /></xsl:attribute>
@@ -58,48 +58,3 @@
 	</xsl:template>
 </xsl:stylesheet>    
 
-<!--Original HTML============================================================ -->
-    <nav id="mobileNavbar" class=" container-fluid  d-block d-md-none fixed-bottom px-0 ">
-        <div class="w-100 h-100 row justify-content-evenly mx-0 ">
-            <a class="col-2  px-0 mobile-link " href="./Bakery.html">
-
-                <img class="imgIcon d-block mx-auto" src="./images/Icons/Bakery-Default.png">
-                <img class="imgIcon d-none mx-auto" src="./images/Icons/Bakery-Active.png">
-                <img class="imgIcon d-none mx-auto" src="./images/Icons/Bakery-Hover.png">
-
-                <div class='textIcon w-100'>Bakery</div>
-            </a>
-            <a class="col-2  px-0 mobile-link  " href="./Meal.html">
-
-                <img class="imgIcon d-block mx-auto" src="./images/Icons/Meal-Default.png">
-                <img class="imgIcon d-none mx-auto" src="./images/Icons/Meal-Active.png">
-                <img class="imgIcon d-none mx-auto" src="./images/Icons/Meal-Hover.png">
-
-                <div class='textIcon w-100'>Meal</div>
-            </a>
-            <a class="col-2  px-0 mobile-link " href="./Home.html">
-
-                <img class="imgIcon d-block mx-auto" src="./images/Icons/Home-Default.png">
-                <img class="imgIcon d-none mx-auto" src="./images/Icons/Home-Active.png">
-                <img class="imgIcon d-none mx-auto" src="./images/Icons/Home-Hover.png">
-
-                <div class='textIcon w-100'>Home</div>
-            </a>
-            <a class="col-2  px-0  mobile-link " href='./Box.html'>
-
-                <img class="imgIcon d-block mx-auto" src="./images/Icons/Box-Default.png">
-                <img class="imgIcon d-none mx-auto" src="./images/Icons/Box-Active.png">
-                <img class="imgIcon d-none mx-auto" src="./images/Icons/Box-Hover.png">
-
-                <div class='textIcon w-100'>Box</div>
-            </a>
-            <a class="col-2  px-0  mobile-link" href='./Event.html'>
-
-                <img class="imgIcon d-block mx-auto" src="./images/Icons/Event-Default.png">
-                <img class="imgIcon d-none mx-auto" src="./images/Icons/Event-Active.png">
-                <img class="imgIcon d-none mx-auto" src="./images/Icons/Event-Hover.png">
-
-                <div class='textIcon w-100'>Event</div>
-            </a>
-        </div>
-    </nav>

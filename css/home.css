@@ -317,10 +317,10 @@ body {
   background-color: black;
 }
 .logo-home-mobile {
-  width: 134px;
-  height: 54px;
+  width: 132px;
+  height: 40px;
   overflow: visible;
-  object-fit: cover;
+  /* object-fit: cover; */
   /* background-image: url(../images/PuffnPie_Logo.png);
   background-size: cover;
   background-repeat: no-repeat;

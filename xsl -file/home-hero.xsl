@@ -10,7 +10,7 @@
             <xsl:attribute name="id">sectionOneHome</xsl:attribute>
             <xsl:attribute name="class">d-none d-md-block</xsl:attribute>
             <xsl:attribute name="style">
-                background: url(<xsl:value-of select="image_banner" />);
+                background: url(<xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_home/image_banner" />);
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
@@ -19,13 +19,13 @@
                 <div class=" mx-5 " id="contentOne">
                     <xsl:element name="h1">
                         <xsl:attribute name="id">goodMorning</xsl:attribute>
-                        <xsl:value-of select="header_text" disable-output-escaping="yes" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_home/header_text" disable-output-escaping="yes" />
                     </xsl:element>
                     <div class="bar-light mt-lg-3 mb-4"></div>
                     <xsl:element name="p">
                         <xsl:attribute name="id">weGetYou</xsl:attribute>
                         <xsl:attribute name="class">d-none d-lg-block</xsl:attribute>
-                        <xsl:value-of select="content_text" disable-output-escaping="yes" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_home/content_text" disable-output-escaping="yes" />
                     </xsl:element>
                     <xsl:element name="button">
                         <xsl:attribute name="class">btn btn-lg rounded-pill grabMe-btn</xsl:attribute>
@@ -35,7 +35,7 @@
                         <xsl:attribute name="data-bs-target">
                             #modal-rider
                         </xsl:attribute>
-                        <xsl:value-of select="button_text" />
+                       Grab Me!
                     </xsl:element>
                 </div>
             </div>
@@ -49,13 +49,13 @@
                 <xsl:element name="img">
                     <xsl:attribute name="class">d-block mb-2 logo-home-mobile</xsl:attribute>
                     <xsl:attribute name="src">
-                        <xsl:value-of select="image_banner_mobile" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_home/image_banner_mobile" />
                     </xsl:attribute>
                 </xsl:element>
              
                
                 <div id="promotion-scroll" class="d-flex flex-row overflow-auto h-auto">
-                    <xsl:for-each select="hero_banner_home_mobile">
+                    <xsl:for-each select="/Properties/Data/Datum/DCR/hero_banner_home/hero_banner_home_mobile">
                         <xsl:element name="div">
                             <xsl:attribute name="class">promotion-card flex-shrink-0 mx-2 position-relative</xsl:attribute>
                             <xsl:element name="img">

@@ -11,7 +11,7 @@
 .logo-home {
   width: 202px;
   height: 61px;
-  object-fit: cover;
+  /* object-fit: cover; */
   /* margin-left: 106px; */
 }
 .nav-item {

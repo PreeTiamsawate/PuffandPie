@@ -13,7 +13,7 @@
                     <xsl:element name="h2">
                         <xsl:attribute name="id">body-header-mobile</xsl:attribute>
                         <xsl:attribute name="class">mt-2 mb-2</xsl:attribute>
-                        <xsl:value-of select="header_text_mobile" disable-output-escaping="yes" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/body_homepage/header_text_mobile" disable-output-escaping="yes" />
                     </xsl:element>
                    
                     <div class="bar-light-mobile"></div>
@@ -22,16 +22,17 @@
                 <div class="col-md-6 col-lg-4 d-none d-md-inline-block contentTwo">
                     <xsl:element name="h2">
                         <xsl:attribute name="id">body-header</xsl:attribute>
-                        <xsl:value-of select="header_text" disable-output-escaping="yes" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/body_homepage/header_text" disable-output-escaping="yes" />
                     </xsl:element>
                    
                     <div class="bar-dark ms-lg-3 ms-0"></div>
-
-                    <xsl:element name="p">
-                        <xsl:attribute name="id">body-paragraph</xsl:attribute>
-                        <xsl:attribute name="class">pe-md-5 pe-lg-1</xsl:attribute>
-                        <xsl:value-of select="content_text" disable-output-escaping="yes" />
-                    </xsl:element>
+                    <div id="body-paragraph" class=" pe-md-5 pe-lg-1">
+                        <xsl:element name="p">
+                            <xsl:attribute name="id">body-paragraph</xsl:attribute>
+                            <xsl:attribute name="class">pe-md-5 pe-lg-1</xsl:attribute>
+                            <xsl:value-of select="/Properties/Data/Datum/DCR/body_homepage/content_text" disable-output-escaping="yes" />
+                        </xsl:element>
+                    </div>
 
                      <xsl:element name="button">
                         <xsl:attribute name="class">btn btn-lg rounded-pill grabMe-btn</xsl:attribute>
@@ -41,7 +42,7 @@
                         <xsl:attribute name="data-bs-target">
                             #modal-rider
                         </xsl:attribute>
-                        <xsl:value-of select="button_text" />
+                        Grab Me!
                     </xsl:element>
                 </div>
                 <div
@@ -51,13 +52,13 @@
                             <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
                             
                             <xsl:attribute name="href">
-                                <xsl:value-of select="image1_link" />
+                                <xsl:value-of select="/Properties/Data/Datum/DCR/body_homepage/image1_link" />
                             </xsl:attribute>
                             <xsl:element name="img">
                                 <xsl:attribute name="src">
-                                    <xsl:value-of select="image1" />
+                                    <xsl:value-of select="/Properties/Data/Datum/DCR/body_homepage/image1" />
                                 </xsl:attribute>
-                                <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
+                                <xsl:attribute name="class">img-link</xsl:attribute>
                             </xsl:element>
                         </xsl:element>
 
@@ -66,13 +67,13 @@
                             <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
                             
                             <xsl:attribute name="href">
-                                <xsl:value-of select="image2_link" />
+                                <xsl:value-of select="/Properties/Data/Datum/DCR/body_homepage/image2_link" />
                             </xsl:attribute>
                             <xsl:element name="img">
                                 <xsl:attribute name="src">
-                                    <xsl:value-of select="image2" />
+                                    <xsl:value-of select="/Properties/Data/Datum/DCR/body_homepage/image2" />
                                 </xsl:attribute>
-                                <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
+                                <xsl:attribute name="class">img-link</xsl:attribute>
                             </xsl:element>
                         </xsl:element>
                    
@@ -87,26 +88,26 @@
                             <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
                             
                             <xsl:attribute name="href">
-                                <xsl:value-of select="image3_link" />
+                                <xsl:value-of select="/Properties/Data/Datum/DCR/body_homepage/image3_link" />
                             </xsl:attribute>
                             <xsl:element name="img">
                                 <xsl:attribute name="src">
-                                    <xsl:value-of select="image3" />
+                                    <xsl:value-of select="/Properties/Data/Datum/DCR/body_homepage/image3" />
                                 </xsl:attribute>
-                                <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
+                                <xsl:attribute name="class">img-link</xsl:attribute>
                             </xsl:element>
                         </xsl:element>
                         <xsl:element name="a">
                             <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
                             
                             <xsl:attribute name="href">
-                                <xsl:value-of select="image4_link" />
+                                <xsl:value-of select="/Properties/Data/Datum/DCR/body_homepage/image4_link" />
                             </xsl:attribute>
                             <xsl:element name="img">
                                 <xsl:attribute name="src">
-                                    <xsl:value-of select="image4" />
+                                    <xsl:value-of select="/Properties/Data/Datum/DCR/body_homepage/image4" />
                                 </xsl:attribute>
-                                <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
+                                <xsl:attribute name="class">img-link</xsl:attribute>
                             </xsl:element>
                         </xsl:element>
                     
