@@ -10,7 +10,7 @@
             <xsl:attribute name="id">sectionOneBox</xsl:attribute>
             <xsl:attribute name="class">d-none d-md-block</xsl:attribute>
             <xsl:attribute name="style">
-                background: url(<xsl:value-of select="hero_imag" />);
+                background: url(<xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_content/hero_imag" />);
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
@@ -19,7 +19,7 @@
                  <xsl:element name="h1">
                     <xsl:attribute name="id">Box</xsl:attribute>
                     <xsl:attribute name="class">mx-auto  mb-lg-2  mb-1 d-md-block d-none</xsl:attribute>
-                    <xsl:value-of select="hero_header" disable-output-escaping="yes" />
+                    <xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_content/hero_header" disable-output-escaping="yes" />
                 </xsl:element>
                 <div class="bar-dark mx-auto my-1 my-lg-4 my-md-3 d-md-block d-none"></div>
             </div>
@@ -31,14 +31,14 @@
             <xsl:attribute name="class">d-md-none</xsl:attribute>
             <xsl:attribute name="style">
                 background: linear-gradient(180deg, #000000 0%, rgba(61, 34, 17, 0.29) 60.42%),
-                url(<xsl:value-of select="hero_image_mobile" />);
+                url(<xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_content/hero_image_mobile" />);
                 background-size: cover;"
             </xsl:attribute>
             <div class="container">
                 <xsl:element name="h1">
                     <xsl:attribute name="id">newMenu</xsl:attribute>
                     <xsl:attribute name="class">mx-auto d-md-none d-block</xsl:attribute>
-                    <xsl:value-of select="hero_header" disable-output-escaping="yes" />
+                    <xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_content//hero_header_mobile" disable-output-escaping="yes" />
                 </xsl:element>
             </div>
         </xsl:element>

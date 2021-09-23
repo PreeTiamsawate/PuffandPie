@@ -5,37 +5,35 @@
 	<xsl:include href="http://www.interwoven.com/livesite/xsl/HTMLTemplates.xsl" />
 	<xsl:include href="http://www.interwoven.com/livesite/xsl/StringTemplates.xsl" />
 	<xsl:template match="/">
-        <xsl:for-each select="body_content_container">
+        <xsl:for-each select="/Properties/Data/Datum/DCR/body_content1/body_content_container">
             <xsl:variable name="position">
                 <xsl:value-of select="position()" />
             </xsl:variable>
             <xsl:choose>
                 <xsl:when test="($position mod 2) = 1">
+                   
                     <xsl:element name="section">
                         <xsl:attribute name="id">banner-mobile-1</xsl:attribute>
                         <xsl:attribute name="class">container-fluid d-block d-md-none</xsl:attribute>
                         <xsl:attribute name="style">
                             background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 51.55%, #000000 84.72%),
-                            url(<xsl:value-of select="banner_mobile_image" />);background-size: cover;background-position: center;
+                            url(/static/puff_pie/images/box/Poster/Poster_Premium_Box-min.png);background-size: cover;background-position: center;
                         </xsl:attribute>
                         <div class="row justify-content-end">
                             <div class="col-3 ps-0 pt-4 ">
                                 <xsl:element name="h2">
                                     <xsl:attribute name="class">banner-mobile-header</xsl:attribute>
-                                    <xsl:value-of select="banner_mobile_header" disable-output-escaping="yes" />
+                                     Premium <br></br>
+                                    Snack Box
                                 </xsl:element>
                                 <div class="bar-white-mobile  d-block d-md-none ms-0"></div>
                                 <xsl:element name="p">
                                     <xsl:attribute name="class">banner-mobile-list  mt-3</xsl:attribute>
-                                    <xsl:value-of select="banner_mobile_detail" disable-output-escaping="yes" />
+                                    - 3 Bakeries
+                                    <br></br>
+                                    - 1 Juice
                                 </xsl:element>
-                                <!-- <ul class="banner-mobile-list ps-3 mt-3">
-                                    <xsl:for-each select="######">
-                                        <xsl:element name="li">
-                                           <xsl:value-of select="banner_mobile_detail" disable-output-escaping="yes" /> 
-                                        </xsl:element>
-                                    </xsl:for-each>
-                                </ul> -->
+                                
                             </div>
                         </div>
                     </xsl:element>
@@ -115,7 +113,8 @@
                                             </xsl:element>
                                             <xsl:element name="p">
                                                 <xsl:attribute name="class">productDetail d-none</xsl:attribute>
-                                                <xsl:value-of select="menu_detail"
+                                                <xsl:value-of select="menu_detail" disable-output-escaping="yes"/>
+                                            </xsl:element>
                                             <xsl:element name="p">
                                                 <xsl:attribute name="class">preservation d-none</xsl:attribute>
                                                 <xsl:value-of select="menu_preservation" disable-output-escaping="yes" />
@@ -128,18 +127,16 @@
                                         btn btn-lg rounded-pill lineOA-btn d-md-flex  d-none
                                     </xsl:attribute>
 									<xsl:attribute name="target">
-										<xsl:value-of select="target_link" />
+										_blank
 									</xsl:attribute>
-									<xsl:attribute name="href">
-										<xsl:value-of select="button_link" />
-									</xsl:attribute>
+									<xsl:attribute name="href">https://lin.ee/w7TtUKN</xsl:attribute>
+										
+									
                                     <xsl:element name="img">
-                                        <xsl:attribute name="src">
-                                            <xsl:value-of select="button_icon"></xsl:value-of>
-                                        </xsl:attribute>
+                                        <xsl:attribute name="src">/static/puff_pie/images/Deliveries/LineOA Icon.png</xsl:attribute>
                                     </xsl:element>
                                     <xsl:element name="span">
-                                       <xsl:value-of select="button_text" />
+                                       Order Now
                                     </xsl:element>
 								</xsl:element>
                             </div>
@@ -153,18 +150,21 @@
                         <xsl:attribute name="class">container-fluid d-block d-md-none</xsl:attribute>
                         <xsl:attribute name="style">
                             background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 51.55%, #000000 84.72%),
-                            url(<xsl:value-of select="banner_mobile_image" />);background-size: cover;background-position: center;
+                            url(/static/puff_pie/images/box/Poster/Poster_Petite_Box-min.png);background-size: cover;background-position: center;
                         </xsl:attribute>
                         <div class="row justify-content-end">
                             <div class="col-3 ps-0 pt-4 ">
                                 <xsl:element name="h2">
                                     <xsl:attribute name="class">banner-mobile-header</xsl:attribute>
-                                    <xsl:value-of select="banner_mobile_header" disable-output-escaping="yes" />
+                                     Petite <br></br>
+                                     Snack Box
                                 </xsl:element>
                                 <div class="bar-white-mobile  d-block d-md-none ms-0"></div>
                                 <xsl:element name="p">
                                     <xsl:attribute name="class">banner-mobile-list  mt-3</xsl:attribute>
-                                    <xsl:value-of select="banner_mobile_detail" disable-output-escaping="yes" />
+                                    - 2 Bakeries
+                                    <br></br>
+                                    - 1 Juice
                                 </xsl:element>
                                 <!-- <ul class="banner-mobile-list ps-3 mt-3">
                                     <xsl:for-each select="######">
@@ -243,46 +243,45 @@
                                        btn btn-lg rounded-pill lineOA-btn d-md-flex  d-none float-md-end
                                     </xsl:attribute>
 									<xsl:attribute name="target">
-										<xsl:value-of select="target_link" />
+										_blank
 									</xsl:attribute>
-									<xsl:attribute name="href">
-										<xsl:value-of select="button_link" />
-									</xsl:attribute>
+									<xsl:attribute name="href">https://lin.ee/w7TtUKN</xsl:attribute>
+										
+									
                                     <xsl:element name="img">
-                                        <xsl:attribute name="src">
-                                            <xsl:value-of select="button_icon"></xsl:value-of>
-                                        </xsl:attribute>
+                                        <xsl:attribute name="src">/static/puff_pie/images/Deliveries/LineOA Icon.png</xsl:attribute>
+                                            
+                                        
                                     </xsl:element>
                                     <xsl:element name="span">
-                                       <xsl:value-of select="button_text" />
+                                       Order Now
                                     </xsl:element>
 								</xsl:element>
                             </div>
                             <div class="col-md-6 col-0 d-md-block d-none  ">
                                 <div class="position-relative w-50 h-auto mt-0 mt-lg-5 ms-5 ps-5">
                                     <xsl:element name="img">
-                                            <xsl:attribute name="src">
-                                                <xsl:value-of select="image1" />
-                                            </xsl:attribute>
-                                            <xsl:attribute name="class">position-absolute top-50 start-50 pic-lg</xsl:attribute>
-                                            <xsl:attribute name="style">object-fit: cover;</xsl:attribute>
-                                        </xsl:element>
-                                        <xsl:element name="img">
-                                            <xsl:attribute name="src">
-                                                <xsl:value-of select="image2" />
-                                            </xsl:attribute>
-                                            <xsl:attribute name="class">pic-sm</xsl:attribute>
+                                        <xsl:attribute name="src">
+                                            <xsl:value-of select="image1" />
+                                        </xsl:attribute>
+                                        <xsl:attribute name="class">
+                                            position-absolute top-50 start-50 pic-lg
+                                        </xsl:attribute>
+                                        <xsl:attribute name="style">
+                                            object-fit: cover;
+                                        </xsl:attribute>
+                                    </xsl:element>
+                                    <xsl:element name="img">
+                                        <xsl:attribute name="src">
+                                            <xsl:value-of select="image2" />
+                                        </xsl:attribute>
+                                        <xsl:attribute name="class">
+                                            pic-sm
+                                        </xsl:attribute>
                                     </xsl:element>
                                 </div>
                             </div>
-                            <!-- <div class="col-md-6 col-0 d-md-block d-none ">
-                                <xsl:element name="img">
-                                    <xsl:attribute name="class">box-pic d-block mt-4 float-end</xsl:attribute>
-                                    <xsl:attribute name="src">
-                                        <xsl:value-of select="######" />
-                                    </xsl:attribute>
-                                </xsl:element>
-                            </div> -->
+                           
                         </div>
                     </section>
 
