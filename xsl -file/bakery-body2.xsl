@@ -11,7 +11,7 @@
                 narrow-section d-flex flex-column h-auto justify-content-around   align-items-center
             </xsl:attribute>
             <xsl:attribute name="style">
-                background: url(<xsl:value-of select="banner_image" />);
+                background: url(<xsl:value-of select="/Properties/Data/Datum/DCR/body_content2/banner_image" />);
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
@@ -20,7 +20,7 @@
                 <xsl:attribute name="class">
                     header-narrow h-auto   align-self-start text-start px-2
                 </xsl:attribute>
-                <xsl:value-of select="banner_text" disable-output-escaping="yes" />
+                <xsl:value-of select="/Properties/Data/Datum/DCR/body_content2/banner_text" disable-output-escaping="yes" />
             </xsl:element>
             <xsl:element name="button">
                 <xsl:attribute name="class">
@@ -32,34 +32,34 @@
                 <xsl:attribute name="data-bs-target">
                     #modal-rider
                 </xsl:attribute>
-                <xsl:value-of select="button_text" />
+                Grab Me!
             </xsl:element>
             
         </xsl:element>
 
         <!-- Brown Sections=================================================================== -->
-        ำ<xsl:element name="section">
+        <xsl:element name="section">
             <xsl:attribute name="class">section-brown w-100  py-lg-5 py-md-3 py-2 h-auto d-flex flex-column</xsl:attribute>
             <xsl:attribute name="style">
-                background-color:<xsl:value-of select="bg_color" /> ;
+                background-color:#3d2211;
             </xsl:attribute>
             <h2 class="quoteWhite text-center my-lg-4 my-2 d-md-block d-none">
-                <xsl:value-of select="top_header_text" disable-output-escaping="yes" />
+                <xsl:value-of select="/Properties/Data/Datum/DCR/body_content2/top_header_text" disable-output-escaping="yes" />
             </h2>
             <div class="bar-light-long mx-auto my-lg-4 my-2 d-md-block d-none"></div>
             <p class="detailEng-white text-center my-lg-4 my-2 d-lg-block d-none">
-                <xsl:value-of select="top_detail_text" disable-output-escaping="yes" />
+                <xsl:value-of select="/Properties/Data/Datum/DCR/body_content2/top_detail_text" disable-output-escaping="yes" />
             </p>
             <!-- <div class="deatailThai-white text-center my-md-4 my-2 d-lg-block d-none">
                <xsl:value-of select="content_th" disable-output-escaping="yes" />
             </div> -->
             <div class="container mx-auto ps-3 ps-lg-5 pt-3">
                 <h2 class="menu-header-mobile-white d-block d-md-none mb-1 ms-2">
-                    <xsl:value-of select="top_slider_topic" disable-output-escaping="yes" />
+                    <xsl:value-of select="/Properties/Data/Datum/DCR/body_content2/top_slider_topic" disable-output-escaping="yes" />
                 </h2>
                 <div class="bar-white-mobile  d-block d-md-none ms-2"></div>
                 <div id="snackBox" class="d-flex flex-row overflow-auto scroll-box my-lg-4 my-2 ms-md-5 ms-auto ">
-                    <xsl:for-each select="top_product_container">
+                    <xsl:for-each select="/Properties/Data/Datum/DCR/body_content2/top_product_container">
                         <xsl:element name="div">
                             <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
@@ -111,7 +111,7 @@
                 <xsl:attribute name="data-bs-target">
                     #modal-rider
                 </xsl:attribute>
-                <xsl:value-of select="button_text" />
+                 Grab Me!
             </xsl:element>
             
 
@@ -120,14 +120,14 @@
                     <div class="position-relative w-50 h-auto mt-5">
                         <xsl:element name="img">
                             <xsl:attribute name="src">
-                                <xsl:value-of select="image1" />
+                                <xsl:value-of select="/Properties/Data/Datum/DCR/body_content2/image1" />
                             </xsl:attribute>
                             <xsl:attribute name="class">pic-sm</xsl:attribute>
                             <xsl:attribute name="style">object-fit: cover;</xsl:attribute>
                         </xsl:element>
                         <xsl:element name="img">
                             <xsl:attribute name="src">
-                                <xsl:value-of select="image2" />
+                                <xsl:value-of select="/Properties/Data/Datum/DCR/body_content2/image2" />
                             </xsl:attribute>
                             <xsl:attribute name="class">position-absolute top-50 start-50 pic-lg</xsl:attribute>
                         </xsl:element>
@@ -135,21 +135,21 @@
                 </div>
                 <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
                     <h2 class="quoteWhite  my-lg-5 my-3  d-md-block d-none">
-                       <xsl:value-of select="main_header_text" disable-output-escaping="yes" />
+                       <xsl:value-of select="/Properties/Data/Datum/DCR/body_content2/main_header_text" disable-output-escaping="yes" />
                     </h2>
                     <div class="bar-light-long  d-md-block d-none"></div>
                     <p class="detailEng-white my-md-4 my-2  d-lg-block d-none">
-                        <xsl:value-of select="main๘detail_text" disable-output-escaping="yes" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/body_content2/main_detail_text" disable-output-escaping="yes" />
                     </p>
                     <!-- <div class="deatailThai-white  d-lg-block d-none">
                         <xsl:value-of select="content_text_th" disable-output-escaping="yes" />
                     </div> -->
                     <h2 class="menu-header-mobile-white d-block d-md-none mb-1 ms-2">
-                        <xsl:value-of select="main_slider_topic" disable-output-escaping="yes" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/body_content2/main_slider_topic" disable-output-escaping="yes" />
                     </h2>
                     <div class="bar-white-mobile  d-block d-md-none ms-2"></div>
                     <div id="sweetyBox" class="d-flex flex-row overflow-auto scroll-box-short my-lg-5 my-3 ">
-                        <xsl:for-each select="mian_product_container">
+                        <xsl:for-each select="/Properties/Data/Datum/DCR/body_content2/main_product_container">
                             <xsl:element name="div">
                                 <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                                 <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
@@ -200,22 +200,22 @@
                         <xsl:attribute name="data-bs-target">
                             #modal-rider
                         </xsl:attribute>
-                        <xsl:value-of select="button_text" />
+                        Grab Me!
                     </xsl:element>
                     
                 </div>
             </div>
             <div class="container ps-lg-5 ps-3  pt-lg-3 pt-md-5">
                 <h2 class="quoteWhite  mt-md-5 mb-md-3 ms-md-5 ms-auto d-md-block d-none">
-                   <xsl:value-of select="bottom_header_text" disable-output-escaping="yes" />
+                   <xsl:value-of select="/Properties/Data/Datum/DCR/body_content2/bottom_header_text" disable-output-escaping="yes" />
                 </h2>
                 <div class="bar-light-long ms-md-5 ms-auto d-md-block d-none "></div>
                 <h2 class="menu-header-mobile-white d-block d-md-none mb-1 ms-2">
-                   <xsl:value-of select="bottom_slider_topic" disable-output-escaping="yes" />
+                   <xsl:value-of select="/Properties/Data/Datum/DCR/body_content2/bottom_slider_topic" disable-output-escaping="yes" />
                 </h2>
                 <div class="bar-white-mobile  d-block d-md-none ms-2"></div>
                 <div id="complimentaryBox" class="d-flex flex-row overflow-auto scroll-box my-md-4 my-2 ms-md-5 ms-auto ">
-                    <xsl:for-each select="bottom_product_container">
+                    <xsl:for-each select="/Properties/Data/Datum/DCR/body_content2/bottom_product_container">
                         <xsl:element name="div">
                             <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
@@ -266,7 +266,7 @@
                     <xsl:attribute name="data-bs-target">
                         #modal-rider
                     </xsl:attribute>
-                    <xsl:value-of select="button_text" />
+                    Grab Me!
                 </xsl:element>
                 
             </div>

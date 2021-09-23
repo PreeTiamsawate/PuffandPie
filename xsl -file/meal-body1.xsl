@@ -6,7 +6,7 @@
 	<xsl:include href="http://www.interwoven.com/livesite/xsl/StringTemplates.xsl" />
 	<xsl:template match="/">
 
-        <xsl:for-each select="body_content_container">
+        <xsl:for-each select="/Properties/Data/Datum/DCR/body_content1/body_content_container">
             <xsl:variable name="position">
                 <xsl:value-of select="position()" />
             </xsl:variable>
@@ -95,7 +95,7 @@
                                     <xsl:attribute name="data-bs-target">
                                         #modal-rider
                                     </xsl:attribute>
-                                    <xsl:value-of select="button_text" />
+                                    Grab Me!
                                 </xsl:element>
                                
                             </div>
@@ -171,7 +171,7 @@
                                     <xsl:attribute name="data-bs-target">
                                         #modal-rider
                                     </xsl:attribute>
-                                    <xsl:value-of select="button_text" />
+                                    Grab Me!
                                 </xsl:element>
                                
                             </div>
@@ -190,9 +190,6 @@
                                                 </xsl:attribute>
                                                 <xsl:attribute name="class">pic-sm</xsl:attribute>
                                     </xsl:element>
-                                    <img src="./images/v224_15.png" class="position-absolute top-50 start-50 pic-lg" alt=""
-                                        style="object-fit: cover;">
-                                    <img src="./images/v220_55.png " class=" pic-sm " alt="">
                                 </div>
                             </div>
                         </div>

@@ -6,7 +6,7 @@
 	<xsl:include href="http://www.interwoven.com/livesite/xsl/StringTemplates.xsl" />
 	<xsl:template match="/">
 
-        <xsl:for-each select="body_content_container">
+        <xsl:for-each select="/Properties/Data/Datum/DCR/body_content1/body_content_container">
             <xsl:variable name="position">
                 <xsl:value-of select="position()" />
             </xsl:variable>
@@ -69,7 +69,7 @@
                                                 </xsl:element>
                                                 <xsl:element name="span">
                                                     <xsl:attribute name="class">card-price-small float-end</xsl:attribute>
-                                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />,-
+                                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />
                                                 </xsl:element>
                                             </xsl:element>
                                             <xsl:element name="p">
@@ -95,7 +95,7 @@
                                     <xsl:attribute name="data-bs-target">
                                         #modal-rider
                                     </xsl:attribute>
-                                    <xsl:value-of select="button_text" />
+                                    Grab Me!
                                 </xsl:element>
                                 
                             </div>
@@ -145,7 +145,7 @@
                                                 </xsl:element>
                                                 <xsl:element name="span">
                                                     <xsl:attribute name="class">card-price-small float-end</xsl:attribute>
-                                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />,-
+                                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />
                                                 </xsl:element>
                                             </xsl:element>
                                             <xsl:element name="p">
@@ -171,7 +171,7 @@
                                     <xsl:attribute name="data-bs-target">
                                         #modal-rider
                                     </xsl:attribute>
-                                    <xsl:value-of select="button_text" />
+                                    Grab Me!
                                 </xsl:element>
                                  
                             </div>

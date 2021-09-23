@@ -10,7 +10,7 @@
             <xsl:attribute name="id">sectionOneMeal</xsl:attribute>
             <xsl:attribute name="class">d-none d-md-block</xsl:attribute>
             <xsl:attribute name="style">
-                background: url(<xsl:value-of select="hero_image" />);
+                background: url(<xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_content/hero_image" />);
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
@@ -19,7 +19,7 @@
                 <xsl:element name="h1">
                     <xsl:attribute name="id">Meal</xsl:attribute>
                     <xsl:attribute name="class">mx-auto mb-lg-2  mb-1 d-md-block d-none</xsl:attribute>
-                    <xsl:value-of select="hero_header" disable-output-escaping="yes" />
+                    <xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_content/hero_header" disable-output-escaping="yes" />
                 </xsl:element>
                 <div class="bar-dark mx-auto my-1 my-lg-4 my-md-3 d-md-block d-none"></div>
     
@@ -27,11 +27,11 @@
                     <div class="mx-md-5">
                         <xsl:element name="h2">
                             <xsl:attribute name="class">newArrivals mt-0</xsl:attribute>
-                            <xsl:value-of select="hero_topic" disable-output-escaping="yes" />/>
+                            <xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_content/hero_topic" disable-output-escaping="yes" />
                         </xsl:element>
                         <div class="bar-dark-sm"></div>
                         <div class="d-flex flex-row justify-content-between  hero-scroll  mt-3 h-auto">
-                            <xsl:for-each select="hero_menu">
+                            <xsl:for-each select="/Properties/Data/Datum/DCR/hero_banner_content/hero_menu">
                                 <xsl:element name="div">
                                     <xsl:attribute name="class">card-big flex-shrink-0 mx-2</xsl:attribute>
                                     <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
@@ -42,11 +42,11 @@
                                     </xsl:element>
                                     <xsl:element name="div">
                                         <xsl:attribute name="class">card-text w-100 h-auto pt-1</xsl:attribute>
-                                        <xsl:element name="h4">
+                                        <xsl:element name="p">
                                             <xsl:attribute name="class">card-name-big</xsl:attribute>
                                             <xsl:value-of select="menu_name" disable-output-escaping="yes" />
                                         </xsl:element>
-                                        <xsl:element name="h5">
+                                        <xsl:element name="span">
                                             <xsl:attribute name="class">card-name-thai-big</xsl:attribute>
                                             <xsl:value-of select="menu_name_th" disable-output-escaping="yes" />
                                         </xsl:element>
@@ -80,18 +80,18 @@
             <xsl:attribute name="class">d-md-none</xsl:attribute>
             <xsl:attribute name="style">
                 background: linear-gradient(180deg, #000000 0%, rgba(61, 34, 17, 0.29) 60.42%),
-                url(<xsl:value-of select="hero_image_mobile" />);
+                url(<xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_content/hero_image_mobile" />);
                 background-size: cover;
             </xsl:attribute>
             <div class="container">
                 <xsl:element name="h1">
                     <xsl:attribute name="id">newMenu</xsl:attribute>
                     <xsl:attribute name="class">mx-auto d-md-none d-block</xsl:attribute>
-                    <xsl:value-of select="hero_header" disable-output-escaping="yes" />
+                    <xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_content/hero_header_mobile" disable-output-escaping="yes" />
                 </xsl:element>
           
                 <div id="contentOneMeal-mobile" class="d-block d-md-none d-flex flex-row overflow-auto mt-5  h-auto">
-                    <xsl:for-each select="hero_menu">
+                    <xsl:for-each select="/Properties/Data/Datum/DCR/hero_banner_content/hero_menu_mobile">
                         <xsl:element name="div">
                             <xsl:attribute name="class">card-mobile-new flex-shrink-0 mx-2 position-relative</xsl:attribute>
                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
@@ -101,27 +101,27 @@
                                 <xsl:attribute name="class">d-block w-100 h-100 newMenu-card-img</xsl:attribute>
                             </xsl:element>
                             <xsl:element name="img">
-                                <xsl:attribute name="src"><xsl:value-of select="######"/></xsl:attribute>
+                                <xsl:attribute name="src"><xsl:value-of select="menu_image_modal_mobile"/></xsl:attribute>
                                 <xsl:attribute name="class">d-none</xsl:attribute>
                             </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">newMenu-card-text w-100</xsl:attribute>
                                 <xsl:element name="h4">
                                     <xsl:attribute name="class">newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2</xsl:attribute>
-                                    <xsl:value-of select="menu_name" disable-output-escaping="yes" />
+                                    <xsl:value-of select="menu_name_mobile" disable-output-escaping="yes" />
                                 </xsl:element>
                             </xsl:element>
                             <xsl:element name="p">
                                 <xsl:attribute name="class">ingredient d-none</xsl:attribute>
-                                <xsl:value-of select="menu_ingredient" disable-output-escaping="yes" />
+                                <xsl:value-of select="menu_ingredient_mobile" disable-output-escaping="yes" />
                             </xsl:element>
                             <xsl:element name="p">
                                 <xsl:attribute name="class">productDetail d-none</xsl:attribute>
-                                <xsl:value-of select="menu_detail" disable-output-escaping="yes" />
+                                <xsl:value-of select="menu_detail_mobile" disable-output-escaping="yes" />
                             </xsl:element>
                             <xsl:element name="p">
                                 <xsl:attribute name="class">preservation d-none</xsl:attribute>
-                                <xsl:value-of select="menu_preservation" disable-output-escaping="yes" />
+                                <xsl:value-of select="menu_preservation_mobile" disable-output-escaping="yes" />
                             </xsl:element>
                         </xsl:element>
                     </xsl:for-each>
