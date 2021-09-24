@@ -10,7 +10,7 @@
                 v41_32 d-flex flex-column justify-content-center align-items-center
             </xsl:attribute>
             <xsl:attribute name="style">
-                background: url(?????? );
+                background: url(/static/puff_pie/images/footer/VisitShops-banner-min.png );
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
@@ -91,7 +91,7 @@
                 </h2>
                 <div class="bar-light-small mt-2"></div>
                 <div id="sitInShopParent" class="d-flex flex-row overflow-auto scroll-box-shops my-2 p-0 mt-3 ">
-                    <xsl:for-each select="branched-sitin">
+                    <xsl:for-each select="/Properties/Data/Datum/DCR/visitshop/branches-sitin">
                         <xsl:element name="div">
                             <xsl:attribute name="class">
                                 sitInShop card-shops-small flex-shrink-0 mx-2 position-relative
@@ -133,7 +133,7 @@
                                         float-end col-3 mb-1
                                     </xsl:attribute>
                                     <xsl:element name="img">
-                                        <xsl:attribute name="src">./images/placeholder.png</xsl:attribute>
+                                        <xsl:attribute name="src">/static/puff_pie/images/map/Location_pin-min.png</xsl:attribute>
                                         <xsl:attribute name="class">location-pin  me-2"</xsl:attribute>
                                     </xsl:element>
                                     <xsl:element name="div">

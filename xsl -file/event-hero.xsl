@@ -12,7 +12,7 @@
             <xsl:attribute name="style">
                 background: linear-gradient(
                 360deg,#000000 -0.26%,rgba(0, 0, 0, 0.25) 47.14%),
-                url(<xsl:value-of select="hero_image" />); 
+                url(<xsl:value-of select="/Properties/Data/Datum/DCR/event/hero_image" />); 
                 background-repeat: no-repeat; 
                 background-position: center center; 
                 background-size:
@@ -20,17 +20,14 @@
             </xsl:attribute>
             <div class="container">
                 <h1 id="Events" class="mx-auto mb-lg-2  mb-1 d-md-block d-none ">
-                    <xsl:value-of select="hero_header" disable-output-escaping="yes" />
+                    <xsl:value-of select="/Properties/Data/Datum/DCR/event/hero_header" disable-output-escaping="yes" />
                 </h1>
                 <div class="bar-light-long ms-2 mx-md-auto my-1  my-md-3 d-md-block d-none"></div>
                 <div id="contentOneEvent" class="mx-auto h-auto d-md-block d-none">
                     <h2 id="crafted">
-                        <xsl:value-of select="hero_title" disable-output-escaping="yes" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/event/hero_title" disable-output-escaping="yes" />
                     </h2>
-                    <div id="bar-superLong" class="w-100 my-3"></div>
-                    <h3 id="date-big">
-                        <xsl:value-of select="hero_date" disable-output-escaping="yes" />
-                    </h3>
+                    <div id="bar-superLong" class="w-100 my-3"></div> 
                 </div>
             </div>
         </xsl:element>
@@ -41,12 +38,12 @@
             <xsl:attribute name="class">d-md-none</xsl:attribute>
             <xsl:attribute name="style">
                 background: linear-gradient(180deg, #000000 0%, rgba(61, 34, 17, 0.29) 60.42%),
-                url(<xsl:value-of select="hero_image_mobile" />);
+                url(<xsl:value-of select="/Properties/Data/Datum/DCR/event/hero_image_mobile" />);
                 background-size: cover;
             </xsl:attribute>
             <div class="container">
                 <h1 id='newMenu' class="mx-auto d-md-none d-block ">
-                    <xsl:value-of select="hero_title_mobile" disable-output-escaping="yes" />
+                    <xsl:value-of select="/Properties/Data/Datum/DCR/event/hero_title_mobile" disable-output-escaping="yes" />
                 </h1>
             </div>
         </xsl:element>

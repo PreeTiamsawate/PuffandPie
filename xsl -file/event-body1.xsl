@@ -6,7 +6,7 @@
 	<xsl:include href="http://www.interwoven.com/livesite/xsl/StringTemplates.xsl" />
 	<xsl:template match="/">
 
-        <xsl:for-each select="event_list">
+        <xsl:for-each select="/Properties/Data/Datum/DCR/event/event_list">
             <xsl:variable name="position">
                 <xsl:value-of select="position()" />
             </xsl:variable>
@@ -39,7 +39,7 @@
                                     <div class="date ">
                                         <xsl:value-of select="event_date" disable-output-escaping="yes" />
                                     </div>
-                                    <img class="event-pin " src="./images/placeholder.png" alt="">
+                                    <img class="event-pin " src="/static/puff_pie/images/event/Location-icon.png" alt=""></img>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                                     <div class="date ">
                                         <xsl:value-of select="event_date" disable-output-escaping="yes" />
                                     </div>
-                                    <img class="event-pin  " src="./images/placeholder.png" alt="">
+                                    <img class="event-pin  " src="/static/puff_pie/images/event/Location-icon.png" alt=""></img>
 
                                 </div>
 

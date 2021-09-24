@@ -11,14 +11,14 @@
             <xsl:attribute name="style">
                 background: linear-gradient(
                 360deg,#000000 -0.26%,rgba(0, 0, 0, 0.25) 47.14%),
-                url(<xsl:value-of select="title_image" />);
+                url(<xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/title_image" />);
                 background-position: center center;
                 background-size: cover;
             </xsl:attribute>
             <xsl:element name="h2">
                 <xsl:attribute name="id">event-banner-text</xsl:attribute>
                 <xsl:attribute name="class">text-center</xsl:attribute>
-                <xsl:value-of select="title" disable-output-escaping="yes" />
+                <xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/title" disable-output-escaping="yes" />
             </xsl:element>
         </xsl:element>
        <section class=" event-section-short container-fluid">
@@ -26,17 +26,17 @@
                 <div class="col-8 p-0 h-100 bg-black">
                     <xsl:element name="img">
                         <xsl:attribute name="src">
-                            <xsl:value-of select="image1" />
+                            <xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/image1" />
                         </xsl:attribute>
                         <xsl:attribute name="class">event-img-short</xsl:attribute>
                     </xsl:element>
                 </div>
                 <div class="event-textbox-dark px-md-5 h-100 col-4 d-flex flex-column justify-content-evenly">
                     <h4 class="event-name-white-short">
-                        <xsl:value-of select="header1" disable-output-escaping="yes" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/header1" disable-output-escaping="yes" />
                     </h4>
                     <p class="event-text-white-thai-short">
-                        <xsl:value-of select="deatail1" disable-output-escaping="yes" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/detail1" disable-output-escaping="yes" />
                     </p>
                 </div>
             </div>
@@ -46,23 +46,23 @@
                 <div class="col-4 p-0 h-100 bg-black">
                     <xsl:element name="img">
                         <xsl:attribute name="src">
-                            <xsl:value-of select="image2" />
+                            <xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/image2" />
                         </xsl:attribute>
                         <xsl:attribute name="class">event-img-short</xsl:attribute>
                     </xsl:element>
                 </div>
                 <div class="event-textbox-dark px-md-5 h-100 col-4 d-flex flex-column justify-content-evenly">
                     <h4 class="event-name-white-short">
-                        <xsl:value-of select="header2" disable-output-escaping="yes" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/header2" disable-output-escaping="yes" />
                     </h4>
                     <p class="event-text-white-thai-short">
-                        <xsl:value-of select="deatail2" disable-output-escaping="yes" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/detail2" disable-output-escaping="yes" />
                     </p>
                 </div>
                 <div class="col-4 p-0 h-100 bg-black">
                      <xsl:element name="img">
                         <xsl:attribute name="src">
-                            <xsl:value-of select="image3" />
+                            <xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/image3" />
                         </xsl:attribute>
                         <xsl:attribute name="class">event-img-short</xsl:attribute>
                     </xsl:element>
@@ -74,16 +74,16 @@
 
                 <div class="event-textbox-dark px-md-5 h-100 col-4 d-flex flex-column justify-content-evenly">
                     <h4 class="event-name-white-short">
-                        <xsl:value-of select="header3" disable-output-escaping="yes" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/header3" disable-output-escaping="yes" />
                     </h4>
                     <p class="event-text-white-thai-short">
-                        <xsl:value-of select="deatail3" disable-output-escaping="yes" />
+                        <xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/detail3" disable-output-escaping="yes" />
                     </p>
                 </div>
                 <div class="col-8 p-0 h-100 bg-black">
                     <xsl:element name="img">
                         <xsl:attribute name="src">
-                            <xsl:value-of select="image4" />
+                            <xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/image4" />
                         </xsl:attribute>
                         <xsl:attribute name="class">event-img-short</xsl:attribute>
                     </xsl:element>
@@ -95,7 +95,7 @@
                 <div class="col-8 p-0 h-100 bg-black">
                     <xsl:element name="img">
                         <xsl:attribute name="src">
-                            <xsl:value-of select="image5" />
+                            <xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/image5" />
                         </xsl:attribute>
                         <xsl:attribute name="class">event-img-short</xsl:attribute>
                     </xsl:element>
@@ -103,7 +103,7 @@
                 <div class="col-4 p-0 h-100 bg-black">
                     <xsl:element name="img">
                         <xsl:attribute name="src">
-                            <xsl:value-of select="image6" />
+                            <xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/image6" />
                         </xsl:attribute>
                         <xsl:attribute name="class">event-img-short</xsl:attribute>
                     </xsl:element>

@@ -163,24 +163,49 @@ iframe {
   opacity: 1;
   text-align: center;
 }
-.v41_32 {
-  width: 100%;
-  height: 330px;
-  background: url("../images/v41_32.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  /* position: absolute;
-    top: 0px;
-    left: 0px; */
-  overflow: hidden;
-}
 
 #shops {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 
   background-image: linear-gradient(#3d2211, rgba(61, 34, 17, 0.93));
+}
+.v41_32 {
+  width: 100%;
+  height: 300px;
+  /* background: url("../images/v41_32.png"); */
+  /* background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+  opacity: 1;
+  overflow: hidden;
+}
+#letsMeetUs {
+  width: 300px;
+  height: 160px;
+  color: rgba(235, 237, 236, 1);
+  font-family: "Avenir LT Std", sans-serif;
+  font-weight: 45;
+  font-size: 50px;
+  opacity: 1;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.visitShops-btn {
+  text-align: center;
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 25px;
+  line-height: 30px;
+  box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  background-color: white;
+  padding: 10px 18px 8px;
+  height: 48px;
+  width: 195px;
+  transition-property: font-weight, background-color;
+  transition-duration: 0.25s;
+  color: black;
 }
 
 /* Tablet Screen Display============================================================================================== */
