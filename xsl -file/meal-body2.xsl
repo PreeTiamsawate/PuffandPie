@@ -24,12 +24,8 @@
             </xsl:element>
              <xsl:element name="button">
                 <xsl:attribute name="class">btn btn-lg rounded-pill grabMe-btn</xsl:attribute>
-                <xsl:attribute name="data-bs-toggle">
-                    modal
-                </xsl:attribute>
-                <xsl:attribute name="data-bs-target">
-                    #modal-rider
-                </xsl:attribute>
+                <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
+                <xsl:attribute name="data-bs-target">#modal-rider</xsl:attribute>
                 Grab Me!
             </xsl:element>
             
@@ -101,12 +97,8 @@
             </div>
             <xsl:element name="button">
                 <xsl:attribute name="class">btn btn-lg rounded-pill grabMe-btn mx-auto my-md-4 d-md-block d-none my-2</xsl:attribute>
-                <xsl:attribute name="data-bs-toggle">
-                    modal
-                </xsl:attribute>
-                <xsl:attribute name="data-bs-target">
-                    #modal-rider
-                </xsl:attribute>
+                <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
+                <xsl:attribute name="data-bs-target">#modal-rider</xsl:attribute>
                 Grab Me!
             </xsl:element>
             
@@ -188,12 +180,8 @@
                     </div>
                      <xsl:element name="button">
                         <xsl:attribute name="class">btn btn-lg rounded-pill grabMe-btn d-block  ms-md-0 mx-auto my-md-4 my-3</xsl:attribute>
-                        <xsl:attribute name="data-bs-toggle">
-                            modal
-                        </xsl:attribute>
-                        <xsl:attribute name="data-bs-target">
-                            #modal-rider
-                        </xsl:attribute>
+                        <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
+                        <xsl:attribute name="data-bs-target">#modal-rider</xsl:attribute>
                         Grab Me!
                     </xsl:element>
                    

@@ -29,12 +29,8 @@
                     </xsl:element>
                     <xsl:element name="button">
                         <xsl:attribute name="class">btn btn-lg rounded-pill grabMe-btn</xsl:attribute>
-                        <xsl:attribute name="data-bs-toggle">
-                            modal
-                        </xsl:attribute>
-                        <xsl:attribute name="data-bs-target">
-                            #modal-rider
-                        </xsl:attribute>
+                        <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
+                        <xsl:attribute name="data-bs-target">#modal-rider</xsl:attribute>
                        Grab Me!
                     </xsl:element>
                 </div>
@@ -58,6 +54,8 @@
                     <xsl:for-each select="/Properties/Data/Datum/DCR/hero_banner_home/hero_banner_home_mobile">
                         <xsl:element name="div">
                             <xsl:attribute name="class">promotion-card flex-shrink-0 mx-2 position-relative</xsl:attribute>
+                            <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
+                            <xsl:attribute name="data-bs-target">#modal-rider</xsl:attribute>
                             <xsl:element name="img">
                                 <xsl:attribute name="class">d-block w-100 h-100 promotion-card-img</xsl:attribute>
                                 <xsl:attribute name="src">

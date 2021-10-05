@@ -36,12 +36,8 @@
 
                      <xsl:element name="button">
                         <xsl:attribute name="class">btn btn-lg rounded-pill grabMe-btn</xsl:attribute>
-                        <xsl:attribute name="data-bs-toggle">
-                            modal
-                        </xsl:attribute>
-                        <xsl:attribute name="data-bs-target">
-                            #modal-rider
-                        </xsl:attribute>
+                        <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
+                        <xsl:attribute name="data-bs-target">#modal-rider</xsl:attribute>
                         Grab Me!
                     </xsl:element>
                 </div>

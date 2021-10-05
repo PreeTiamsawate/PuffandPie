@@ -18,7 +18,7 @@
                         </h2>
 
                         <button type="button"
-                            class="btn btn-primary rounded-pill grabMe-btn-modal d-inline-block mt-5 float-end">Grab
+                            class="btn btn-primary rounded-pill grabMe-btn-modal d-inline-block mt-5 float-end" data-bs-toggle="modal" data-bs-target="#modal-rider" data-bs-dismiss="modal">Grab
                             Me!</button>
                     </div>
                     <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
