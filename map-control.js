@@ -4,6 +4,7 @@ const sitInShopParent = document.querySelector("#sitInShopParent");
 const sitInShops = Array.from(document.querySelectorAll(".sitInShop"));
 // const toGoMap = document.querySelector("#toGo-map");
 const sitInMap = document.querySelector("#sitIn-map");
+const locationPins = document.querySelectorAll(".location-pin");
 // console.log(toGoShopParent);
 // console.log(toGoShops);
 function distance(lat1, lon1, lat2, lon2, unit) {
@@ -30,6 +31,18 @@ function distance(lat1, lon1, lat2, lon2, unit) {
       dist = dist * 0.8684;
     }
     return dist;
+  }
+}
+function showMap(Shops, mapFrame) {
+  for (let shop of Shops) {
+    shop.addEventListener("click", function () {
+      mapFrame.innerHTML = this.getAttribute("mapIframe");
+    });
+  }
+}
+function hidePins() {
+  for (let locationPin of locationPins) {
+    locationPin.classList.add("d-none");
   }
 }
 function sortShops(Shops, shopParent, userLat, userLong, mapFrame) {
@@ -61,6 +74,8 @@ function sortShops(Shops, shopParent, userLat, userLong, mapFrame) {
 const showShopsByDistance = function () {
   if (!navigator.geolocation) {
     alert("Geolocation is not supported by your browser");
+    showMap(sitInShops, sitInMap);
+    hidePins();
   } else {
     navigator.geolocation.getCurrentPosition(success, error);
   }
@@ -91,6 +106,8 @@ const showShopsByDistance = function () {
 
   function error() {
     alert("คุณไม่อนุญาตให้ที่เว็ปไซต์เข้าถึงตำแหน่งที่ตั้งของคุณ");
+    showMap(sitInShops, sitInMap);
+    hidePins();
   }
 };
 
