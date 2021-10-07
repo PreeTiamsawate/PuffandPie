@@ -24,7 +24,7 @@
             </xsl:element>
             <xsl:element name="button">
                 <xsl:attribute name="class">
-                    btn btn-lg rounded-pill grabMe-btn d-md-block d-none 
+                    btn btn-lg rounded-pill grabMe-btn 
                 </xsl:attribute>
                 <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
                 <xsl:attribute name="data-bs-target">#modal-rider</xsl:attribute>

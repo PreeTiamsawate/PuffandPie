@@ -13,7 +13,7 @@ let foodpandaLinks = [
     latitude: 13.8056359,
     longitude: 100.562122,
     distance: 0,
-    isOpen: true,
+    isOpen: false,
   },
 
   {
@@ -88,6 +88,6 @@ let foodpandaLinks = [
     latitude: 13.8053221,
     longitude: 100.5611411,
     distance: 0,
-    isOpen: true,
+    isOpen: false,
   },
 ];
