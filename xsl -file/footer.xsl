@@ -14,6 +14,7 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
+            
             </xsl:attribute>
             <xsl:element name="div">
                 <xsl:attribute name="id">letsMeetUs</xsl:attribute>

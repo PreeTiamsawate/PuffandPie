@@ -6,8 +6,7 @@
 	<xsl:include href="http://www.interwoven.com/livesite/xsl/StringTemplates.xsl" />
 	<xsl:template match="/">
 
-        <section id="sectionTwo">
-
+        <section id="sectionTwo" style="margin-top: -35px">
             <div class="container mx-auto  row">
                 <div class="d-md-none my-3">
                     <xsl:element name="h2">

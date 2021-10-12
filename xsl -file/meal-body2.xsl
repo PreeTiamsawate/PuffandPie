@@ -15,6 +15,7 @@
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
+                margin-top: -12px;
             </xsl:attribute>
             <xsl:element name="h1">
                 <xsl:attribute name="class">

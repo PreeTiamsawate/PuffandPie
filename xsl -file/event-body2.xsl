@@ -14,6 +14,7 @@
                 url(<xsl:value-of select="/Properties/Data/Datum/DCR/tiles_banner/title_image" />);
                 background-position: center center;
                 background-size: cover;
+                margin-top: -12px;
             </xsl:attribute>
             <xsl:element name="h2">
                 <xsl:attribute name="id">event-banner-text</xsl:attribute>

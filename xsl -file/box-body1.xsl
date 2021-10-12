@@ -11,13 +11,13 @@
             </xsl:variable>
             <xsl:choose>
                 <xsl:when test="($position mod 2) = 1">
-                   
                     <xsl:element name="section">
                         <xsl:attribute name="id">banner-mobile-1</xsl:attribute>
                         <xsl:attribute name="class">container-fluid d-block d-md-none</xsl:attribute>
                         <xsl:attribute name="style">
                             background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 51.55%, #000000 84.72%),
                             url(/static/puff_pie/images/box/Poster/Poster_Premium_Box-min.png);background-size: cover;background-position: center;
+                            margin-top: -12px;
                         </xsl:attribute>
                         <div class="row justify-content-end">
                             <div class="col-3 ps-0 pt-4 ">
@@ -38,7 +38,7 @@
                         </div>
                     </xsl:element>
 
-                    <section class="sectionBox py-lg-5 py-md-3 py-2 w-100 h-auto">
+                    <section class="sectionBox py-lg-5 py-md-3 py-2 w-100 h-auto" style="margin-top: -12px">
                         <div class="container mx-auto  row">
                         <div class="col-md-6 col-0 d-md-block d-none  ">
                                 <div class="position-relative w-50 h-auto mt-5">

@@ -12,7 +12,7 @@
             </xsl:variable>
             <xsl:choose>
                 <xsl:when test="($position mod 2) = 1">
-                    <section class="sectionBakery py-lg-5 py-md-3 py-2  w-100 h-auto">
+                    <section class="sectionBakery py-lg-5 py-md-3 py-2  w-100 h-auto" style="margin-top: -12px">
                         <div class="container mx-auto row">
                             <div class="col-md-6 col-0 d-md-block d-none  ">
                                 <div class="position-relative w-50 h-auto mt-5">

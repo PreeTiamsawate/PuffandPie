@@ -17,6 +17,7 @@
                 background-position: center center; 
                 background-size:
                 cover;
+                margin-top: -35px;
             </xsl:attribute>
             <div class="container">
                 <h1 id="Events" class="mx-auto mb-lg-2  mb-1 d-md-block d-none ">

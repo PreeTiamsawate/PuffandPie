@@ -14,6 +14,7 @@
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
+                margin-top: -35px;
             </xsl:attribute>
             <xsl:element name="h1">
                 <xsl:attribute name="id">visitOurShops</xsl:attribute>

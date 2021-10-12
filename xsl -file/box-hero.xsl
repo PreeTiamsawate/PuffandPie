@@ -14,6 +14,7 @@
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
+                margin-top: -35px;
             </xsl:attribute>
             <div class="container">
                  <xsl:element name="h1">
