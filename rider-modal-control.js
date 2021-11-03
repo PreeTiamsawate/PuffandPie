@@ -178,4 +178,9 @@ const setLinkToButton = function (
 const foodpandaBtn = document.querySelector("#foodpanda-btn");
 const robinhoodBtn = document.querySelector("#robinhood-btn");
 
-setLinkToButton(robinhoodLinks, robinhoodBtn, foodpandaLinks, foodpandaBtn);
+toOrderBtns = document.querySelectorAll('[data-bs-target="#modal-rider"]');
+for (let toOrderBtn of toOrderBtns) {
+  toOrderBtn.addEventListener("click", function () {
+    setLinkToButton(robinhoodLinks, robinhoodBtn, foodpandaLinks, foodpandaBtn);
+  });
+}

@@ -24,7 +24,7 @@
                         <xsl:value-of select="/Properties/Data/Datum/DCR/body_homepage/header_text" disable-output-escaping="yes" />
                     </xsl:element>
                    
-                    <div class="bar-dark ms-lg-3 ms-0"></div>
+                    <div class="bar-dark  ms-0"></div>
                     <div id="body-paragraph" class=" pe-md-5 pe-lg-1">
                         <xsl:element name="p">
                             <xsl:attribute name="id">body-paragraph</xsl:attribute>

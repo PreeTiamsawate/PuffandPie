@@ -123,15 +123,17 @@ body {
   margin-bottom: 24px;
 }
 
-.foodLink:hover {
-  border: 8px solid #995a13;
-}
-
 .img-link {
   border-radius: 20px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-sizing: border-box;
+}
+.img-link:hover {
+  box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+  /* border: 5px solid #995a13;
+  border-radius: 20px; */
 }
 
 #body-header {
@@ -146,7 +148,6 @@ body {
   text-align: left;
   margin-top: 50px;
   margin-bottom: 30px;
-  margin-left: 15px;
 }
 .bar-dark {
   width: 166px;
@@ -167,8 +168,8 @@ body {
   font-size: 18px;
   opacity: 1;
   text-align: left;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 /* .v46_23 {
   width: 100%;

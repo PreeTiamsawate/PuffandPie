@@ -101,7 +101,9 @@ body {
   height: auto;
   border-radius: 12px;
 }
-
+.card-text {
+  padding-left: 0.4rem !important;
+}
 .card-name-big {
   font-family: "Avenir LT Std", sans-serif;
   font-style: normal;
