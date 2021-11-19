@@ -37,6 +37,7 @@
     <link href="./css/home.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/rider-modal.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/banner-modal.css">
     <link rel="icon" href="./favicon.ico">
 </head>
 
@@ -183,6 +184,17 @@
         </div>
     </section>
 
+    <!-- {% comment %} Banner Modal ======================================== {% endcomment %} -->
+    <div class="modal fade" id="modal-banner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content position-relative content-container ">
+                <img src="" alt="" class="modal-img">
+                <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
     <section id="sectionTwo">
 
         <div class="container mx-auto  row">
@@ -262,9 +274,10 @@
 
     </section>
 
+
     <!-- Rider Modal Section------------------------------------------------ -->
 
-    <div class="modal fade " id="modal-rider" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade show" id="modal-rider" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content mx-auto modal-rider-content ">
                 <h1 class="custom-modal-header">Select</h1>
@@ -395,11 +408,13 @@
     </footer>
 
 
-
+    <!-- jquery js link -->
+    <!-- <script src="./jquery3-6-0.js"></script> -->
     <!-- Javascript for Bootstrap5 -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script> -->
+        crossorigin="anonymous"></script>
     <!-- Navbar Control Javascript -->
     <script src="./navbar-control.js">
 
@@ -408,6 +423,7 @@
     <script src="./robinhood_links.js"></script>
     <script src="./foodpanda_links.js"></script>
     <script src="./rider-modal-control.js"></script>
+    <script src="./banner-modal.js"></script>
     <!-- <script src="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script> -->
     <!-- <script>
         console.log(foodpandaLinks)

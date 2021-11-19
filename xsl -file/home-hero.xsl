@@ -37,6 +37,26 @@
             </div>
         </xsl:element>
 
+        <!-- Modal Banner ===== -->
+        <div class="modal fade" id="modal-banner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content position-relative content-container ">
+                    <xsl:element name="img">
+                        <xsl:attribute name="class">modal-img</xsl:attribute>
+                        <xsl:attribute name="src">
+                            <xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_home/image_banner_modal" />
+                        </xsl:attribute>
+                        <xsl:attribute name="alt">
+                            <xsl:value-of select="/Properties/Data/Datum/DCR/hero_banner_home/text_banner_modal" />
+                        </xsl:attribute>
+                    </xsl:element>
+                    
+                    <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+
    
         <!-- Mobile Hero=================================== -->
         <section id="sectionOneHomeMobile" class="d-block d-md-none w-100 d-block h-auto pb-4 ">
