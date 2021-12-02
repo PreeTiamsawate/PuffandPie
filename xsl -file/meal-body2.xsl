@@ -82,7 +82,7 @@
                             </xsl:element>
                             <xsl:element name="p">
                                 <xsl:attribute name="class">ingredient d-none</xsl:attribute>
-                                <xsl:value-of select="menu_ingredient" disable-output-escaping="yes" />>
+                                <xsl:value-of select="menu_ingredient" disable-output-escaping="yes" />
                             </xsl:element>
                             <xsl:element name="p">
                                 <xsl:attribute name="class">productDetail d-none</xsl:attribute>
